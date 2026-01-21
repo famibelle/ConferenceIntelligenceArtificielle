@@ -239,9 +239,6 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 
 ## 🏆 AlexNet : La Révolution de 2012
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
 **Qu'est-ce qu'AlexNet ?**
 - Réseau de neurones convolutif profond créé par Alex Krizhevsky, Ilya Sutskever et Geoffrey Hinton
 - 8 couches (5 convolutives + 3 entièrement connectées)
@@ -254,10 +251,6 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 
 **Les Innovations Clés**
 - Utilisation de **GPU** pour l'entraînement
-
-    </div>
-
-    <div style="flex: 1;">
 
 ![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
 
