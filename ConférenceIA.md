@@ -119,12 +119,16 @@ graph LR
 La naissance du mot "Intelligence Artificielle"
 **La Conférence de Dartmouth** s'est tenue en 1956 au Dartmouth College dans le New Hampshire, aux États-Unis. Elle a réuni des pionniers comme John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell. C'est lors de cette rencontre historique que le terme "Intelligence Artificielle" a été inventé par John McCarthy. Les participants pensaient pouvoir créer une machine pensante en quelques mois
 https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCge-mEPiJuKtQN0GIXOPaACYj-OBNccNrBHAzApkaMESTnylTGDqMVciQOM1C10dAXdg1kzKlDIM3jDpFWdz44PWxCJ8
+
 ---
 
 ## 1960 – Perceptrons
 - **Frank Rosenblatt** invente le perceptron
 - Neurone artificiel = base des réseaux de neurones
 - Limité : ne résout pas les problèmes non linéaires comme le XOR
+
+---
+
 ## 🔍 Le Problème XOR : Limite du Perceptron Simple
 
 Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, qui nécessite une séparation non linéaire. Le XOR renvoie vrai uniquement si **une seule** des deux entrées est vraie, pas les deux en même temps.
@@ -214,7 +218,7 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - IA d’IBM bat Garry Kasparov aux échecs
 - Exemple d’IA spécialisée
 - Démonstration de puissance de calcul + stratégie
-
+![Garry Kasparov vs Deep Blue](https://tse1.mm.bing.net/th/id/OIP.3liapdpAF6vYvBQnLSOGvQHaFA?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3)
 ---
 
 ## 2006 – Renaissance du Deep Learning
@@ -228,8 +232,10 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - Réseau de neurones convolutif profond
 - Gagne le concours **ImageNet**
 - Révolutionne la vision par ordinateur
-https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg
 
+![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
+
+---
 
 ## 🏆 AlexNet : La Révolution de 2012
 
@@ -255,7 +261,8 @@ https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg
 
 ![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
 
---
+---
+
 **Pourquoi c'est important ?**
 - Prouve que le deep learning fonctionne
 - Lance l'ère moderne de l'IA
@@ -272,6 +279,8 @@ https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg
 - **Alex Krizhevsky** : Doctorant, développeur principal
 - **Ilya Sutskever** : Co-auteur, futur cofondateur d'OpenAI
 - **Geoffrey Hinton** : Superviseur, "Parrain du Deep Learning"
+
+---
 
 **Le Destin d'Ilya Sutskever**
 - Après AlexNet, rejoint Google Brain
@@ -302,12 +311,74 @@ https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg
 
 ---
 
+## 🎯 Comment AlphaGo a Battu Lee Sedol
+
+**Le Match Historique (Mars 2016)**
+- AlphaGo affronte Lee Sedol, champion du monde de Go
+- Victoire 4-1 : choc pour la communauté du Go
+- Considéré comme impossible 10 ans auparavant
+
+---
+
+**Les Techniques d'AlphaGo**
+- **Apprentissage supervisé** : étude de 30 millions de positions de parties de professionnels
+- **Apprentissage par renforcement** : l'IA joue contre elle-même des millions de fois
+- **Recherche arborescente Monte Carlo** : évalue les meilleurs coups possibles
+- Combinaison de réseaux neuronaux profonds et d'algorithmes de recherche
+
+---
+
+**Le Coup 37 : Le Moment Légendaire**
+- Deuxième partie : AlphaGo joue un coup jamais vu auparavant
+- Les commentateurs le jugent d'abord "ridicule"
+- Se révèle être un coup de génie qui change la partie
+- Démontre que l'IA peut créer des stratégies innovantes
+
+---
+
+**Impact**
+- Révolutionne la compréhension du jeu de Go
+- Prouve que l'IA peut surpasser l'intuition humaine
+- Lee Sedol déclare : "AlphaGo m'a montré que je ne savais rien"
+
+---
+
 ## 🌌 SETI @ Home
 - Projet pour détecter vie extraterrestre
 - Utilise la puissance de calcul **des ordinateurs des bénévoles**
 - Exemple de **distributed computing** et science collaborative
 
 ---
+
+## 🎮 AlphaStar : Champion de StarCraft II
+
+**Le Défi StarCraft II**
+- Jeu de stratégie en temps réel extrêmement complexe
+- Nécessite planification, gestion de ressources, micro-gestion
+- Plus de 10^26 actions possibles (vs 10^170 pour le Go)
+
+**Les Performances d'AlphaStar**
+- Décembre 2018 : Bat des joueurs professionnels
+- Atteint le niveau "Grandmaster" (top 0,2% des joueurs)
+- Gère simultanément : économie, armée, stratégie
+
+**Les Techniques Utilisées**
+- **Apprentissage par imitation** : étudie des millions de parties humaines
+- **Apprentissage par renforcement** : joue contre différentes versions de lui-même
+- **Architecture neuronale** : réseaux transformers pour comprendre le contexte du jeu
+- Traite environ 22 000 observations par seconde
+
+**Innovation Clé**
+- AlphaStar ne joue pas de manière surhumaine (APM limité à un niveau humain)
+- Démontre une compréhension stratégique profonde
+- Capable d'adapter sa stratégie en temps réel
+
+**Impact**
+- Prouve que l'IA peut maîtriser des environnements complexes et imprévisibles
+- Applications : logistique, gestion de ressources, planification
+
+---
+<!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
 
 ## 🧠 Le cerveau humain
 - Taille moyenne : 1600 cm³
@@ -316,6 +387,37 @@ https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg
 - Synapses : pratiquement illimitées
 
 https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg
+---
+
+## 🧬 AlphaFold : De SETI@Home au Pliage de Protéines
+
+**Le Lien avec SETI@Home**
+- SETI@Home : calcul distribué pour chercher des signaux extraterrestres
+- Même principe appliqué au pliage de protéines : **Folding@home**
+- Des milliers d'ordinateurs volontaires calculent comment les protéines se replient
+
+**AlphaFold : La Révolution**
+- Développé par DeepMind (2020)
+- Résout un problème vieux de 50 ans : prédire la structure 3D des protéines
+- Une protéine = chaîne d'acides aminés qui se replie d'une façon précise
+
+**Pourquoi c'est Important ?**
+- La forme d'une protéine détermine sa fonction
+- Comprendre le pliage = comprendre les maladies
+- Applications : conception de médicaments, lutte contre les virus
+
+**Les Performances**
+- Prédit la structure de 200 millions de protéines
+- Précision comparable aux méthodes expérimentales
+- Réduit de plusieurs années à quelques heures le temps de recherche
+
+**Impact sur la Science**
+- Prix Nobel de Chimie 2024 décerné à Demis Hassabis (DeepMind)
+- Accélère la recherche médicale mondiale
+- Données ouvertes : accessibles à tous les chercheurs
+
+![AlphaFold Protein Structure](https://cdn.the-scientist.com/assets/articleNo/68887/aImg/43733/alphafold-l.png)
+
 ---
 
 ## ⚡ Énergie : cerveau vs IA
