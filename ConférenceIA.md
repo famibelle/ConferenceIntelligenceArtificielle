@@ -116,12 +116,23 @@ graph LR
 - Objectif : créer des machines capables de penser
 - Début de l’IA symbolique
 
+La naissance du mot "Intelligence Artificielle"
+**La Conférence de Dartmouth** s'est tenue en 1956 au Dartmouth College dans le New Hampshire, aux États-Unis. Elle a réuni des pionniers comme John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell. C'est lors de cette rencontre historique que le terme "Intelligence Artificielle" a été inventé par John McCarthy. Les participants pensaient pouvoir créer une machine pensante en quelques mois
+https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCge-mEPiJuKtQN0GIXOPaACYj-OBNccNrBHAzApkaMESTnylTGDqMVciQOM1C10dAXdg1kzKlDIM3jDpFWdz44PWxCJ8
 ---
 
 ## 1960 – Perceptrons
 - **Frank Rosenblatt** invente le perceptron
 - Neurone artificiel = base des réseaux de neurones
-- Limité : ne résout pas les problèmes non linéaires
+- Limité : ne résout pas les problèmes non linéaires comme le XOR
+## 🔍 Le Problème XOR : Limite du Perceptron Simple
+
+Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, qui nécessite une séparation non linéaire. Le XOR renvoie vrai uniquement si **une seule** des deux entrées est vraie, pas les deux en même temps.
+
+**Pourquoi c'est important ?**
+- Cette limitation a montré qu'un seul neurone ne suffit pas
+- A conduit au **premier hiver de l'IA** (1974-1980) : baisse de financements et d'intérêt pour la recherche
+
 
 ---
 
@@ -129,6 +140,52 @@ graph LR
 - Introduction des **couches multiples**
 - Permet de résoudre des problèmes plus complexes
 - Base des IA modernes
+
+## 🧠 Réseaux multicouches : une vraie révolution
+- Les couches multiples permettent d'apprendre des relations complexes que le perceptron simple ne pouvait pas résoudre
+
+---
+
+
+## 🏆 Les Parrains de l'IA
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+**Les Pères Fondateurs du Deep Learning**
+
+Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 2018** (le "Nobel de l'informatique") :
+
+**Geoffrey Hinton** 🇬🇧
+- Réseaux de neurones profonds
+- Rétropropagation moderne
+- "Parrain du Deep Learning"
+
+**Yann LeCun** 🇫🇷
+- Réseaux convolutifs (CNN)
+- Reconnaissance d'images
+
+**Yoshua Bengio** 🇨🇦
+- Traitement du langage naturel
+- Représentations distribuées
+- Éthique de l'IA
+
+https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
+
+    </div>
+
+    <div style="flex: 1;">
+
+**Leur Impact**
+
+- Ont persisté quand personne ne croyait aux réseaux de neurones
+- Leurs travaux ont permis : reconnaissance vocale, voitures autonomes, traduction automatique
+- Forment aujourd'hui la nouvelle génération de chercheurs
+
+
+    </div>
+</div>
+
 
 ---
 
@@ -171,6 +228,56 @@ graph LR
 - Réseau de neurones convolutif profond
 - Gagne le concours **ImageNet**
 - Révolutionne la vision par ordinateur
+https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg
+
+
+## 🏆 AlexNet : La Révolution de 2012
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+**Qu'est-ce qu'AlexNet ?**
+- Réseau de neurones convolutif profond créé par Alex Krizhevsky, Ilya Sutskever et Geoffrey Hinton
+- 8 couches (5 convolutives + 3 entièrement connectées)
+- 60 millions de paramètres
+
+**La Performance**
+- Gagne le concours ImageNet 2012
+- Taux d'erreur : 15,3% (vs 26,2% pour le second)
+- Révolutionne la reconnaissance d'images
+
+**Les Innovations Clés**
+- Utilisation de **GPU** pour l'entraînement
+
+    </div>
+
+    <div style="flex: 1;">
+
+![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
+
+--
+**Pourquoi c'est important ?**
+- Prouve que le deep learning fonctionne
+- Lance l'ère moderne de l'IA
+- Inspire tous les modèles actuels
+
+    </div>
+</div>
+
+---
+
+## 🎯 AlexNet : L'Équipe qui a Changé l'IA
+
+**Les Créateurs**
+- **Alex Krizhevsky** : Doctorant, développeur principal
+- **Ilya Sutskever** : Co-auteur, futur cofondateur d'OpenAI
+- **Geoffrey Hinton** : Superviseur, "Parrain du Deep Learning"
+
+**Le Destin d'Ilya Sutskever**
+- Après AlexNet, rejoint Google Brain
+- 2015 : Cofonde **OpenAI** avec Sam Altman
+- Rôle clé dans le développement de **GPT** et **ChatGPT**
+- Chief Scientist chez OpenAI jusqu'en 2024
 
 ---
 
@@ -591,75 +698,6 @@ Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 
 ## **4. Questions Clés (20 min)**
 **Objectif** : Répondre aux interrogations courantes
-- **4.1** "L'IA est-elle plus intelligente que nous ?" (5 min)
-  - Non, elle est spécialisée (exemple AlphaGo)
-- **4.2** "Peut-on lui faire confiance ?" (5 min)
-  - Les biais et erreurs de l'IA (exemple de traduction amusante)
-- **4.3** "Va-t-elle nous remplacer ?" (5 min)
-  - Métiers qui évoluent vs nouveaux métiers
-- **4.4** Créativité et IA (5 min)
-  - Démonstration de génération créative
-
----
-
-## **5. Enjeux et Défis (15 min)**
-**Objectif** : Présenter les défis de manière concrète
-- **5.1** Les biais algorithmiques (5 min)
-  - Exemple : Refus de prêt à cause d'une adresse
-- **5.2** Impact environnemental (5 min)
-  - Comparaison : cerveau (20W) vs IA (centrale électrique)
-- **5.3** Régulation (5 min)
-  - RGPD et IA Act : des règles pour protéger nos données
-
----
-
-## **6. Atelier Pratique (10 min)**
-**Objectif** : Impliquer le public
-- **6.1** Jeu : "Imaginez une application utile de l'IA" (5 min)
-  - Exemples : rappel médicaments, tri de photos
-- **6.2** Quiz interactif (5 min)
-  - "Quelle image a été générée par une IA ?"
-
----
-
-## **7. Conclusion (15 min)**
-**Objectif** : Synthèse et ouverture
-- **7.1** 3 messages clés (5 min)
-  - L'IA est un outil puissant mais pas magique
-  - Elle peut nous aider mais il faut rester critique
-  - Les métiers ne disparaîtront pas, ils évolueront
-- **7.2** Ressources accessibles (5 min)
-  - Livre : "L'IA pour les Nuls" (Luc Julia)
-  - Site : Class'Code (MOOC gratuit)
-- **7.3** Débat ouvert (5 min)
-  - "Quelle question vous intrigue encore sur l'IA ?"
-
----
-
-## **Support Visuel Recommandé**
-- **Format** : Slides épurés avec peu de texte
-- **Contenu** :
-  - Schémas simples (neurone biologique vs artificiel)
-  - Images concrètes (exemples d'applications)
-  - Pas d'animations (comme demandé)
-
-## **Matériel Nécessaire**
-- Projecteur pour les démonstrations
-- Accès internet pour les outils interactifs
-- Tableau/paperboard pour les schémas
-
-## **Préparation Conseillée**
-- Préparer 3-4 démonstrations interactives
-- Imprimer des exemples visuels pour le quiz
-- Prévoir des pauses pour les questions
-
----
-
-Ce syllabus respecte vos préférences :
-- Pas d'animations
-- Adapté aux néophytes
-- Approche pragmatique avec démonstrations
-- Sans référence technique complexe
-- Avec des pauses pour interaction
-
-Souhaitez-vous que j'ajoute ou modifie des éléments spécifiques ?
+- **4.1** "L'IA est-elle plus intelligente que nous ?"
+- **4.2** "Peut-on lui faire confiance ?" 
+- **4.3** "Va-t-elle nous remplacer ?"
