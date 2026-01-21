@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme" />
   <style>
     .reveal .slides { text-align: left; }
+    /* Mise en page simple: texte à gauche, image à droite */
+    .two-col { display: flex; gap: 2rem; align-items: center; }
+    .two-col .col-left, .two-col .col-right { flex: 1; }
+    .two-col .col-right { text-align: center; }
+    @media (max-width: 900px) { .two-col { flex-direction: column; } }
   </style>
 </head>
 <body>
@@ -33,6 +38,50 @@
       center: false,
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
     });
+
+    // Transforme les slides marquées avec data-layout="text-image"
+    function applyTextImageLayout() {
+      const sections = document.querySelectorAll('section[data-layout="text-image"]');
+      sections.forEach(sec => {
+        if (sec.dataset.layoutApplied === '1') return;
+        const imgSrc = sec.getAttribute('data-img');
+        const alt = sec.getAttribute('data-alt') || '';
+        const leftHTML = sec.innerHTML;
+
+        const container = document.createElement('div');
+        container.className = 'two-col';
+
+        const left = document.createElement('div');
+        left.className = 'col-left';
+        left.innerHTML = leftHTML;
+
+        const right = document.createElement('div');
+        right.className = 'col-right';
+        if (imgSrc) {
+          const img = document.createElement('img');
+          img.src = imgSrc;
+          img.alt = alt;
+          img.style.maxWidth = '100%';
+          img.style.height = 'auto';
+          right.appendChild(img);
+        } else {
+          const note = document.createElement('p');
+          note.textContent = 'Ajoutez data-img="chemin/vers/image.png"';
+          note.style.opacity = '0.7';
+          right.appendChild(note);
+        }
+
+        container.appendChild(left);
+        container.appendChild(right);
+        sec.innerHTML = '';
+        sec.appendChild(container);
+        sec.dataset.layoutApplied = '1';
+      });
+    }
+
+    Reveal.on('ready', applyTextImageLayout);
+    // Applique aussi si du contenu dynamique est chargé ou si on change d'état
+    Reveal.on('slidechanged', applyTextImageLayout);
   </script>
 </body>
 </html>
