@@ -19,6 +19,13 @@
     .two-col :is(h1,h2,h3) { font-size: clamp(1.2rem, 4vw, 2.6rem); line-height: 1.2; }
     .two-col :is(p,li) { font-size: clamp(1rem, 2.5vw, 1.4rem); }
     @media (max-width: 900px) { .two-col { flex-direction: column; } }
+    /* Title spanning full width above columns */
+    .slide-header { width: 100%; margin: 0 0 1rem 0; }
+    .slide-header :is(h1,h2) { margin: 0; font-size: clamp(2rem, 6vw, 4rem); line-height: 1.1; }
+    /* Right image fills its column without overflow */
+    .two-col.image-right { align-items: stretch; }
+    .two-col.image-right .col-right { display: flex; align-items: center; justify-content: center; }
+    .two-col.image-right .col-right img { max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain; }
     /* Vidéo responsive 16:9 */
     .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; }
     .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
@@ -55,10 +62,17 @@
         if (sec.dataset.layoutApplied === '1') return;
         const imgSrc = sec.getAttribute('data-img');
         const alt = sec.getAttribute('data-alt') || '';
+        // Extract first heading as full-width title
+        const heading = sec.querySelector('h1, h2');
+        let headerHTML = '';
+        if (heading) {
+          headerHTML = heading.outerHTML;
+          heading.remove();
+        }
         const leftHTML = sec.innerHTML;
 
         const container = document.createElement('div');
-        container.className = 'two-col';
+        container.className = 'two-col image-right';
 
         const left = document.createElement('div');
         left.className = 'col-left';
@@ -70,8 +84,6 @@
           const img = document.createElement('img');
           img.src = imgSrc;
           img.alt = alt;
-          img.style.maxWidth = '100%';
-          img.style.height = 'auto';
           right.appendChild(img);
         } else {
           const note = document.createElement('p');
@@ -83,6 +95,12 @@
         container.appendChild(left);
         container.appendChild(right);
         sec.innerHTML = '';
+        if (headerHTML) {
+          const header = document.createElement('div');
+          header.className = 'slide-header';
+          header.innerHTML = headerHTML;
+          sec.appendChild(header);
+        }
         sec.appendChild(container);
         sec.dataset.layoutApplied = '1';
       });
