@@ -88,22 +88,33 @@
 
     // Convertit une URL YouTube (youtu.be ou watch?v=) en URL d'embed
     function toYoutubeEmbed(url) {
+      let embed = url;
       try {
         const u = new URL(url);
-        // Déjà un embed
-        if (u.hostname.includes('youtube.com') && u.pathname.startsWith('/embed/')) return url;
         // youtu.be/<id>
         if (u.hostname === 'youtu.be') {
           const id = u.pathname.replace('/', '');
-          return `https://www.youtube.com/embed/${id}`;
+          embed = `https://www.youtube.com/embed/${id}`;
+        } else if (u.hostname.includes('youtube.com')) {
+          // youtube.com/watch?v=<id>
+          if (u.pathname === '/watch') {
+            const id = u.searchParams.get('v');
+            if (id) embed = `https://www.youtube.com/embed/${id}`;
+          } else if (u.pathname.startsWith('/embed/')) {
+            embed = url; // déjà embed
+          }
         }
-        // youtube.com/watch?v=<id>
-        if (u.hostname.includes('youtube.com') && u.pathname === '/watch') {
-          const id = u.searchParams.get('v');
-          if (id) return `https://www.youtube.com/embed/${id}`;
-        }
-      } catch (e) { /* ignore */ }
-      return url; // autre URL: retourne tel quel (ex: déjà embed ou autre fournisseur)
+      } catch (e) { /* ignore, keep original */ }
+      // Ajoute les paramètres d'autoplay et lecture inline (iOS) et mute pour compatibilité
+      try {
+        const eu = new URL(embed);
+        eu.searchParams.set('autoplay', '1');
+        eu.searchParams.set('mute', '1');
+        eu.searchParams.set('playsinline', '1');
+        return eu.toString();
+      } catch (e) {
+        return embed;
+      }
     }
 
     // Mise en page texte à gauche / vidéo à droite
