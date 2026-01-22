@@ -13,6 +13,9 @@
     .two-col .col-left, .two-col .col-right { flex: 1; }
     .two-col .col-right { text-align: center; }
     @media (max-width: 900px) { .two-col { flex-direction: column; } }
+    /* Vidéo responsive 16:9 */
+    .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
   </style>
 </head>
 <body>
@@ -82,6 +85,64 @@
     Reveal.on('ready', applyTextImageLayout);
     // Applique aussi si du contenu dynamique est chargé ou si on change d'état
     Reveal.on('slidechanged', applyTextImageLayout);
+
+    // Convertit une URL YouTube (youtu.be ou watch?v=) en URL d'embed
+    function toYoutubeEmbed(url) {
+      try {
+        const u = new URL(url);
+        // Déjà un embed
+        if (u.hostname.includes('youtube.com') && u.pathname.startsWith('/embed/')) return url;
+        // youtu.be/<id>
+        if (u.hostname === 'youtu.be') {
+          const id = u.pathname.replace('/', '');
+          return `https://www.youtube.com/embed/${id}`;
+        }
+        // youtube.com/watch?v=<id>
+        if (u.hostname.includes('youtube.com') && u.pathname === '/watch') {
+          const id = u.searchParams.get('v');
+          if (id) return `https://www.youtube.com/embed/${id}`;
+        }
+      } catch (e) { /* ignore */ }
+      return url; // autre URL: retourne tel quel (ex: déjà embed ou autre fournisseur)
+    }
+
+    // Mise en page texte à gauche / vidéo à droite
+    function applyTextVideoLayout() {
+      const sections = document.querySelectorAll('section[data-layout="text-video"]');
+      sections.forEach(sec => {
+        if (sec.dataset.layoutApplied === '1') return;
+        const videoUrl = sec.getAttribute('data-video');
+        const leftHTML = sec.innerHTML;
+
+        const container = document.createElement('div');
+        container.className = 'two-col';
+
+        const left = document.createElement('div');
+        left.className = 'col-left';
+        left.innerHTML = leftHTML;
+
+        const right = document.createElement('div');
+        right.className = 'col-right';
+        const wrapper = document.createElement('div');
+        wrapper.className = 'video-container';
+        const iframe = document.createElement('iframe');
+        iframe.src = toYoutubeEmbed(videoUrl || '');
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.allowFullscreen = true;
+        wrapper.appendChild(iframe);
+        right.appendChild(wrapper);
+
+        container.appendChild(left);
+        container.appendChild(right);
+        sec.innerHTML = '';
+        sec.appendChild(container);
+        sec.dataset.layoutApplied = '1';
+      });
+    }
+
+    Reveal.on('ready', applyTextVideoLayout);
+    Reveal.on('slidechanged', applyTextVideoLayout);
   </script>
 </body>
 </html>
