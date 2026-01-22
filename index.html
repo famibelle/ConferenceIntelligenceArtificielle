@@ -6,30 +6,7 @@
   <title>Conférence IA — Slides</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme" />
-  <style>
-    .reveal .slides { text-align: left; }
-    /* Mise en page simple: texte à gauche, image à droite */
-    .two-col { display: flex; gap: 2rem; align-items: center; }
-    /* Allow columns to shrink and wrap their content */
-    .two-col .col-left, .two-col .col-right { flex: 1; min-width: 0; }
-    .two-col .col-right { text-align: center; }
-    /* Better wrapping for long words/lines */
-    .two-col .col-left, .two-col .col-right { overflow-wrap: anywhere; word-break: break-word; }
-    /* Tame very large headings inside columns */
-    .two-col :is(h1,h2,h3) { font-size: clamp(1.2rem, 4vw, 2.6rem); line-height: 1.2; }
-    .two-col :is(p,li) { font-size: clamp(1rem, 2.5vw, 1.4rem); }
-    @media (max-width: 900px) { .two-col { flex-direction: column; } }
-    /* Title spanning full width above columns */
-    .slide-header { width: 100%; margin: 0 0 1rem 0; }
-    .slide-header :is(h1,h2) { margin: 0; font-size: clamp(2rem, 6vw, 4rem); line-height: 1.1; }
-    /* Right image fills its column without overflow */
-    .two-col.image-right { align-items: stretch; }
-    .two-col.image-right .col-right { display: flex; align-items: center; justify-content: center; }
-    .two-col.image-right .col-right img { max-width: 100%; max-height: 70vh; width: auto; height: auto; object-fit: contain; }
-    /* Vidéo responsive 16:9 */
-    .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; }
-    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="reveal">
@@ -55,13 +32,20 @@
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
     });
 
+    function attr(sec, name, defVal) {
+      const v = sec.getAttribute(name);
+      return (v === null || v === undefined || v === '') ? defVal : v;
+    }
+
     // Transforme les slides marquées avec data-layout="text-image"
     function applyTextImageLayout() {
       const sections = document.querySelectorAll('section[data-layout="text-image"]');
       sections.forEach(sec => {
         if (sec.dataset.layoutApplied === '1') return;
-        const imgSrc = sec.getAttribute('data-img');
-        const alt = sec.getAttribute('data-alt') || '';
+        const imgSrc = attr(sec, 'data-img', '');
+        const alt = attr(sec, 'data-alt', '');
+        const side = attr(sec, 'data-side', 'right');
+        
         // Extract first heading as full-width title
         const heading = sec.querySelector('h1, h2');
         let headerHTML = '';
@@ -69,31 +53,38 @@
           headerHTML = heading.outerHTML;
           heading.remove();
         }
-        const leftHTML = sec.innerHTML;
+        const contentHTML = sec.innerHTML;
 
         const container = document.createElement('div');
-        container.className = 'two-col image-right';
+        container.className = 'two-col';
 
-        const left = document.createElement('div');
-        left.className = 'col-left';
-        left.innerHTML = leftHTML;
+        const colA = document.createElement('div');
+        const colB = document.createElement('div');
+        colA.className = 'col-left';
+        colB.className = 'col-right';
 
-        const right = document.createElement('div');
-        right.className = 'col-right';
-        if (imgSrc) {
-          const img = document.createElement('img');
-          img.src = imgSrc;
-          img.alt = alt;
-          right.appendChild(img);
+        if (side === 'left') {
+          // image left, text right
+          if (imgSrc) {
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = alt;
+            colA.appendChild(img);
+          }
+          colB.innerHTML = contentHTML;
         } else {
-          const note = document.createElement('p');
-          note.textContent = 'Ajoutez data-img="chemin/vers/image.png"';
-          note.style.opacity = '0.7';
-          right.appendChild(note);
+          // text left, image right
+          colA.innerHTML = contentHTML;
+          if (imgSrc) {
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = alt;
+            colB.appendChild(img);
+          }
         }
 
-        container.appendChild(left);
-        container.appendChild(right);
+        container.appendChild(colA);
+        container.appendChild(colB);
         sec.innerHTML = '';
         if (headerHTML) {
           const header = document.createElement('div');
@@ -107,7 +98,6 @@
     }
 
     Reveal.on('ready', applyTextImageLayout);
-    // Applique aussi si du contenu dynamique est chargé ou si on change d'état
     Reveal.on('slidechanged', applyTextImageLayout);
 
     // Convertit une URL YouTube (youtu.be ou watch?v=) en URL d'embed
@@ -141,36 +131,62 @@
       }
     }
 
-    // Mise en page texte à gauche / vidéo à droite
+    // Mise en page texte / vidéo
     function applyTextVideoLayout() {
       const sections = document.querySelectorAll('section[data-layout="text-video"]');
       sections.forEach(sec => {
         if (sec.dataset.layoutApplied === '1') return;
-        const videoUrl = sec.getAttribute('data-video');
-        const leftHTML = sec.innerHTML;
+        const videoUrl = attr(sec, 'data-video', '');
+        const side = attr(sec, 'data-side', 'right');
+        
+        // Extract first heading as full-width title
+        const heading = sec.querySelector('h1, h2');
+        let headerHTML = '';
+        if (heading) {
+          headerHTML = heading.outerHTML;
+          heading.remove();
+        }
+        const contentHTML = sec.innerHTML;
 
         const container = document.createElement('div');
         container.className = 'two-col';
 
-        const left = document.createElement('div');
-        left.className = 'col-left';
-        left.innerHTML = leftHTML;
+        const colA = document.createElement('div');
+        const colB = document.createElement('div');
+        colA.className = 'col-left';
+        colB.className = 'col-right';
+        
+        const videoEl = (() => {
+          const wrapper = document.createElement('div');
+          wrapper.className = 'video-container';
+          const iframe = document.createElement('iframe');
+          iframe.src = toYoutubeEmbed(videoUrl || '');
+          iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+          iframe.allowFullscreen = true;
+          wrapper.appendChild(iframe);
+          return wrapper;
+        })();
 
-        const right = document.createElement('div');
-        right.className = 'col-right';
-        const wrapper = document.createElement('div');
-        wrapper.className = 'video-container';
-        const iframe = document.createElement('iframe');
-        iframe.src = toYoutubeEmbed(videoUrl || '');
-        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-        iframe.allowFullscreen = true;
-        wrapper.appendChild(iframe);
-        right.appendChild(wrapper);
+        if (side === 'left') {
+          // video left, text right
+          colA.appendChild(videoEl);
+          colB.innerHTML = contentHTML;
+        } else {
+          // text left, video right
+          colA.innerHTML = contentHTML;
+          colB.appendChild(videoEl);
+        }
 
-        container.appendChild(left);
-        container.appendChild(right);
+        container.appendChild(colA);
+        container.appendChild(colB);
         sec.innerHTML = '';
+        if (headerHTML) {
+          const header = document.createElement('div');
+          header.className = 'slide-header';
+          header.innerHTML = headerHTML;
+          sec.appendChild(header);
+        }
         sec.appendChild(container);
         sec.dataset.layoutApplied = '1';
       });

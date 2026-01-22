@@ -1,0 +1,52 @@
+/* Reveal slides baseline */
+.reveal .slides { text-align: left; }
+
+/* Simple two-column layout */
+.two-col {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.two-col .col-left,
+.two-col .col-right {
+  flex: 1;
+}
+
+/* Images fill their column */
+.two-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Title spanning full width above columns */
+.slide-header {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.slide-header :is(h1, h2) {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+/* Responsive video */
+.video-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 900px) {
+  .two-col {
+    flex-direction: column;
+  }
+}
