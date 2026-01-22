@@ -1,52 +1,84 @@
 /* Reveal slides baseline */
 .reveal .slides { text-align: left; }
 
-/* Simple two-column layout */
-.two-col {
+/* Layout deux colonnes */
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Titre en haut */
+.slide-title {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.slide-title h1,
+.slide-title h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+/* Container des deux colonnes */
+.slide-columns {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+}
+
+/* Colonne texte (gauche) */
+.slide-text {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 20px;
+  overflow: hidden;
 }
 
-.two-col .col-left,
-.two-col .col-right {
+.slide-text-content {
+  width: 100%;
+  /* Pas de transform-origin nécessaire avec fitty */
+}
+
+/* Colonne média (droite) */
+.slide-media {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-/* Images fill their column */
-.two-col img {
-  width: 100%;
+.slide-media img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  display: block;
+  object-fit: contain;
 }
 
-/* Title spanning full width above columns */
-.slide-header {
-  width: 100%;
-  margin: 0 0 1rem 0;
-}
-
-.slide-header :is(h1, h2) {
-  margin: 0;
-  font-size: clamp(2rem, 6vw, 4rem);
-  line-height: 1.1;
-}
-
-/* Responsive video */
-.video-container {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
-.video-container iframe {
+.slide-media .video-wrapper {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-media iframe {
+  width: 100%;
+  height: 100%;
+  max-height: 70vh;
   border: 0;
 }
 
-/* Responsive layout for small screens */
+/* Responsive */
 @media (max-width: 900px) {
-  .two-col {
+  .slide-columns {
     flex-direction: column;
   }
 }
