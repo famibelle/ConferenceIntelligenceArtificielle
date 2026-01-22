@@ -10,8 +10,14 @@
     .reveal .slides { text-align: left; }
     /* Mise en page simple: texte à gauche, image à droite */
     .two-col { display: flex; gap: 2rem; align-items: center; }
-    .two-col .col-left, .two-col .col-right { flex: 1; }
+    /* Allow columns to shrink and wrap their content */
+    .two-col .col-left, .two-col .col-right { flex: 1; min-width: 0; }
     .two-col .col-right { text-align: center; }
+    /* Better wrapping for long words/lines */
+    .two-col .col-left, .two-col .col-right { overflow-wrap: anywhere; word-break: break-word; }
+    /* Tame very large headings inside columns */
+    .two-col :is(h1,h2,h3) { font-size: clamp(1.2rem, 4vw, 2.6rem); line-height: 1.2; }
+    .two-col :is(p,li) { font-size: clamp(1rem, 2.5vw, 1.4rem); }
     @media (max-width: 900px) { .two-col { flex-direction: column; } }
     /* Vidéo responsive 16:9 */
     .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; }
