@@ -1,96 +1,7 @@
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">L'Intelligence Artificielle</div>
 
 
-
 ---
-
-Maitre Corbeau sur un arbre ?
-
----
-
-Maitre Corbeau sur un arbre perché
-http://andreetgyps.a.n.pic.centerblog.net/o/6b0e0247.jpg
-
----
-# Tokenisation
-
-Les tokens en traitement du langage naturel (NLP) sont comme les syllabes en poésie. Tout comme les syllabes sont les éléments constitutifs du rythme et de la structure d'un poème, les tokens sont les unités fondamentales qui permettent aux modèles d'IA de traiter et de comprendre le texte.
-
-## "Maitre Corbeau sur un arbre perché" → décasyllabe
-- **Syllabes dans un poème :** Maitre Corbeau sur un arbre perché.
-- **Tokens en NLP :** [Mai ##tre Cor ##beau sur un ar### bre perché.].
-
----
-
-# Token dans les Modèles d'IA
-
-La limite de tokens définit le nombre maximum de tokens qu'un modèle peut traiter dans une seule entrée. Des limites de tokens plus élevées permettent de gérer des contextes plus longs, rendant les modèles plus efficaces pour des tâches comme la synthèse, l'analyse de code et la génération de documents.
-
-| Modèle         | Taille Max (tokens) | Pages Livre de Poche Approx. |
-|----------------|---------------------|------------------------------|
-| GPT-5          | 128 000             | ~512                         |
-| Llama 3.1      | 128 000             | ~512                         |
-| Mistral Large  | 64 000              | ~256                         |
-
----
-
-# Embedding
-
-## Transformer les Tokens en Représentations Numériques
-
-<div style="display: flex; align-items: center; gap: 20px;">
-
-    <div style="flex: 1;">
-
-L'embedding transforme les tokens en vecteurs, qui servent de véritables points d'entrée pour le LLM.
-
-    </div>
-
-    <div style="flex: 1;">
-
-![Exemple d'Embedding](https://causewriter.ai/wp-content/uploads/2023/08/image-2.png)
-
-    </div>
-</div>
-
----
-
-# Comment la Tokenisation et l'Embedding Fonctionnent Ensemble :
-**Tokenisation :**
-- Divise le texte en tokens (par exemple, mots, sous-mots ou caractères).
-- Exemple : "Maitre Corbeau sur un arbre perché" → [Mai ##tre Cor ##beau sur un ar### bre perché.].
-
-**Embedding :**
-- Associe chaque token à un vecteur de haute dimension dans un espace continu.
-- Exemple : [Mai ##tre Cor ##beau sur un ar### bre perché.]. → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
-
----
-
-# Pourquoi l'Embedding est Important :
-- **Compréhension Sémantique :** Les tokens ayant des significations similaires ont des embeddings plus proches dans l'espace vectoriel.
-
-
-```mermaid
-graph LR
-  A["Input Phrase: 'Maitre Corbeau sur un arbre perché'"] --> B["Tokenization: [Mai ##tre Cor ##beau sur un ar### bre perché.]"]
-  B --> C["Embedding: Dense Numerical Vectors"]
-
-  C["Tokenization Output"]
-  C --> D["Token: 'Mai'"]
-  D --> D1["Vector: [0.12, 0.45, 0.78, ...]"]
-  C --> E["Token: '##tre'"]
-  E --> E1["Vector: [0.34, 0.67, 0.89, ...]"]
-  C --> F["Token: 'Cor'"]
-  F --> F1["Vector: [0.56, 0.23, 0.91, ...]"]
-  C --> G["Token: '##beau'"]
-  G --> G1["Vector: [0.78, 0.12, 0.34, ...]"]
-  C --> H["Token: 'sur'"]
-  H --> H1["Vector: [0.45, 0.89, 0.67, ...]"]
-  ```
-
----
-
-
 
 ## 🤔 Qu’est-ce que l’IA ?
 - Intelligence artificielle = capacité d’un programme à **simuler l’intelligence humaine**
@@ -104,10 +15,23 @@ graph LR
 
 ---
 
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
+
+---
+
 ## 1950 – Alan Turing
 - Publie "Computing Machinery and Intelligence"
 - Propose le **Test de Turing**
 - Question : une machine peut-elle penser ?
+
+### La proposition de Turing (Jeu de l’imitation)
+- Expérience pensée où un interrogateur converse uniquement par écrit avec deux entités cachées: un humain et une machine.
+- Objectif: décider qui est l’humain à partir des réponses en langage naturel.
+- Règle de succès: si l’interrogateur ne distingue pas de façon fiable la machine de l’humain, la machine *réussit* le test.
+- Motivation: remplacer “Les machines peuvent-elles penser ?” par une évaluation comportementale mesurable.
+- Contraintes: échange textuel (sans vision ni audio), sujets libres, durée limitée.
+
+https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg
 
 ---
 
@@ -126,7 +50,15 @@ https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCg
 - **Frank Rosenblatt** invente le perceptron
 - Neurone artificiel = base des réseaux de neurones
 - Limité : ne résout pas les problèmes non linéaires comme le XOR
+### Le perceptron de Rosenblatt en bref
+- Neurone binaire: somme pondérée des entrées + biais, puis seuil.
+- Règle d’apprentissage: w ← w + η(y − ŷ) x (ajuste les poids pour corriger l’erreur).
+- Résout les problèmes linéairement séparables (AND, OR).
+- Limite majeure: XOR non séparable → besoin de couches cachées.
+- Impact: démonstration matérielle (Mark I Perceptron), base des réseaux modernes.
 
+> "Devices of this sort are expected ultimately to be capable of concept formation, language translation, collation of military intelligence, and the solution of problems through inductive logic."
+ <em>— Frank Rosenblatt, 1957</em>
 ---
 
 ## 🔍 Le Problème XOR : Limite du Perceptron Simple
@@ -150,6 +82,19 @@ Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, q
 
 ---
 
+<!-- .slide: data-layout="text-video" data-video="https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1" -->
+
+## Démonstration de réseau convolutionnel de 1989 par Yann Le Cun
+
+Il s’agit d’une démonstration de « LeNet-1 », le premier réseau convolutionnel capable de reconnaître des chiffres manuscrits avec une bonne vitesse et précision.
+
+Elle a été développée début 1989 au département Adaptive System Research, dirigé par Larry Jackel, chez Bell Labs à Holmdel (New Jersey).
+
+Cette démonstration « en temps réel » tournait sur une carte DSP installée dans un PC 486, avec une caméra vidéo et une carte d’acquisition. 
+https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1
+
+
+---
 
 ## 🏆 Les Parrains de l'IA
 
@@ -213,12 +158,12 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - Précurseur des réseaux très larges et profonds actuels
 
 ---
+<!-- .slide: data-layout="text-image" data-img="https://tse1.mm.bing.net/th/id/OIP.3liapdpAF6vYvBQnLSOGvQHaFA?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" data-alt="Garry Kasparov vs Deep Blue]" -->
 
 ## 1997 – Deep Blue
 - IA d’IBM bat Garry Kasparov aux échecs
-- Exemple d’IA spécialisée
-- Démonstration de puissance de calcul + stratégie
-![Garry Kasparov vs Deep Blue](https://tse1.mm.bing.net/th/id/OIP.3liapdpAF6vYvBQnLSOGvQHaFA?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3)
+- Démonstration de force brute d’algorithmes
+
 ---
 
 ## 2006 – Renaissance du Deep Learning
@@ -371,6 +316,7 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - Applications : logistique, gestion de ressources, planification
 
 ---
+
 <!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
 
 ## 🧠 Le cerveau humain
@@ -380,14 +326,59 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - Synapses : pratiquement illimitées
 
 https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg
+
+---
+<!-- .slide: data-layout="text-image" data-img="https://cdn.mos.cms.futurecdn.net/uMHimeHetVYcCSt8ExUM8.jpg" -->
+
+## SETI : Recherche d’intelligences extraterrestres
+- Objectif : détecter des technosignatures (émissions radio étroites, impulsions laser) d’origine non naturelle.
+- Méthodes : radiotélescopes (Allen Telescope Array, Green Bank), observations optiques, analyse de spectres, filtrage des interférences terrestres.
+- Problème : le volume de recherche immense et pas assez de capacité de calcul.
+
+
+---
+
+## 1999 SETI@Home**
+- SETI@Home : calcul distribué pour chercher des signaux extraterrestres
+- Même principe appliqué au pliage de protéines : **Folding@home**
+- Des milliers d'ordinateur
+s volontaires calculent comment les protéines se replient
+
+---
+## 🧬 Pliage moléculaire en médecine
+
+## Pourquoi c’est important
+- La forme d’une protéine dicte son rôle (ex. enzymes, anticorps, récepteurs).
+- Un mauvais pliage peut provoquer des maladies (Alzheimer, Parkinson, mucoviscidose).
+- Aide à concevoir des médicaments ciblés et à mieux diagnostiquer.
+
+## Pourquoi c’est difficile
+- Trop de formes possibles (nombre de combinaisons astronomique).
+- Le pliage dépend de nombreux facteurs (eau, liaisons, ions, pH, température, etc.).
+- Les modèles informatiques sont coûteux et doivent être vérifiés en laboratoire.
+
+## Impact
+- Meilleure compréhension de la fonction des protéines et moins d’effets indésirables.
+- Conception plus précise de thérapies.
+- Découvertes accélérées grâce au calcul avancé et à l’IA.
+
+
+---
+
+## 🧬 Folding@home : Pliage des Protéines Distribué
+- Projet de calcul distribué lancé en 2000 par Stanford pour simuler le repliement des protéines.
+- Des volontaires prêtent CPU/GPUleur ordinateurs pour exécuter des calculs.
+- Objectifs: comprendre le repliement, les dysfonctionnements et interactions, accélérer la recherche sur Alzheimer, cancers, COVID‑19.
+
+- Participation: installer le client sur foldingathome.org, choisir une équipe et laisser calculer en arrière‑plan.
+
 ---
 
 ## 🧬 AlphaFold : De SETI@Home au Pliage de Protéines
-
-**Le Lien avec SETI@Home**
-- SETI@Home : calcul distribué pour chercher des signaux extraterrestres
-- Même principe appliqué au pliage de protéines : **Folding@home**
-- Des milliers d'ordinateurs volontaires calculent comment les protéines se replient
+### Repères chronologiques
+- 1999 – SETI@home (calcul distribué grand public)
+- 2000 – Folding@home (pliage des protéines)
+- 2020 – AlphaFold 2 (percée en prédiction de structures 3D)
 
 **AlphaFold : La Révolution**
 - Développé par DeepMind (2020)
@@ -411,7 +402,173 @@ https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg
 
 ![AlphaFold Protein Structure](https://cdn.the-scientist.com/assets/articleNo/68887/aImg/43733/alphafold-l.png)
 
+
 ---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
+
+---
+
+# ML : Apprentissage supervisé
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+Utilisation de données étiquetées
+
+Tâches de classification et de régression
+
+    </div>
+
+    <div style="flex: 1;">
+
+![Apprentissage supervisé](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Supervised-Learning-in-ML.jpg)
+
+    </div>
+</div>
+---
+
+# ML : Apprentissage supervisé
+
+- Maintenance prédictive des composants du véhicule (ex. plaquettes de frein, pneus).
+- Analyse du comportement des conducteurs et évaluation du risque.
+- Reconnaissance et classification des panneaux de signalisation.
+- Systèmes d’alerte de franchissement de ligne.
+
+---
+
+# ML : Apprentissage non supervisé
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+Découverte de structures cachées
+
+Techniques de clustering et de réduction de dimensionnalité
+    </div>
+
+    <div style="flex: 1;">
+
+![Apprentissage non supervisé](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Unsupervised-Learning-in-ML.jpg)
+
+    </div>
+    
+</div>
+
+---
+# ML : Apprentissage non supervisé
+- Regroupement des profils de conduite pour des offres d’assurance personnalisées.
+- Regroupement des schémas de trafic pour optimiser la navigation et l’itinéraire.
+- Segmentation des données d’usage du véhicule pour des campagnes marketing ciblées.
+
+---
+# ML : Apprentissage par renforcement
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+Agents apprenant par essais et erreurs
+
+Systèmes de récompense
+    </div>
+
+    <div style="flex: 1;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+</div>
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Maitre Corbeau sur un arbre ?</div>
+
+---
+
+Maitre Corbeau sur un arbre perché
+http://andreetgyps.a.n.pic.centerblog.net/o/6b0e0247.jpg
+
+---
+# Tokenisation
+
+Les tokens en traitement du langage naturel (NLP) sont comme les syllabes en poésie. Tout comme les syllabes sont les éléments constitutifs du rythme et de la structure d'un poème, les tokens sont les unités fondamentales qui permettent aux modèles d'IA de traiter et de comprendre le texte.
+
+## "Maitre Corbeau sur un arbre perché" → décasyllabe
+- **Syllabes dans un poème :** Maitre Corbeau sur un arbre perché.
+- **Tokens en NLP :** [Mai ##tre Cor ##beau sur un ar### bre perché.].
+
+---
+
+# Token dans les Modèles d'IA
+
+La limite de tokens définit le nombre maximum de tokens qu'un modèle peut traiter dans une seule entrée. Des limites de tokens plus élevées permettent de gérer des contextes plus longs, rendant les modèles plus efficaces pour des tâches comme la synthèse, l'analyse de code et la génération de documents.
+
+| Modèle         | Taille Max (tokens) | Pages Livre de Poche Approx. |
+|----------------|---------------------|------------------------------|
+| GPT-5          | 128 000             | ~512                         |
+| Llama 3.1      | 128 000             | ~512                         |
+| Mistral Large  | 64 000              | ~256                         |
+
+---
+
+# Embedding
+
+## Transformer les Tokens en Représentations Numériques
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+    <div style="flex: 1;">
+
+L'embedding transforme les tokens en vecteurs, qui servent de véritables points d'entrée pour le LLM.
+
+    </div>
+
+    <div style="flex: 1;">
+
+![Exemple d'Embedding](https://causewriter.ai/wp-content/uploads/2023/08/image-2.png)
+
+    </div>
+</div>
+
+---
+
+# Comment la Tokenisation et l'Embedding Fonctionnent Ensemble :
+**Tokenisation :**
+- Divise le texte en tokens (par exemple, mots, sous-mots ou caractères).
+- Exemple : "Maitre Corbeau sur un arbre perché" → [Mai ##tre Cor ##beau sur un ar### bre perché.].
+
+**Embedding :**
+- Associe chaque token à un vecteur de haute dimension dans un espace continu.
+- Exemple : [Mai ##tre Cor ##beau sur un ar### bre perché.]. → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
+
+---
+
+# Pourquoi l'Embedding est Important :
+- **Compréhension Sémantique :** Les tokens ayant des significations similaires ont des embeddings plus proches dans l'espace vectoriel.
+
+
+```mermaid
+graph LR
+  A["Input Phrase: 'Maitre Corbeau sur un arbre perché'"] --> B["Tokenization: [Mai ##tre Cor ##beau sur un ar### bre perché.]"]
+  B --> C["Embedding: Dense Numerical Vectors"]
+
+  C["Tokenization Output"]
+  C --> D["Token: 'Mai'"]
+  D --> D1["Vector: [0.12, 0.45, 0.78, ...]"]
+  C --> E["Token: '##tre'"]
+  E --> E1["Vector: [0.34, 0.67, 0.89, ...]"]
+  C --> F["Token: 'Cor'"]
+  F --> F1["Vector: [0.56, 0.23, 0.91, ...]"]
+  C --> G["Token: '##beau'"]
+  G --> G1["Vector: [0.78, 0.12, 0.34, ...]"]
+  C --> H["Token: 'sur'"]
+  H --> H1["Vector: [0.45, 0.89, 0.67, ...]"]
+  ```
+
+---
+
+
+---
+
 
 ## ⚡ Énergie : cerveau vs IA
 | Système | Consommation |
@@ -555,7 +712,7 @@ Similarités et différences avec les neurones biologiques ?
 
 
 ---
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # Réseaux de Neurones Artificiels
 
 Les réseaux de neurones artificiels (RNA) sont des modèles computationnels inspirés de la structure et du fonctionnement des réseaux neuronaux biologiques. 
