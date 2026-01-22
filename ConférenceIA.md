@@ -13,6 +13,85 @@
 - Smartphones, assistants vocaux, recommandations
 - IA pour la santé, l’industrie, l’art et la science
 
+
+---
+
+---
+
+# AI VS GENERATIVE AI​
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+
+**ARTIFICIAL INTELLIGENCE** is a field of computer science that aims to create systems capable of imitating or simulating human intelligence.​
+
+**MACHINE LEARNING** focuses on building systems that learn and improve from experience without being explicitly programmed.​
+
+**DEEP LEARNING** uses neural networks with many layers to model complex patterns in data.​
+
+**GENERATIVE AI** can create or generate new content, ideas, or data that resemble human creativity.​
+
+  </div>
+
+  <div style="flex: 1;">
+
+![AI, ML, DL, and Generative AI Face-Off](https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp)
+
+  </div>
+</div>
+
+
+
+---
+
+# Neurones biologiques  
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+    **Structure :**  
+    - Dendrites  
+    - Soma  
+    - Axone  
+
+    **Fonctionnement des synapses :**  
+    - Transmission de signaux chimiques et électriques  
+
+    </div>
+
+    <div style="flex: 1;">
+
+    ![Structure du neurone](https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png)  
+    *Illustration d’un neurone biologique*
+
+    </div>
+
+</div>
+
+---
+
+# Neurones artificiels  
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+Modèle mathématique du neurone artificiel  
+
+Fonctions d’activation : ReLU, Sigmoïde, Tanh  
+
+Similarités et différences avec les neurones biologiques ?  
+
+</div>
+
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+    ![Structure du neurone artificiel](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png)  
+    *Illustration d’un neurone artificiel*
+    </div>
+</div>
+
+
+
 ---
 
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
@@ -195,7 +274,7 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - Révolutionne la reconnaissance d'images
 
 **Les Innovations Clés**
-- Utilisation de **GPU** pour l'entraînement
+- Utilisation de **GPU Nvidia** pour l'entraînement
 
 ![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
 
@@ -211,6 +290,8 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 
 ---
 
+<!-- .slide: data-layout="two-column" data-img="https://www.zdnet.com/a/img/resize/cbdfcc9ffe02c07ec17d656be49e670a55e467ec/2025/03/20/1fff3c66-1148-433b-859b-e53ca710522c/u-of-toronto-2013-hinton-krizhevsky-sutskever.jpg?auto=webp&width=1280" data-alt="Geoffrey Hinton, Alex Krizhevsky et Ilya Sutskever (Université de Toronto, 2013)" -->
+
 ## 🎯 AlexNet : L'Équipe qui a Changé l'IA
 
 **Les Créateurs**
@@ -219,8 +300,8 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - **Geoffrey Hinton** : Superviseur, "Parrain du Deep Learning"
 
 ---
-
-**Le Destin d'Ilya Sutskever**
+<!-- .slide: data-layout="two-column" data-img="https://d92co48ro6fll.cloudfront.net/gradual/videos/scale/transformX/posters/what-s-next-for-ai-systems-language-models-with-ilya-sutskever-of-openai.jpg" data-alt="Ilya Sutskever" -->
+## Le fabuleux destin d'Ilya Sutskever
 - Après AlexNet, rejoint Google Brain
 - 2015 : Cofonde **OpenAI** avec Sam Altman
 - Rôle clé dans le développement de **GPT** et **ChatGPT**
@@ -295,10 +376,14 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - Nécessite planification, gestion de ressources, micro-gestion
 - Plus de 10^26 actions possibles (vs 10^170 pour le Go)
 
+---
+
 **Les Performances d'AlphaStar**
 - Décembre 2018 : Bat des joueurs professionnels
 - Atteint le niveau "Grandmaster" (top 0,2% des joueurs)
 - Gère simultanément : économie, armée, stratégie
+
+---
 
 **Les Techniques Utilisées**
 - **Apprentissage par imitation** : étudie des millions de parties humaines
@@ -306,29 +391,22 @@ https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
 - **Architecture neuronale** : réseaux transformers pour comprendre le contexte du jeu
 - Traite environ 22 000 observations par seconde
 
+---
 **Innovation Clé**
 - AlphaStar ne joue pas de manière surhumaine (APM limité à un niveau humain)
 - Démontre une compréhension stratégique profonde
 - Capable d'adapter sa stratégie en temps réel
 
-**Impact**
-- Prouve que l'IA peut maîtriser des environnements complexes et imprévisibles
-- Applications : logistique, gestion de ressources, planification
+---
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/UuhECwm31dM?si=5-9yNHVsPns0mCSq" -->
+## L'IA dans StarCraft II bat le meilleur joueur humain
+
+> La grande incertitude [liée au manque] d'informations en période de guerre est d'une difficulté particulière parce que toutes les actions doivent dans une certaine mesure être planifiées avec une légère zone d'ombre qui (…) comme l'effet d'un brouillard ou d'un clair de lune, donne aux choses des dimensions exagérées ou non naturelles.
+
+— Carl von Clausewitz, "De la guerre"
 
 ---
-
-<!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
-
-## 🧠 Le cerveau humain
-- Taille moyenne : 1600 cm³
-- Néandertal : 1300 cm³
-- Limité pour nouveaux neurones
-- Synapses : pratiquement illimitées
-
-https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg
-
----
-<!-- .slide: data-layout="text-image" data-img="https://cdn.mos.cms.futurecdn.net/uMHimeHetVYcCSt8ExUM8.jpg" -->
+<!-- .slide: data-layout="two-column" data-img="https://cdn.mos.cms.futurecdn.net/uMHimeHetVYcCSt8ExUM8.jpg" -->
 
 ## SETI : Recherche d’intelligences extraterrestres
 - Objectif : détecter des technosignatures (émissions radio étroites, impulsions laser) d’origine non naturelle.
@@ -337,12 +415,11 @@ https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg
 
 
 ---
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/EyWsnc7cB_w?si=BvUJi0RrmLqog1BR" -->
 
-## 1999 SETI@Home**
-- SETI@Home : calcul distribué pour chercher des signaux extraterrestres
-- Même principe appliqué au pliage de protéines : **Folding@home**
-- Des milliers d'ordinateur
-s volontaires calculent comment les protéines se replient
+## 1999 SETI@Home
+- Calcul distribué pour chercher des signaux extraterrestres
+- Des milliers d'ordinateurs volontaires cherchent des signaux extraterrestres dans les données radio
 
 ---
 ## 🧬 Pliage moléculaire en médecine
@@ -352,10 +429,14 @@ s volontaires calculent comment les protéines se replient
 - Un mauvais pliage peut provoquer des maladies (Alzheimer, Parkinson, mucoviscidose).
 - Aide à concevoir des médicaments ciblés et à mieux diagnostiquer.
 
+---
+
 ## Pourquoi c’est difficile
 - Trop de formes possibles (nombre de combinaisons astronomique).
 - Le pliage dépend de nombreux facteurs (eau, liaisons, ions, pH, température, etc.).
 - Les modèles informatiques sont coûteux et doivent être vérifiés en laboratoire.
+
+---
 
 ## Impact
 - Meilleure compréhension de la fonction des protéines et moins d’effets indésirables.
@@ -364,21 +445,14 @@ s volontaires calculent comment les protéines se replient
 
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/en/3/35/LifeWithPlayStation_Folding.jpg" -->
 
 ## 🧬 Folding@home : Pliage des Protéines Distribué
 - Projet de calcul distribué lancé en 2000 par Stanford pour simuler le repliement des protéines.
 - Des volontaires prêtent CPU/GPUleur ordinateurs pour exécuter des calculs.
-- Objectifs: comprendre le repliement, les dysfonctionnements et interactions, accélérer la recherche sur Alzheimer, cancers, COVID‑19.
-
-- Participation: installer le client sur foldingathome.org, choisir une équipe et laisser calculer en arrière‑plan.
+- Objectifs: comprendre le repliement, les dysfonctionnements et interactions, accélérer la recherche sur Alzheimer, cancers, maladies infectieuses.
 
 ---
-
-## 🧬 AlphaFold : De SETI@Home au Pliage de Protéines
-### Repères chronologiques
-- 1999 – SETI@home (calcul distribué grand public)
-- 2000 – Folding@home (pliage des protéines)
-- 2020 – AlphaFold 2 (percée en prédiction de structures 3D)
 
 **AlphaFold : La Révolution**
 - Développé par DeepMind (2020)
@@ -389,6 +463,11 @@ s volontaires calculent comment les protéines se replient
 - La forme d'une protéine détermine sa fonction
 - Comprendre le pliage = comprendre les maladies
 - Applications : conception de médicaments, lutte contre les virus
+
+---
+
+https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
+
 
 **Les Performances**
 - Prédit la structure de 200 millions de protéines
@@ -404,8 +483,48 @@ s volontaires calculent comment les protéines se replient
 
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://news.aikoreacommunity.com/content/images/2024/01/20240109_181100.png" -->
+## 2017 – Attention is All You Need
+- En bref: le Transformer est une architecture d’IA (2017) qui comprend le contexte des phrases grâce à un mécanisme appelé “attention”.
+- Idée clé: l’attention permet au modèle de se concentrer sur les mots les plus utiles pour la tâche (traduire, résumer, répondre).
+- Petite illustration: dans “Le chat de ma grand mère mange la souris”, le mot “mange” regarde “chat” et “souris” pour comprendre qui fait quoi.
+
+
+
+---
+
+## 🚀 OpenAI et l’impact de ChatGPT
+- Lancement en nov. 2022, adoption record (>100 M utilisateurs/mois)
+- Popularisation de l’IA générative et accélération de son adoption dans tous les secteurs
+
+---
 
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
+
+---
+
+## 🧮 Types d’apprentissage
+- Supervisé : données étiquetées
+- Non supervisé : motifs détectés automatiquement
+- Par renforcement : essais et erreurs + récompenses
+
+---
+
+## 🔍 Apprentissage supervisé
+- Exemple : reconnaissance d’images (chat vs chien)
+- IA apprend à partir d’exemples connus
+
+---
+
+## 🔍 Apprentissage non supervisé
+- IA découvre des motifs sans étiquettes
+- Exemple : clustering, segmentation
+
+---
+
+## 🔄 Apprentissage par renforcement
+- IA agit dans un environnement, reçoit feedback
+- Exemple : AlphaGo, OpenAI Five
 
 ---
 
@@ -566,6 +685,14 @@ graph LR
 
 ---
 
+<!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
+
+## 🧠 Le cerveau humain
+- Taille moyenne : 1600 cm³
+- Néandertal : 1300 cm³
+- Limité pour nouveaux neurones
+- Synapses : pratiquement illimitées
+
 
 ---
 
@@ -582,12 +709,7 @@ graph LR
 - Cerveau : flexible, économe en énergie, généraliste
 - IA : rapide, spécialisée, énergivore
 
----
 
-## ⏳ Singularité technologique
-- Moment hypothétique où IA surpassera l’intelligence humaine
-- Débat : emploi, éthique, contrôle
-- Sujet fascinant et controversé
 
 ---
 
@@ -596,6 +718,9 @@ graph LR
 - IA capable de comprendre, apprendre et agir **comme un humain**
 - Contrairement à l’IA actuelle, qui est spécialisée
 
+
+---
+![Comparaison des performances de l'IA et des humains — Our World in Data](https://upload.wikimedia.org/wikipedia/commons/1/11/Comparaison_des_performances_de_l%27IA_et_des_humains_-_Our_World_in_Data.svg?download)
 ---
 
 ## 🧠 Différence IA spécialisée vs AGI
@@ -637,37 +762,6 @@ graph LR
 
 ---
 
-## 🧮 Types d’apprentissage
-- Supervisé : données étiquetées
-- Non supervisé : motifs détectés automatiquement
-- Par renforcement : essais et erreurs + récompenses
-
----
-
-## 🔍 Apprentissage supervisé
-- Exemple : reconnaissance d’images (chat vs chien)
-- IA apprend à partir d’exemples connus
-
----
-
-## 🔍 Apprentissage non supervisé
-- IA découvre des motifs sans étiquettes
-- Exemple : clustering, segmentation
-
----
-
-## 🔄 Apprentissage par renforcement
-- IA agit dans un environnement, reçoit feedback
-- Exemple : AlphaGo, OpenAI Five
-
----
-
-## ⚙️ GPU et Deep Learning
-- Calcul parallèle massif
-- Permet l’entraînement rapide de réseaux profonds
-- Différence clé avec CPU : vitesse et échelle
-
----
 
 ## 🌐 IA et vie quotidienne
 - Smartphones, assistants vocaux
@@ -801,7 +895,6 @@ Le concept du PMC a été introduit pour la première fois en 1969 par Marvin Mi
     </div>
 
 </div>
----
 
 
 
@@ -896,49 +989,76 @@ Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 </div>
 
 
+---
+<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D4D12AQGyGyJI7Ht9fw/article-cover_image-shrink_600_2000/0/1668837711973?e=2147483647&v=beta&t=aGrDI4vzxLQz976zymt5s0DWTCp6GeG6UXLtKzmOxns" -->
+
+## Singularité technologique en IA
+- Point hypothétique où l’IA dépasse l’intelligence humaine et s’auto-améliore rapidement.
+- Timeline incertaine; scénario graduel ou abrupt.
 
 ---
 
-## **2. Les Bases de l'IA (20 min)**
-**Objectif** : Rendre compréhensible le fonctionnement de l'IA
-- **2.1** Comparaison neurone biologique/neurone artificiel (5 min)
-  - Schéma simple : Corps cellulaire/dendrites vs entrées/poids
-  - Analogie : "Comme une recette de cuisine très précise"
-- **2.2** Historique accessible (5 min)
-  - Alan Turing, Yann Le Cun, SETI@Home
-  - Les jeux vidéo et l'IA (Black & White, Theme Park)
-- **2.3** Limites et réalités (10 min)
-  - Cerveau humain (1600 cm³) vs GPU (consommation énergétique)
-## 🧪 Le Test de Turing : Peut-on Tromper un Humain ?
+<!-- .slide: data-layout="two-column" data-img="https://controverity.com/wp-content/uploads/2026/01/elon2026-1024x536.webp" -->
+
+## Timeline pas si incertaine que ça :
+
+> "2026 est l'année de la singularité technologique."
+
+Elon Musk le 4 janvier 2026
 
 ---
+
 ## Le test de Turing
 **Principe :**
 - Test proposé par Alan Turing en 1950
 - Une machine peut-elle convaincre un humain qu'elle est elle-même humaine lors d'une conversation ?
 
-**Comment ça marche :**
+---
+
+<!-- .slide: data-layout="two-column" data-img="https://media.geeksforgeeks.org/wp-content/uploads/Turing-Diagram-159676.png" -->
+
+## Comment ça marche :
 1. Un humain dialogue avec deux interlocuteurs cachés
 2. L'un est une machine, l'autre un humain
 3. Si l'humain ne peut pas distinguer qui est qui, la machine "réussit" le test
+---
 
-**Exemple concret :**
+## Exemple concret :
 - Vous discutez par écrit avec deux personnes
 - L'une parle de ses vacances, l'autre aussi
 - Laquelle est l'IA ? Si vous ne pouvez pas le dire, l'IA a réussi !
 
-**Limites du test :**
-- Réussir ne signifie pas "penser" vraiment
-- Une IA peut imiter sans comprendre
-- Débat : intelligence simulée vs intelligence réelle
+---
+## Et demain ? :
+- Dès 2027 on ne pourra pas faire la disctinction entre un humain et une IA
 
-**Aujourd'hui :**
-- En 2027 on ne pourra pas faire la disctinction entre un humain et une IA
+---
+<!-- .slide: data-layout="two-column" data-img="https://www.eoi.es/blogs/redinnovacionEOI/files/2015/08/Jan2V_Film_Her.jpg" -->
+## 🎬 Her (2013) avec Joaquin Phoenix
+- Relation intime entre un homme et une IA avancée
+- Thèmes: attachement émotionnel, empathie simulée, solitude, autonomie de l’IA.
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://static.milibris.com/thumbnail/issue/1a2ac231-e35e-41be-a8f2-e3bf978e79a7/front/catalog-cover-large.jpeg" -->
+
+## 2026 la une du magazine Libération du 22 janvier 2026
+
+Le test de Turing est officiellement passé par toute IA grand public qui tient aujourd'hui dans votre poche.
+---
+
+# Atelier Interactif : Comment détecter une image générée par IA ?
+
+https://this-person-does-not-exist.com/en
 
 
 ---
 
-## Applications Concrètes (25 min)**
+## Parlons avec le Général de Gaulle
+https://unmute.sh/
+
+---
+
+## Applications Concrètes
   - Génération d'une image simple ("un chat dans un jardin")
   - Génération d'un poème avec le public
 -  Exemples du quotidien (10 min)
@@ -948,8 +1068,7 @@ Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 
 ---
 
-## **4. Questions Clés (20 min)**
-**Objectif** : Répondre aux interrogations courantes
-- **4.1** "L'IA est-elle plus intelligente que nous ?"
-- **4.2** "Peut-on lui faire confiance ?" 
-- **4.3** "Va-t-elle nous remplacer ?"
+## **Questions Clés (20 min)**
+- "L'IA est-elle plus intelligente que nous ?"
+- "Peut-on lui faire confiance ?" 
+- "Va-t-elle nous remplacer ?"
