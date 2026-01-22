@@ -15,9 +15,7 @@
 
 
 ---
-
----
-
+<!-- .slide: data-layout="two-column" data-img="https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp" -->
 # AI VS GENERATIVE AI​
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -31,46 +29,25 @@
 
 **GENERATIVE AI** can create or generate new content, ideas, or data that resemble human creativity.​
 
-  </div>
-
-  <div style="flex: 1;">
-
-![AI, ML, DL, and Generative AI Face-Off](https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp)
-
-  </div>
-</div>
-
 
 
 ---
 
 # Neurones biologiques  
+<!-- .slide: data-layout="two-column" data-img="https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png" -->
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
+**Structure :**  
+- Dendrites  
+- Soma  
+- Axone  
 
-    **Structure :**  
-    - Dendrites  
-    - Soma  
-    - Axone  
+**Fonctionnement des synapses :**  
+- Transmission de signaux chimiques et électriques  
 
-    **Fonctionnement des synapses :**  
-    - Transmission de signaux chimiques et électriques  
-
-    </div>
-
-    <div style="flex: 1;">
-
-    ![Structure du neurone](https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png)  
-    *Illustration d’un neurone biologique*
-
-    </div>
-
-</div>
 
 ---
-
-# Neurones artificiels  
+<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
+# Neurones artificiels
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
 
@@ -79,17 +56,6 @@ Modèle mathématique du neurone artificiel
 Fonctions d’activation : ReLU, Sigmoïde, Tanh  
 
 Similarités et différences avec les neurones biologiques ?  
-
-</div>
-
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
-    ![Structure du neurone artificiel](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png)  
-    *Illustration d’un neurone artificiel*
-    </div>
-</div>
-
 
 
 ---
@@ -103,6 +69,8 @@ Similarités et différences avec les neurones biologiques ?
 - Propose le **Test de Turing**
 - Question : une machine peut-elle penser ?
 
+---
+<!-- .slide: data-layout="two-column" data-img="https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg" data-alt="Le Jeu de l'imitation de Turing" -->
 ### La proposition de Turing (Jeu de l’imitation)
 - Expérience pensée où un interrogateur converse uniquement par écrit avec deux entités cachées: un humain et une machine.
 - Objectif: décider qui est l’humain à partir des réponses en langage naturel.
@@ -113,6 +81,7 @@ Similarités et différences avec les neurones biologiques ?
 https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCge-mEPiJuKtQN0GIXOPaACYj-OBNccNrBHAzApkaMESTnylTGDqMVciQOM1C10dAXdg1kzKlDIM3jDpFWdz44PWxCJ8" -->
 
 ## 1956 – Naissance officielle de l’IA
 - Conférence de **Dartmouth**
@@ -120,8 +89,10 @@ https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg
 - Début de l’IA symbolique
 
 La naissance du mot "Intelligence Artificielle"
+
+---
+
 **La Conférence de Dartmouth** s'est tenue en 1956 au Dartmouth College dans le New Hampshire, aux États-Unis. Elle a réuni des pionniers comme John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell. C'est lors de cette rencontre historique que le terme "Intelligence Artificielle" a été inventé par John McCarthy. Les participants pensaient pouvoir créer une machine pensante en quelques mois
-https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCge-mEPiJuKtQN0GIXOPaACYj-OBNccNrBHAzApkaMESTnylTGDqMVciQOM1C10dAXdg1kzKlDIM3jDpFWdz44PWxCJ8
 
 ---
 
@@ -129,12 +100,13 @@ https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCg
 - **Frank Rosenblatt** invente le perceptron
 - Neurone artificiel = base des réseaux de neurones
 - Limité : ne résout pas les problèmes non linéaires comme le XOR
+
+---
+
 ### Le perceptron de Rosenblatt en bref
 - Neurone binaire: somme pondérée des entrées + biais, puis seuil.
-- Règle d’apprentissage: w ← w + η(y − ŷ) x (ajuste les poids pour corriger l’erreur).
 - Résout les problèmes linéairement séparables (AND, OR).
 - Limite majeure: XOR non séparable → besoin de couches cachées.
-- Impact: démonstration matérielle (Mark I Perceptron), base des réseaux modernes.
 
 > "Devices of this sort are expected ultimately to be capable of concept formation, language translation, collation of military intelligence, and the solution of problems through inductive logic."
  <em>— Frank Rosenblatt, 1957</em>
