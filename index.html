@@ -6,6 +6,7 @@
   <title>Conférence IA — Slides</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,13 +29,18 @@
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/notes/notes.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fitty@2/dist/fitty.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
       slideNumber: true,
       center: false,
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+      width: '100%',
+      height: '100%',
+      margin: 0,
+      minScale: 1,
+      maxScale: 1,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
     });
 
     function attr(sec, name, defVal) {
@@ -152,32 +158,64 @@
         sec.appendChild(container);
         sec.dataset.layoutApplied = '1';
         
-        // Applique le scaling du texte avec fitty
-        applyFitty(textContent, textDiv);
+        // Applique le scaling du texte
+        scaleText(textContent, textDiv);
       });
     }
 
-    // Ajuste la taille du texte pour remplir la hauteur avec fitty.js
-    function applyFitty(textContent, textContainer) {
-      // Attend que le DOM soit rendu
+    // Ajuste la taille du texte pour remplir la hauteur
+    function scaleText(textContent, textContainer) {
       requestAnimationFrame(() => {
         setTimeout(() => {
-          if (typeof fitty !== 'undefined') {
-            const containerHeight = textContainer.getBoundingClientRect().height;
+          // Reset complètement le transform
+          textContent.style.transform = '';
+          
+          // Force plusieurs reflows
+          void textContent.offsetHeight;
+          void textContainer.offsetHeight;
+          
+          // Attendre un peu plus pour que le DOM se stabilise
+          setTimeout(() => {
+            // Mesure la hauteur et largeur du conteneur disponible
+            const containerHeight = textContainer.clientHeight;
+            const containerWidth = textContainer.clientWidth;
             
-            // Applique fitty avec la hauteur max du conteneur
-            fitty(textContent, {
-              minSize: 12,
-              maxSize: containerHeight,
-              multiLine: true,
-              observeMutations: {
-                subtree: true,
-                childList: true,
-                characterData: true
-              }
-            });
-          }
-        }, 100);
+            // Mesure la hauteur et largeur naturelle du contenu
+            const contentHeight = textContent.scrollHeight;
+            const contentWidth = textContent.scrollWidth;
+            
+            if (containerHeight > 10 && contentHeight > 10 && containerWidth > 10 && contentWidth > 10) {
+              // Calcule le scale pour hauteur et largeur
+              const scaleHeight = containerHeight / contentHeight;
+              const scaleWidth = containerWidth / contentWidth;
+              
+              // Prend le minimum des deux pour éviter tout débordement
+              let scale = Math.min(scaleHeight, scaleWidth) * 0.92;
+              
+              // Applique le scale
+              textContent.style.transform = `scale(${scale})`;
+              textContent.style.transformOrigin = 'top left';
+              
+              // Vérifie si ça déborde et réajuste si nécessaire
+              setTimeout(() => {
+                const newRect = textContent.getBoundingClientRect();
+                const containerRect = textContainer.getBoundingClientRect();
+                
+                // Vérifie débordement en hauteur
+                if (newRect.height > containerRect.height) {
+                  scale = scale * (containerRect.height / newRect.height) * 0.95;
+                  textContent.style.transform = `scale(${scale})`;
+                }
+                
+                // Vérifie débordement en largeur
+                if (newRect.width > containerRect.width) {
+                  scale = scale * (containerRect.width / newRect.width) * 0.95;
+                  textContent.style.transform = `scale(${scale})`;
+                }
+              }, 50);
+            }
+          }, 50);
+        }, 200);
       });
     }
 
@@ -189,13 +227,18 @@
         document.querySelectorAll('.slide-text-content').forEach(content => {
           const container = content.closest('.slide-text');
           if (container) {
-            applyFitty(content, container);
+            scaleText(content, container);
           }
         });
-      }, 100);
+      }, 200);
     });
     window.addEventListener('resize', () => {
-      // Fitty gère automatiquement le resize avec observeMutations
+      document.querySelectorAll('.slide-text-content').forEach(content => {
+        const container = content.closest('.slide-text');
+        if (container) {
+          scaleText(content, container);
+        }
+      });
     });
 
     // Gestion du toggle dark/light mode
