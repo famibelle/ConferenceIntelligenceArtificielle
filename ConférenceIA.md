@@ -31,7 +31,7 @@
 
 ---
 
-## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
 
 ---
 
@@ -62,15 +62,15 @@
 ## La Conférence de Dartmouth
 En 1956 au Dartmouth College dans le New Hampshire, aux États-Unis. 
  
-Elle a réuni John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell. 
+Elle a réuni **John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell**. 
 
-C'est lors de cette rencontre historique que le terme "Intelligence Artificielle" a été inventé par John McCarthy. 
+C'est lors de cette rencontre historique que le terme **Intelligence Artificielle** a été inventé par John McCarthy. 
 
-Les participants pensaient pouvoir créer une machine pensante en quelques mois
+Les participants pensaient pouvoir créer une machine pensante en quelques mois ...
 
 ---
 
-## 1960 – Perceptrons
+## 1960 – Le Perceptron
 - **Frank Rosenblatt** invente le perceptron
 - Neurone artificiel = base des réseaux de neurones
 - Limité : ne résout pas les problèmes non linéaires comme le XOR
@@ -81,6 +81,10 @@ Les participants pensaient pouvoir créer une machine pensante en quelques mois
 - Neurone binaire: somme pondérée des entrées + biais, puis seuil.
 - Résout les problèmes linéairement séparables (AND, OR).
 - Limite majeure: XOR non séparable → besoin de couches cachées.
+
+
+---
+
 
 ## Le perceptron de Rosenblatt en bref
 
@@ -103,8 +107,61 @@ Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, q
 - Permet de résoudre des problèmes plus complexes
 - Base des IA modernes
 
+---
+
 ## 🧠 Réseaux multicouches : une vraie révolution
 - Les couches multiples permettent d'apprendre des relations complexes que le perceptron simple ne pouvait pas résoudre
+
+---
+
+## Le Perceptron Multicouche (PMC)
+
+Un Perceptron Multicouche (PMC) est un type de réseau de neurones artificiels composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie. 
+
+Chaque couche consiste en des nœuds (neurones) interconnectés où les entrées sont traitées à travers des connexions pondérées, des fonctions d'activation et des biais. 
+
+Le concept du PMC a été introduit pour la première fois en 1969 par **Marvin Minsky et Seymour Papert** dans leur livre *Perceptrons*, qui a posé les bases de la recherche sur les réseaux de neurones.
+
+![PMC](https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M)
+
+---
+
+## Au fait c'est quoi un Neurone Artificiel et un Réseau de Neurones Artificiels ?
+
+---
+
+## Neurones biologiques  
+<!-- .slide: data-layout="two-column" data-img="https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png" -->
+
+**Structure :**  
+- Dendrites  
+- Soma  
+- Axone  
+
+**Fonctionnement des synapses :**  
+- Transmission de signaux chimiques et électriques  
+
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
+## Un Neurone Artificiel
+
+Modèle mathématique du neurone artificiel  
+
+Fonctions d’activation : ReLU, Sigmoïde, Tanh  
+
+Similarités et différences avec les neurones biologiques ?  
+
+---
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x" -->
+
+## Réseaux de Neurones Artificiels
+
+Les réseaux de neurones artificiels sont des modèles computationnels inspirés de la structure et du fonctionnement des réseaux neuronaux biologiques. 
+
+Ils sont composés de couches interconnectées de neurones artificiels, où chaque neurone traite les entrées, applique une fonction d'activation et transmet la sortie à la couche suivante. 
+
+Les Réseaux de Neurones Artificiels sont les unités fondamentales des IA.
 
 ---
 
@@ -228,8 +285,7 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 **Pourquoi c'est important ?**
 - Prouve que le deep learning fonctionne
 - Lance l'ère moderne de l'IA
-- Inspire tous les modèles actuels
-
+- Inspire **tous** les modèles actuels
 
 ---
 
@@ -244,6 +300,7 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://d92co48ro6fll.cloudfront.net/gradual/videos/scale/transformX/posters/what-s-next-for-ai-systems-language-models-with-ilya-sutskever-of-openai.jpg" data-alt="Ilya Sutskever" -->
+
 ## Le fabuleux destin d'Ilya Sutskever
 - Après AlexNet, rejoint Google Brain
 - 2015 : Cofonde **OpenAI** avec Sam Altman
@@ -272,8 +329,8 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Apprentissage par renforcement + réseaux profonds
 
 ---
-
-## 🎯 Comment AlphaGo a Battu Lee Sedol
+<!-- .slide: data-layout="two-column" data-img="https://imgv2-1-f.scribdassets.com/img/document/698305505/original/462b61234a/1707724024?v=1" -->
+## 🎯 Comment AlphaGo a battu Lee Sedol
 
 **Le Match Historique (Mars 2016)**
 - AlphaGo affronte Lee Sedol, champion du monde de Go
@@ -282,15 +339,16 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ---
 
-**Les Techniques d'AlphaGo**
+## Les Techniques d'AlphaGo
 - **Apprentissage supervisé** : étude de 30 millions de positions de parties de professionnels
 - **Apprentissage par renforcement** : l'IA joue contre elle-même des millions de fois
 - **Recherche arborescente Monte Carlo** : évalue les meilleurs coups possibles
 - Combinaison de réseaux neuronaux profonds et d'algorithmes de recherche
 
 ---
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/whNvUWRQPhY" -->
 
-**Le Coup 37 : Le Moment Légendaire**
+## Le Coup 37 : Le Moment Légendaire
 - Deuxième partie : AlphaGo joue un coup jamais vu auparavant
 - Les commentateurs le jugent d'abord "ridicule"
 - Se révèle être un coup de génie qui change la partie
@@ -298,10 +356,11 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ---
 
-**Impact**
+## Impact
 - Révolutionne la compréhension du jeu de Go
-- Prouve que l'IA peut surpasser l'intuition humaine
-- Lee Sedol déclare : "AlphaGo m'a montré que je ne savais rien"
+- Prouve que l'IA peut surpasser l'intuition humaine 
+> "AlphaGo m'a montré que je ne savais rien"
+Lee Sedol
 
 ---
 
@@ -473,7 +532,7 @@ https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
 
 ---
 
-## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
 
 ---
 
@@ -502,7 +561,7 @@ https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
 
 ---
 
-# ML : Apprentissage supervisé
+## ML : Apprentissage supervisé
 
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
@@ -521,7 +580,7 @@ Tâches de classification et de régression
 </div>
 ---
 
-# ML : Apprentissage supervisé
+## ML : Apprentissage supervisé
 
 - Maintenance prédictive des composants du véhicule (ex. plaquettes de frein, pneus).
 - Analyse du comportement des conducteurs et évaluation du risque.
@@ -530,7 +589,7 @@ Tâches de classification et de régression
 
 ---
 
-# ML : Apprentissage non supervisé
+## ML : Apprentissage non supervisé
 
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
@@ -549,13 +608,14 @@ Techniques de clustering et de réduction de dimensionnalité
 </div>
 
 ---
-# ML : Apprentissage non supervisé
+
+## ML : Apprentissage non supervisé
 - Regroupement des profils de conduite pour des offres d’assurance personnalisées.
 - Regroupement des schémas de trafic pour optimiser la navigation et l’itinéraire.
 - Segmentation des données d’usage du véhicule pour des campagnes marketing ciblées.
 
 ---
-# ML : Apprentissage par renforcement
+## ML : Apprentissage par renforcement
 
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
@@ -659,174 +719,6 @@ graph LR
 
 ---
 
-<!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
-
-## 🧠 Le cerveau humain
-- Taille moyenne : 1600 cm³
-- Néandertal : 1300 cm³
-- Limité pour nouveaux neurones
-- Synapses : pratiquement illimitées
-
-
----
-
-
-## ⚡ Énergie : cerveau vs IA
-| Système | Consommation |
-|---------|--------------|
-| Cerveau humain | ~20 W |
-| GPU IA | ~250–400 W par unité |
-
----
-
-## 🧠 Comparatif cerveau vs IA
-- Cerveau : flexible, économe en énergie, généraliste
-- IA : rapide, spécialisée, énergivore
-
-
-
----
-
-## 🤖 L’AGI : qu’est-ce que c’est ?
-- AGI = **Artificial General Intelligence**
-- IA capable de comprendre, apprendre et agir **comme un humain**
-- Contrairement à l’IA actuelle, qui est spécialisée
-
-
----
-![Comparaison des performances de l'IA et des humains — Our World in Data](https://upload.wikimedia.org/wikipedia/commons/1/11/Comparaison_des_performances_de_l%27IA_et_des_humains_-_Our_World_in_Data.svg?download)
----
-
-## 🧠 Différence IA spécialisée vs AGI
-| IA spécialisée | AGI |
-|----------------|-----|
-| Fait une seule tâche | Peut apprendre toutes les tâches |
-| Exemple : AlphaGo | Exemple : résoudre un problème, créer, planifier |
-| Limité à un domaine | Flexible et généraliste |
-
----
-
-## 🌌 Pourquoi l’AGI est fascinante
-- Potentiel énorme : science, médecine, exploration spatiale
-- Risques : contrôle, éthique, emploi
-- Question clé : que se passe-t-il si elle devient **plus intelligente que nous** ?
-
----
-
-la  course vers l'ia entretenue par les 
-tensions geopolitiques entre les blocs USA CHINE EUROPE
-
----
-
-## 🔮 Vers l’AGI
-- Combinaison :
-  - Réseaux profonds
-  - Mémoire et planification
-  - Compréhension du langage et raisonnement
-- Objectif : IA **polyvalente et autonome**
-
----
-
-## ⚖️ Éthique et AGI
-- Sécurité : éviter comportements imprévisibles
-- Transparence : comment prend-elle ses décisions ?
-- Responsabilité : qui contrôle l’AGI ?
-
----
-
-## 🖥️ Démonstration : Moshi de Kuytai
-- Génération de texte et images
-- Interaction avec le public
-- Illustrer puissance et limites de l’IA
-
----
-
-
-## 🌐 IA et vie quotidienne
-- Smartphones, assistants vocaux
-- Recommandations : Netflix, YouTube, Spotify
-- Voitures autonomes
-
----
-
-## 🏥 IA et santé
-- Détection précoce de maladies
-- Analyse d’images médicales
-- Personnalisation des traitements
-
----
-
-## 🎨 IA et créativité
-- Génération d’images, textes, musique
-- Limites : créativité encadrée, pas d’intuition
-
-
-
-
----
-
----
-
-## Neurones biologiques  
-<!-- .slide: data-layout="two-column" data-img="https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png" -->
-
-**Structure :**  
-- Dendrites  
-- Soma  
-- Axone  
-
-**Fonctionnement des synapses :**  
-- Transmission de signaux chimiques et électriques  
-
-
----
-<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
-## Neurones artificiels
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
-Modèle mathématique du neurone artificiel  
-
-Fonctions d’activation : ReLU, Sigmoïde, Tanh  
-
-Similarités et différences avec les neurones biologiques ?  
-
-
----
-
----
-
-## Neurones Artificiels  
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
-Modèle mathématique du neurone artificiel  
-
-Fonctions d'activation : ReLU, Sigmoid, Tanh  
-
-Similarités et différences avec les neurones biologiques ?  
-
-</div>
-
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
-    ![Structure du Neurone Artificiel](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png)  
-    *Illustration d'un neurone artificiel*
-    </div>
-</div>
-
-
----
-<iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-## Réseaux de Neurones Artificiels
-
-Les réseaux de neurones artificiels (RNA) sont des modèles computationnels inspirés de la structure et du fonctionnement des réseaux neuronaux biologiques. 
-
-Ils sont composés de couches interconnectées de neurones artificiels, où chaque neurone traite les entrées, applique une fonction d'activation et transmet la sortie à la couche suivante. 
-
-**Les RNA** sont largement utilisés pour des tâches telles que la reconnaissance de motifs, la classification et la régression dans divers domaines.
-
 ---
 
 ## Paramètres et Poids dans les Réseaux de Neurones
@@ -862,6 +754,8 @@ $$\text{sortie} = \text{fonction\_activation}(W \cdot X + B)$$
 
     </div>
 </div>
+
+
 ---
 
 ## Mistral 7B : Nombre de Paramètres
@@ -876,7 +770,7 @@ Le modèle Mistral 7B est un modèle de fondation de pointe avec **7 milliards d
 **Comparaison :**
 - **GPT-4 :** Environ 175 milliards de paramètres estimés.
 - **LLaMA 2 (13B) :** 13 milliards de paramètres.
-
+- **GPT-5 : ** entre 500 et 1500 milliards de paramètres selon les rumeurs.
     </div>
 
     <div style="flex: 1;">
@@ -885,30 +779,11 @@ Le modèle Mistral 7B est un modèle de fondation de pointe avec **7 milliards d
 
     </div>
 </div>
+
 ---
 
-## Perceptron Multicouche (PMC)
-<div style="display: flex; align-items: center; gap: 20px;">
-
-    <div style="flex: 1;">
-
-Un Perceptron Multicouche (PMC) est un type de réseau de neurones artificiels composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie. Chaque couche consiste en des nœuds (neurones) interconnectés où les entrées sont traitées à travers des connexions pondérées, des fonctions d'activation et des biais. 
-
-Les PMC sont largement utilisés pour des tâches d'apprentissage supervisé telles que la classification et la régression, tirant parti de leur capacité à modéliser des relations complexes et non linéaires dans les données.
-
-Le concept du PMC a été introduit pour la première fois en 1969 par Marvin Minsky et Seymour Papert dans leur livre *Perceptrons*, qui a posé les bases de la recherche sur les réseaux de neurones.
-
-    </div>
-
-    <div style="flex: 1;">
-
-![PMC](https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M)
-
-    </div>
-
-</div>
-
-
+## LLMs Un modèle avec beaucoup beaucoup ... beaucoup de paramètres
+LLM: Large Language Model
 
 ---
 ## ML : Apprentissage par Renforcement​
@@ -927,6 +802,7 @@ Systèmes de récompense​
     </div>
 
 </div>
+
 ---
 
 ## ML : Apprentissage par Renforcement​
@@ -948,7 +824,6 @@ Systèmes de récompense​
 </div>
 ---
 
-
 ## Réseau de Neurones en Action
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -967,6 +842,152 @@ Elle visualise comment le modèle traite les images d'entrée, extrait les carac
 
     </div>
 </div>
+
+---
+
+## Les Successeurs des LLM (vision de Yann Le Cun)
+- JEPA : apprentissage auto-supervisé qui prédit des parties manquantes en espace de représentations (pas d’autocomplétion de tokens).
+- World Models : modèles prédictifs du monde (vidéo/audio/action) pour raisonner et planifier.
+
+---
+
+# Comment l'Homme se positionne vis à vis de l'IA ?
+
+---
+
+<!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
+
+## 🧠 Le cerveau humain
+- Taille moyenne : 1300 cm³
+- Néandertal : 1600 cm³
+- Limité pour nouveaux neurones
+- Synapses : pratiquement illimitées
+
+
+---
+
+
+## ⚡ Énergie : cerveau vs IA
+| Système | Consommation |
+|---------|--------------|
+| Cerveau humain | ~20 W |
+| Cluster d'IA | 1000 MW |
+
+Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énergie** qu'une IA.
+
+
+## Comparaison des performances de l'IA et des humains
+![Comparaison des performances de l'IA et des humains — Our World in Data](https://upload.wikimedia.org/wikipedia/commons/1/11/Comparaison_des_performances_de_l%27IA_et_des_humains_-_Our_World_in_Data.svg?download)
+
+---
+
+# Et Demain ?
+
+---
+
+## 🤖 L’AGI : qu’est-ce que c’est ?
+- AGI = **Artificial General Intelligence**
+- IA capable de comprendre, apprendre et agir **comme un humain**
+- Contrairement à l’IA actuelle, qui est spécialisée
+
+---
+
+## 🧠 Différence IA spécialisée vs AGI
+| IA spécialisée | AGI |
+|----------------|-----|
+| Fait une seule tâche | Peut apprendre toutes les tâches |
+| Exemple : AlphaGo | Exemple : résoudre un problème, créer, planifier |
+| Limité à un domaine | Flexible et généraliste |
+
+---
+
+## 🔮 Vers l’AGI
+- Combinaison :
+  - Réseaux profonds
+  - Mémoire et planification
+  - Compréhension du langage et raisonnement
+- Objectif : IA **polyvalente et autonome**
+
+---
+
+## 🌌 Pourquoi l’AGI est fascinante
+- Potentiel énorme : science, médecine, exploration spatiale
+- Risques : contrôle, éthique, emploi
+- Question clé : que se passe-t-il quand l'IA devient **plus intelligente que nous** ?
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D4D12AQGyGyJI7Ht9fw/article-cover_image-shrink_600_2000/0/1668837711973?e=2147483647&v=beta&t=aGrDI4vzxLQz976zymt5s0DWTCp6GeG6UXLtKzmOxns" -->
+
+## Singularité technologique en IA
+- Point hypothétique où l’IA dépasse l’intelligence humaine et s’auto-améliore rapidement.
+- Timeline incertaine; scénario graduel ou abrupt.
+
+
+---
+
+# Un futur pas si lointain ... 
+
+---
+
+Dès 2027 on ne pourra pas faire la disctinction entre un humain et une IA
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://www.eoi.es/blogs/redinnovacionEOI/files/2015/08/Jan2V_Film_Her.jpg" -->
+## 🎬 Her (2013) avec Joaquin Phoenix
+- Relation intime entre un homme et une IA avancée
+- Thèmes: attachement émotionnel, empathie simulée, solitude, autonomie de l’IA.
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://static.milibris.com/thumbnail/issue/1a2ac231-e35e-41be-a8f2-e3bf978e79a7/front/catalog-cover-large.jpeg" -->
+
+## 2026 la une du magazine Libération du 22 janvier 2026
+
+Le test de Turing est officiellement passé par toute IA grand public qui tient aujourd'hui dans votre poche.
+
+
+---
+
+<!-- .slide: data-layout="two-column" data-img="https://img-api.mac4ever.com/1179/0/af7e438e7e_qu-est-ce-que-le-slop-ce-curieux-phenomene-envahissant.webp" -->
+
+## IA Slop ou la bouillie générée par IA qui pollue le web
+- Contenu généré automatiquement de faible qualité, produit à grande échelle pour le clic/SEO, avec peu de valeur ajoutée ou vérification.
+- Impacts: pollution informationnelle, désinformation, baisse de confiance, modèles réentraînés sur données contaminées.
+
+> "It’s becoming harder to detect what’s real and what’s AI-generated. This is particularly critical when it comes to deepfakes." le mercredi 21 janvier 2026.
+By Neal Mohan, CEO, YouTube
+
+---
+
+<!-- .slide: data-layout="two-column" data-img="https://controverity.com/wp-content/uploads/2026/01/elon2026-1024x536.webp" -->
+
+## La singularity arrive avec 30 ans d'avance
+
+> "2026 est l'année de la singularité technologique."
+
+Elon Musk le 4 janvier 2026
+
+
+---
+
+<!-- .slide: data-layout="two-column" data-video="https://youtube.com/shorts/zGfac0-MY20?si=c8Tn2hH6gn0-aaaG" -->
+## L'IA est elle meilleure que nous ?
+
+- Mathématicien français, médaille Fields 2010 pour ses travaux en théorie cinétique (équations de Boltzmann et de Landau).
+- Auteur du rapport national 2018 sur l’IA “Donner un sens à l’intelligence artificielle” (stratégie française et européenne).
+- Ancien directeur de l’Institut Henri-Poincaré et député, engagé sur sciences, éducation et innovation.
+
+---
+
+## la  course vers l'ia entretenue par les tensions geopolitiques entre les blocs USA CHINE EUROPE
+
+---
+
+
+## 🖥️ Démonstration : Moshi de Kuytai
+- Génération de texte et images
+- Interaction avec le public
+- Illustrer puissance et limites de l’IA
+
 
 ---
 
@@ -1002,23 +1023,6 @@ Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 
 
 ---
-<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D4D12AQGyGyJI7Ht9fw/article-cover_image-shrink_600_2000/0/1668837711973?e=2147483647&v=beta&t=aGrDI4vzxLQz976zymt5s0DWTCp6GeG6UXLtKzmOxns" -->
-
-## Singularité technologique en IA
-- Point hypothétique où l’IA dépasse l’intelligence humaine et s’auto-améliore rapidement.
-- Timeline incertaine; scénario graduel ou abrupt.
-
----
-
-<!-- .slide: data-layout="two-column" data-img="https://controverity.com/wp-content/uploads/2026/01/elon2026-1024x536.webp" -->
-
-## Timeline pas si incertaine que ça :
-
-> "2026 est l'année de la singularité technologique."
-
-Elon Musk le 4 janvier 2026
-
----
 
 ## Le test de Turing
 **Principe :**
@@ -1041,24 +1045,9 @@ Elon Musk le 4 janvier 2026
 - Laquelle est l'IA ? Si vous ne pouvez pas le dire, l'IA a réussi !
 
 ---
-## Et demain ? :
-- Dès 2027 on ne pourra pas faire la disctinction entre un humain et une IA
-
----
-<!-- .slide: data-layout="two-column" data-img="https://www.eoi.es/blogs/redinnovacionEOI/files/2015/08/Jan2V_Film_Her.jpg" -->
-## 🎬 Her (2013) avec Joaquin Phoenix
-- Relation intime entre un homme et une IA avancée
-- Thèmes: attachement émotionnel, empathie simulée, solitude, autonomie de l’IA.
-
----
-<!-- .slide: data-layout="two-column" data-img="https://static.milibris.com/thumbnail/issue/1a2ac231-e35e-41be-a8f2-e3bf978e79a7/front/catalog-cover-large.jpeg" -->
-
-## 2026 la une du magazine Libération du 22 janvier 2026
-
-Le test de Turing est officiellement passé par toute IA grand public qui tient aujourd'hui dans votre poche.
----
 
 ## Atelier Interactif : Comment détecter une image générée par IA ?
+
 
 https://this-person-does-not-exist.com/en
 
@@ -1080,10 +1069,6 @@ https://unmute.sh/
 
 
 
----
-
-<!-- .slide: data-layout="two-column" data-video="https://youtube.com/shorts/zGfac0-MY20?si=c8Tn2hH6gn0-aaaG" -->
-## L'IA est elle meilleure que nous ?
 
 ---
 
