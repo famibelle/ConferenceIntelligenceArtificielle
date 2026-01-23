@@ -29,9 +29,13 @@
 }
 
 /* Affiche uniquement l'icône appropriée */
+#theme-toggle .icon-sun,
+#theme-toggle .icon-moon { 
+  display: none; 
+  position: absolute;
+}
+
 body[data-theme="dark"] #theme-toggle .icon-sun { display: block; }
-body[data-theme="dark"] #theme-toggle .icon-moon { display: none; }
-body[data-theme="light"] #theme-toggle .icon-sun { display: none; }
 body[data-theme="light"] #theme-toggle .icon-moon { display: block; }
 
 /* Layout deux colonnes */
