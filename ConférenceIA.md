@@ -759,6 +759,11 @@ graph LR
 
 ---
 
+la  course vers l'ia entretenue par les 
+tensions geopolitiques entre les blocs USA CHINE EUROPE
+
+---
+
 ## 🔮 Vers l’AGI
 - Combinaison :
   - Réseaux profonds
