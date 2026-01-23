@@ -1038,6 +1038,11 @@ https://unmute.sh/
 -  Détecter l'IA (5 min)
   - "Cette image a-t-elle été générée par une IA ?" (quiz visuel)
 
+
+
+---
+L'ia meilleure que nous ?
+https://youtube.com/shorts/zGfac0-MY20?si=c8Tn2hH6gn0-aaaG
 ---
 
 ## **Questions Clés (20 min)**
