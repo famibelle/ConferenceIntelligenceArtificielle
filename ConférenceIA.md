@@ -1,4 +1,4 @@
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">L'Intelligence Artificielle</div>
+## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">L'Intelligence Artificielle</div>
 
 
 ---
@@ -16,7 +16,7 @@
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp" -->
-# AI VS GENERATIVE AI​
+## AI VS GENERATIVE AI​
 
 <div style="display: flex; align-items: center; gap: 20px;">
   <div style="flex: 1;">
@@ -29,38 +29,9 @@
 
 **GENERATIVE AI** can create or generate new content, ideas, or data that resemble human creativity.​
 
-
-
 ---
 
-# Neurones biologiques  
-<!-- .slide: data-layout="two-column" data-img="https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png" -->
-
-**Structure :**  
-- Dendrites  
-- Soma  
-- Axone  
-
-**Fonctionnement des synapses :**  
-- Transmission de signaux chimiques et électriques  
-
-
----
-<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
-# Neurones artificiels
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
-Modèle mathématique du neurone artificiel  
-
-Fonctions d’activation : ReLU, Sigmoïde, Tanh  
-
-Similarités et différences avec les neurones biologiques ?  
-
-
----
-
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
+## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
 
 ---
 
@@ -71,14 +42,13 @@ Similarités et différences avec les neurones biologiques ?
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg" data-alt="Le Jeu de l'imitation de Turing" -->
-### La proposition de Turing (Jeu de l’imitation)
+## La proposition de Turing (Jeu de l’imitation)
 - Expérience pensée où un interrogateur converse uniquement par écrit avec deux entités cachées: un humain et une machine.
 - Objectif: décider qui est l’humain à partir des réponses en langage naturel.
 - Règle de succès: si l’interrogateur ne distingue pas de façon fiable la machine de l’humain, la machine *réussit* le test.
 - Motivation: remplacer “Les machines peuvent-elles penser ?” par une évaluation comportementale mesurable.
 - Contraintes: échange textuel (sans vision ni audio), sujets libres, durée limitée.
 
-https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCge-mEPiJuKtQN0GIXOPaACYj-OBNccNrBHAzApkaMESTnylTGDqMVciQOM1C10dAXdg1kzKlDIM3jDpFWdz44PWxCJ8" -->
@@ -86,13 +56,17 @@ https://image3.slideserve.com/6546540/turing-s-imitation-game-l.jpg
 ## 1956 – Naissance officielle de l’IA
 - Conférence de **Dartmouth**
 - Objectif : créer des machines capables de penser
-- Début de l’IA symbolique
-
-La naissance du mot "Intelligence Artificielle"
 
 ---
 
-**La Conférence de Dartmouth** s'est tenue en 1956 au Dartmouth College dans le New Hampshire, aux États-Unis. Elle a réuni des pionniers comme John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell. C'est lors de cette rencontre historique que le terme "Intelligence Artificielle" a été inventé par John McCarthy. Les participants pensaient pouvoir créer une machine pensante en quelques mois
+## La Conférence de Dartmouth
+En 1956 au Dartmouth College dans le New Hampshire, aux États-Unis. 
+ 
+Elle a réuni John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell. 
+
+C'est lors de cette rencontre historique que le terme "Intelligence Artificielle" a été inventé par John McCarthy. 
+
+Les participants pensaient pouvoir créer une machine pensante en quelques mois
 
 ---
 
@@ -103,13 +77,16 @@ La naissance du mot "Intelligence Artificielle"
 
 ---
 
-### Le perceptron de Rosenblatt en bref
+## Le perceptron de Rosenblatt en bref
 - Neurone binaire: somme pondérée des entrées + biais, puis seuil.
 - Résout les problèmes linéairement séparables (AND, OR).
 - Limite majeure: XOR non séparable → besoin de couches cachées.
 
+## Le perceptron de Rosenblatt en bref
+
 > "Devices of this sort are expected ultimately to be capable of concept formation, language translation, collation of military intelligence, and the solution of problems through inductive logic."
  <em>— Frank Rosenblatt, 1957</em>
+
 ---
 
 ## 🔍 Le Problème XOR : Limite du Perceptron Simple
@@ -117,9 +94,7 @@ La naissance du mot "Intelligence Artificielle"
 Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, qui nécessite une séparation non linéaire. Le XOR renvoie vrai uniquement si **une seule** des deux entrées est vraie, pas les deux en même temps.
 
 **Pourquoi c'est important ?**
-- Cette limitation a montré qu'un seul neurone ne suffit pas
-- A conduit au **premier hiver de l'IA** (1974-1980) : baisse de financements et d'intérêt pour la recherche
-
+- Cette limitation a conduit au **premier hiver de l'IA** (1974-1980) : baisse de financements et d'intérêt pour la recherche
 
 ---
 
@@ -137,13 +112,11 @@ Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, q
 
 ## Démonstration de réseau convolutionnel de 1989 par Yann Le Cun
 
-Il s’agit d’une démonstration de « LeNet-1 », le premier réseau convolutionnel capable de reconnaître des chiffres manuscrits avec une bonne vitesse et précision.
+*LeNet-1* premier réseau convolutionnel capable de reconnaître des chiffres manuscrits avec une bonne vitesse et précision.
 
 Elle a été développée début 1989 au département Adaptive System Research, dirigé par Larry Jackel, chez Bell Labs à Holmdel (New Jersey).
 
 Cette démonstration « en temps réel » tournait sur une carte DSP installée dans un PC 486, avec une caméra vidéo et une carte d’acquisition. 
-https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1
-
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg" data-alt="Les Pères Fondateurs du Deep Learning" -->
@@ -155,18 +128,10 @@ https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1
 Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 2018** (le "Nobel de l'informatique") :
 
 **Geoffrey Hinton** 🇬🇧
-- Réseaux de neurones profonds
-- Rétropropagation moderne
-- "Parrain du Deep Learning"
 
 **Yann LeCun** 🇫🇷
-- Réseaux convolutifs (CNN)
-- Reconnaissance d'images
 
 **Yoshua Bengio** 🇨🇦
-- Traitement du langage naturel
-- Représentations distribuées
-- Éthique de l'IA
 
 ---
 
@@ -175,7 +140,6 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Ont persisté quand personne ne croyait aux réseaux de neurones
 - Leurs travaux ont permis : reconnaissance vocale, voitures autonomes, traduction automatique
 - Forment aujourd'hui la nouvelle génération de chercheurs
-
 
 ---
 
@@ -223,6 +187,15 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ---
 
+## ImageNet (en bref)
+
+- Jeu de données d’images à grande échelle lancé en 2009
+- ~14 M d’images annotées à la main, ~20 000 catégories (synsets WordNet)
+- Utilisé pour entraîner et évaluer des modèles de vision par ordinateur
+![ImageNet](https://cv.gluon.ai/_images/imagenet_banner.jpeg)
+
+---
+
 ## 🏆 AlexNet : La Révolution de 2012
 
 **Qu'est-ce qu'AlexNet ?**
@@ -230,15 +203,25 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - 8 couches (5 convolutives + 3 entièrement connectées)
 - 60 millions de paramètres
 
+![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
+
+---
+
+## 🏆 AlexNet : La Révolution de 2012
+
 **La Performance**
 - Gagne le concours ImageNet 2012
 - Taux d'erreur : 15,3% (vs 26,2% pour le second)
 - Révolutionne la reconnaissance d'images
 
+---
+
+## 🏆 AlexNet : La Révolution de 2012
+
 **Les Innovations Clés**
 - Utilisation de **GPU Nvidia** pour l'entraînement
 
-![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
+![Ordinateur de chambre utilisé pour la percée](https://computerhistory.org/wp-content/uploads/2025/01/fig-69-REDUCED-bedroom-computer-used-for-breakthrough-1024x771.jpg)
 
 ---
 
@@ -247,8 +230,6 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Lance l'ère moderne de l'IA
 - Inspire tous les modèles actuels
 
-    </div>
-</div>
 
 ---
 
@@ -285,7 +266,7 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ---
 
-## 2016 – AlphaGo
+## 2016 - AlphaGo
 - Développé par **Demis Hassabis, DeepMind**
 - Bat le champion de Go
 - Apprentissage par renforcement + réseaux profonds
@@ -401,6 +382,7 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 ---
 
 ## Impact
+
 - Meilleure compréhension de la fonction des protéines et moins d’effets indésirables.
 - Conception plus précise de thérapies.
 - Découvertes accélérées grâce au calcul avancé et à l’IA.
@@ -445,61 +427,43 @@ https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
 
 ---
 
-🎮 Jeux vidéo — Contributions de Demis Hassabis
+## Demis Hassabis et les Jeux vidéo 🎮  
 
-1) Syndicate (1993)
+- Syndicate (1993)
 	•	Rôle : Playtester (testeur de jeu) dans ses débuts chez Bullfrog Productions.  ￼
 	•	Studio : Bullfrog Productions (connu pour des jeux de simulation et stratégie innovants).  ￼
 
-⸻
-
-2) Theme Park (1994)
-	•	Rôle :
-	•	Project Leader (chef de projet)
+- Theme Park (1994)
 	•	Lead Programmer (programmeur principal) sur plusieurs versions (DOS, Amiga, SNES, PlayStation, etc.).  ￼
 	•	Studio : Bullfrog Productions (éditeur / développeur).  ￼
 👉 Theme Park est un jeu de simulation de parc d’attractions très populaire dans les années 1990.
 
-⸻
-
-3) Republic: The Revolution (2003)
+- Republic: The Revolution (2003)
 	•	Rôle : Executive Designer (concepteur exécutif) et concept principal du jeu.  ￼
 	•	Studio : Elixir Studios, société qu’il a fondée en 1998 à Londres.  ￼
 👉 Un jeu de stratégie / simulation politique ambitieux conçu autour de systèmes complexes.
 
-⸻
-
-4) Evil Genius (2004)
+- Evil Genius (2004)
 	•	Rôle : Executive Designer et Concept.  ￼
 	•	Studio : Elixir Studios, toujours sous sa direction.  ￼
 👉 Dans ce jeu, le joueur incarne un maître du mal qui dirige une base secrète (similaire au style “simulation de base” avec humour).
 
-⸻
-
-🕹️ Rôles dans l’industrie et studios
-	•	Bullfrog Productions — où il a démarré jeune, travaillant sur des jeux de simulation comme Theme Park et testant Syndicate.  ￼
-	•	Elixir Studios — fondé par Hassabis lui-même, produit Republic: The Revolution et Evil Genius.  ￼
-
-➡️ Elixir Studios a fermé en 2005 après quelques projets, mais est resté notable pour avoir été dirigé par Hassabis avant qu’il ne se consacre totalement à l’IA.  ￼
-
-⸻
-
-🧠 Pourquoi ces jeux comptent
-
-Même si la plupart des contributions de Hassabis datent des années 1990–2000, ces rôles l’ont :
-	•	formé à la simulation, à l’IA et au game design ;
-	•	inspiré pour sa carrière ultérieure en intelligence artificielle et recherche (notamment chez DeepMind).  ￼
-
-
 
 ---
+
 <!-- .slide: data-layout="two-column" data-img="https://news.aikoreacommunity.com/content/images/2024/01/20240109_181100.png" -->
 ## 2017 – Attention is All You Need
 - En bref: le Transformer est une architecture d’IA (2017) qui comprend le contexte des phrases grâce à un mécanisme appelé “attention”.
 - Idée clé: l’attention permet au modèle de se concentrer sur les mots les plus utiles pour la tâche (traduire, résumer, répondre).
 - Petite illustration: dans “Le chat de ma grand mère mange la souris”, le mot “mange” regarde “chat” et “souris” pour comprendre qui fait quoi.
 
+---
 
+## 🎯 Impact des Transformers
+- Révolutionne le traitement du langage naturel (NLP)
+- Base des modèles comme BERT, GPT, T5
+
+> C'est le T dans GPT !
 
 ---
 
@@ -509,7 +473,7 @@ Même si la plupart des contributions de Hassabis datent des années 1990–2000
 
 ---
 
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
+## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
 
 ---
 
@@ -609,15 +573,15 @@ Systèmes de récompense
 </div>
 ---
 
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Maitre Corbeau sur un arbre ?</div>
+## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Maitre Corbeau sur un arbre ?</div>
 
 ---
 
-Maitre Corbeau sur un arbre perché
+## Maitre Corbeau sur un arbre perché
 http://andreetgyps.a.n.pic.centerblog.net/o/6b0e0247.jpg
 
 ---
-# Tokenisation
+## Tokenisation
 
 Les tokens en traitement du langage naturel (NLP) sont comme les syllabes en poésie. Tout comme les syllabes sont les éléments constitutifs du rythme et de la structure d'un poème, les tokens sont les unités fondamentales qui permettent aux modèles d'IA de traiter et de comprendre le texte.
 
@@ -627,7 +591,7 @@ Les tokens en traitement du langage naturel (NLP) sont comme les syllabes en po�
 
 ---
 
-# Token dans les Modèles d'IA
+## Token dans les Modèles d'IA
 
 La limite de tokens définit le nombre maximum de tokens qu'un modèle peut traiter dans une seule entrée. Des limites de tokens plus élevées permettent de gérer des contextes plus longs, rendant les modèles plus efficaces pour des tâches comme la synthèse, l'analyse de code et la génération de documents.
 
@@ -639,7 +603,7 @@ La limite de tokens définit le nombre maximum de tokens qu'un modèle peut trai
 
 ---
 
-# Embedding
+## Embedding
 
 ## Transformer les Tokens en Représentations Numériques
 
@@ -660,7 +624,7 @@ L'embedding transforme les tokens en vecteurs, qui servent de véritables points
 
 ---
 
-# Comment la Tokenisation et l'Embedding Fonctionnent Ensemble :
+## Comment la Tokenisation et l'Embedding Fonctionnent Ensemble :
 **Tokenisation :**
 - Divise le texte en tokens (par exemple, mots, sous-mots ou caractères).
 - Exemple : "Maitre Corbeau sur un arbre perché" → [Mai ##tre Cor ##beau sur un ar### bre perché.].
@@ -671,7 +635,7 @@ L'embedding transforme les tokens en vecteurs, qui servent de véritables points
 
 ---
 
-# Pourquoi l'Embedding est Important :
+## Pourquoi l'Embedding est Important :
 - **Compréhension Sémantique :** Les tokens ayant des significations similaires ont des embeddings plus proches dans l'espace vectoriel.
 
 
@@ -797,9 +761,42 @@ tensions geopolitiques entre les blocs USA CHINE EUROPE
 - Limites : créativité encadrée, pas d’intuition
 
 
+
+
 ---
 
-# Neurones Artificiels  
+---
+
+## Neurones biologiques  
+<!-- .slide: data-layout="two-column" data-img="https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png" -->
+
+**Structure :**  
+- Dendrites  
+- Soma  
+- Axone  
+
+**Fonctionnement des synapses :**  
+- Transmission de signaux chimiques et électriques  
+
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
+## Neurones artificiels
+<div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1;">
+
+Modèle mathématique du neurone artificiel  
+
+Fonctions d’activation : ReLU, Sigmoïde, Tanh  
+
+Similarités et différences avec les neurones biologiques ?  
+
+
+---
+
+---
+
+## Neurones Artificiels  
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
 
@@ -822,7 +819,7 @@ Similarités et différences avec les neurones biologiques ?
 
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-# Réseaux de Neurones Artificiels
+## Réseaux de Neurones Artificiels
 
 Les réseaux de neurones artificiels (RNA) sont des modèles computationnels inspirés de la structure et du fonctionnement des réseaux neuronaux biologiques. 
 
@@ -832,7 +829,7 @@ Ils sont composés de couches interconnectées de neurones artificiels, où chaq
 
 ---
 
-# Paramètres et Poids dans les Réseaux de Neurones
+## Paramètres et Poids dans les Réseaux de Neurones
 
 Dans les réseaux de neurones, les **paramètres** font référence aux valeurs ajustables que le modèle apprend pendant l'entraînement. Ceux-ci incluent :
 
@@ -847,7 +844,7 @@ Dans les réseaux de neurones, les **paramètres** font référence aux valeurs 
 
 ---
 
-# Paramètres et Poids dans les Réseaux de Neurones
+## Paramètres et Poids dans les Réseaux de Neurones
 
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
@@ -867,7 +864,7 @@ $$\text{sortie} = \text{fonction\_activation}(W \cdot X + B)$$
 </div>
 ---
 
-# Mistral 7B : Nombre de Paramètres
+## Mistral 7B : Nombre de Paramètres
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
@@ -890,7 +887,7 @@ Le modèle Mistral 7B est un modèle de fondation de pointe avec **7 milliards d
 </div>
 ---
 
-# Perceptron Multicouche (PMC)
+## Perceptron Multicouche (PMC)
 <div style="display: flex; align-items: center; gap: 20px;">
 
     <div style="flex: 1;">
@@ -914,7 +911,7 @@ Le concept du PMC a été introduit pour la première fois en 1969 par Marvin Mi
 
 
 ---
-# ML : Apprentissage par Renforcement​
+## ML : Apprentissage par Renforcement​
 
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
@@ -932,7 +929,7 @@ Systèmes de récompense​
 </div>
 ---
 
-# ML : Apprentissage par Renforcement​
+## ML : Apprentissage par Renforcement​
 <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1;">
 
@@ -973,7 +970,7 @@ Elle visualise comment le modèle traite les images d'entrée, extrait les carac
 
 ---
 
-# Base de Données MNIST : Reconnaissance de Chiffres Manuscrits
+## Base de Données MNIST : Reconnaissance de Chiffres Manuscrits
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
@@ -1061,7 +1058,7 @@ Elon Musk le 4 janvier 2026
 Le test de Turing est officiellement passé par toute IA grand public qui tient aujourd'hui dans votre poche.
 ---
 
-# Atelier Interactif : Comment détecter une image générée par IA ?
+## Atelier Interactif : Comment détecter une image générée par IA ?
 
 https://this-person-does-not-exist.com/en
 
@@ -1084,11 +1081,13 @@ https://unmute.sh/
 
 
 ---
-L'ia meilleure que nous ?
-https://youtube.com/shorts/zGfac0-MY20?si=c8Tn2hH6gn0-aaaG
+
+<!-- .slide: data-layout="two-column" data-video="https://youtube.com/shorts/zGfac0-MY20?si=c8Tn2hH6gn0-aaaG" -->
+## L'IA est elle meilleure que nous ?
+
 ---
 
-## **Questions Clés (20 min)**
+## Questions Clés
 - "L'IA est-elle plus intelligente que nous ?"
 - "Peut-on lui faire confiance ?" 
 - "Va-t-elle nous remplacer ?"
