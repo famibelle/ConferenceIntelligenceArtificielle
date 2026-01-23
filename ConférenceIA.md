@@ -453,6 +453,54 @@ https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
 
 ![AlphaFold Protein Structure](https://cdn.the-scientist.com/assets/articleNo/68887/aImg/43733/alphafold-l.png)
 
+---
+
+🎮 Jeux vidéo — Contributions de Demis Hassabis
+
+1) Syndicate (1993)
+	•	Rôle : Playtester (testeur de jeu) dans ses débuts chez Bullfrog Productions.  ￼
+	•	Studio : Bullfrog Productions (connu pour des jeux de simulation et stratégie innovants).  ￼
+
+⸻
+
+2) Theme Park (1994)
+	•	Rôle :
+	•	Project Leader (chef de projet)
+	•	Lead Programmer (programmeur principal) sur plusieurs versions (DOS, Amiga, SNES, PlayStation, etc.).  ￼
+	•	Studio : Bullfrog Productions (éditeur / développeur).  ￼
+👉 Theme Park est un jeu de simulation de parc d’attractions très populaire dans les années 1990.
+
+⸻
+
+3) Republic: The Revolution (2003)
+	•	Rôle : Executive Designer (concepteur exécutif) et concept principal du jeu.  ￼
+	•	Studio : Elixir Studios, société qu’il a fondée en 1998 à Londres.  ￼
+👉 Un jeu de stratégie / simulation politique ambitieux conçu autour de systèmes complexes.
+
+⸻
+
+4) Evil Genius (2004)
+	•	Rôle : Executive Designer et Concept.  ￼
+	•	Studio : Elixir Studios, toujours sous sa direction.  ￼
+👉 Dans ce jeu, le joueur incarne un maître du mal qui dirige une base secrète (similaire au style “simulation de base” avec humour).
+
+⸻
+
+🕹️ Rôles dans l’industrie et studios
+	•	Bullfrog Productions — où il a démarré jeune, travaillant sur des jeux de simulation comme Theme Park et testant Syndicate.  ￼
+	•	Elixir Studios — fondé par Hassabis lui-même, produit Republic: The Revolution et Evil Genius.  ￼
+
+➡️ Elixir Studios a fermé en 2005 après quelques projets, mais est resté notable pour avoir été dirigé par Hassabis avant qu’il ne se consacre totalement à l’IA.  ￼
+
+⸻
+
+🧠 Pourquoi ces jeux comptent
+
+Même si la plupart des contributions de Hassabis datent des années 1990–2000, ces rôles l’ont :
+	•	formé à la simulation, à l’IA et au game design ;
+	•	inspiré pour sa carrière ultérieure en intelligence artificielle et recherche (notamment chez DeepMind).  ￼
+
+
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://news.aikoreacommunity.com/content/images/2024/01/20240109_181100.png" -->
