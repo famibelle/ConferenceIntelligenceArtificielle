@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <button id="theme-toggle" title="Basculer dark/light mode" aria-label="Basculer le thème">
+    <span class="icon-sun">☀️</span>
+    <span class="icon-moon">🌙</span>
+  </button>
   <div class="reveal">
     <div class="slides">
       <!-- Charge le Markdown; utilisez --- pour séparer les slides, -- pour les sous-slides -->
@@ -192,6 +196,31 @@
     });
     window.addEventListener('resize', () => {
       // Fitty gère automatiquement le resize avec observeMutations
+    });
+
+    // Gestion du toggle dark/light mode
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeLink = document.getElementById('theme');
+    const savedTheme = localStorage.getItem('reveal-theme') || 'dark';
+    
+    function setTheme(mode) {
+      const themePath = mode === 'light' 
+        ? 'https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/white.css'
+        : 'https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css';
+      
+      themeLink.href = themePath;
+      document.body.setAttribute('data-theme', mode);
+      localStorage.setItem('reveal-theme', mode);
+    }
+    
+    // Applique le thème sauvegardé
+    setTheme(savedTheme);
+    
+    // Toggle au clic
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.body.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
     });
   </script>
 </body>
