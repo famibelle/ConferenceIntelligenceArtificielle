@@ -146,11 +146,9 @@ https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1
 
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg" data-alt="Les Pères Fondateurs du Deep Learning" -->
 
 ## 🏆 Les Parrains de l'IA
-
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
 
 **Les Pères Fondateurs du Deep Learning**
 
@@ -170,21 +168,13 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Représentations distribuées
 - Éthique de l'IA
 
-https://www.intelligenthq.com/wp-content/uploads/2023/09/godfathers-of-ai.jpg
-
-    </div>
-
-    <div style="flex: 1;">
+---
 
 **Leur Impact**
 
 - Ont persisté quand personne ne croyait aux réseaux de neurones
 - Leurs travaux ont permis : reconnaissance vocale, voitures autonomes, traduction automatique
 - Forment aujourd'hui la nouvelle génération de chercheurs
-
-
-    </div>
-</div>
 
 
 ---
