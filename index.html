@@ -44,18 +44,47 @@
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
     });
 
-    // Initialiser Mermaid
-    mermaid.initialize({ 
-      startOnLoad: true,
-      theme: 'dark',
-      themeVariables: {
-        darkMode: true
-      }
+    // Initialiser Mermaid après que Reveal soit complètement chargé
+    Reveal.on('ready', () => {
+      mermaid.initialize({ 
+        startOnLoad: false,
+        theme: 'dark',
+        themeVariables: {
+          darkMode: true
+        }
+      });
+      
+      // Rendre les diagrammes Mermaid
+      setTimeout(() => {
+        const mermaidDivs = document.querySelectorAll('.mermaid');
+        mermaidDivs.forEach((div, index) => {
+          const graphDefinition = div.textContent;
+          const id = `mermaid-${index}`;
+          mermaid.render(id, graphDefinition).then(({ svg }) => {
+            div.innerHTML = svg;
+          }).catch(err => {
+            console.error('Mermaid error:', err);
+          });
+        });
+      }, 500);
     });
     
     // Re-rendre les diagrammes Mermaid lors du changement de slide
     Reveal.on('slidechanged', () => {
-      mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+      setTimeout(() => {
+        const mermaidDivs = document.querySelectorAll('.mermaid');
+        mermaidDivs.forEach((div, index) => {
+          if (!div.querySelector('svg')) {
+            const graphDefinition = div.textContent;
+            const id = `mermaid-slide-${index}`;
+            mermaid.render(id, graphDefinition).then(({ svg }) => {
+              div.innerHTML = svg;
+            }).catch(err => {
+              console.error('Mermaid error:', err);
+            });
+          }
+        });
+      }, 100);
     });
 
     function attr(sec, name, defVal) {
