@@ -49,7 +49,7 @@
     }
 
     // Convertit URL YouTube en embed
-    function toYoutubeEmbed(url) {
+    function toYoutubeEmbed(url, shouldMute = true) {
       let embed = url;
       try {
         const u = new URL(url);
@@ -68,8 +68,10 @@
       try {
         const eu = new URL(embed);
         eu.searchParams.set('autoplay', '1');
-        eu.searchParams.set('mute', '1');
         eu.searchParams.set('playsinline', '1');
+        if (shouldMute) {
+          eu.searchParams.set('mute', '1');
+        }
         return eu.toString();
       } catch (e) {
         return embed;
@@ -86,6 +88,7 @@
         const videoSrc = attr(sec, 'data-video', '');
         const alt = attr(sec, 'data-alt', 'Image');
         const side = attr(sec, 'data-side', 'right');
+        const mute = attr(sec, 'data-mute', 'true');
         
         // Extrait le titre
         const heading = sec.querySelector('h1, h2');
@@ -130,9 +133,10 @@
           const videoWrapper = document.createElement('div');
           videoWrapper.className = 'video-wrapper';
           const iframe = document.createElement('iframe');
-          iframe.src = toYoutubeEmbed(videoSrc);
+          iframe.src = toYoutubeEmbed(videoSrc, mute === 'true');
           iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
           iframe.allowFullscreen = true;
+          iframe.loading = 'lazy';
           videoWrapper.appendChild(iframe);
           mediaDiv.appendChild(videoWrapper);
         } else if (imgSrc) {
