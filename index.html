@@ -30,6 +30,7 @@
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/notes/notes.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
     Reveal.initialize({
       hash: true,
@@ -41,6 +42,20 @@
       minScale: 1,
       maxScale: 1,
       plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+    });
+
+    // Initialiser Mermaid
+    mermaid.initialize({ 
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        darkMode: true
+      }
+    });
+    
+    // Re-rendre les diagrammes Mermaid lors du changement de slide
+    Reveal.on('slidechanged', () => {
+      mermaid.init(undefined, document.querySelectorAll('.mermaid'));
     });
 
     function attr(sec, name, defVal) {
