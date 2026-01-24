@@ -95,16 +95,18 @@
     // Convertit URL YouTube en embed
     function toYoutubeEmbed(url, shouldMute = true) {
       let embed = url;
+      let videoId = '';
       try {
         const u = new URL(url);
         if (u.hostname === 'youtu.be') {
-          const id = u.pathname.replace('/', '');
-          embed = `https://www.youtube.com/embed/${id}`;
+          videoId = u.pathname.replace('/', '');
+          embed = `https://www.youtube.com/embed/${videoId}`;
         } else if (u.hostname.includes('youtube.com')) {
           if (u.pathname === '/watch') {
-            const id = u.searchParams.get('v');
-            if (id) embed = `https://www.youtube.com/embed/${id}`;
+            videoId = u.searchParams.get('v');
+            if (videoId) embed = `https://www.youtube.com/embed/${videoId}`;
           } else if (u.pathname.startsWith('/embed/')) {
+            videoId = u.pathname.split('/embed/')[1];
             embed = url;
           }
         }
@@ -113,6 +115,11 @@
         const eu = new URL(embed);
         eu.searchParams.set('autoplay', '1');
         eu.searchParams.set('playsinline', '1');
+        eu.searchParams.set('loop', '1');
+        // Pour que loop fonctionne, il faut aussi ajouter playlist avec l'ID de la vidéo
+        if (videoId) {
+          eu.searchParams.set('playlist', videoId);
+        }
         if (shouldMute) {
           eu.searchParams.set('mute', '1');
         }
