@@ -99,17 +99,6 @@ Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, q
 - Base des IA modernes
 
 ---
-<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
-
-## Le Perceptron Multicouche
-
-Le **Perceptron Multicouche** est un type de réseau de neurones artificiels composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie. 
-
-Chaque couche consiste en des neurones interconnectés où les entrées sont traitées à travers des connexions pondérées, des fonctions d'activation et des biais.
-
-Le concept du PMC a été introduit pour la première fois en 1969 par *Marvin Minsky et Seymour Papert* dans leur livre *Perceptrons*
-
----
 
 ## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 8vw; font-weight: bold; width: 100%;">Au fait c'est quoi un Neurone Artificiel, et c'est quoi un Réseau de Neurones Artificiels ?</div>
 
@@ -130,11 +119,11 @@ Le concept du PMC a été introduit pour la première fois en 1969 par *Marvin M
 <!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
 ## Un Neurone Artificiel
 
-Modèle mathématique du neurone artificiel  
+Modèle mathématique du neurone artificiel
 
-Fonctions d’activation : ReLU, Sigmoïde, Tanh  
+Fonctions d’activation : ReLU, Sigmoïde, Tanh
 
-Similarités et différences avec les neurones biologiques ?  
+Similarités et différences avec les neurones biologiques ?
 
 ---
 <!-- .slide: data-layout="two-column" data-video="https://datascientest.com/wp-content/uploads/2020/06/DP_2.png" -->
@@ -176,19 +165,14 @@ Cette démonstration « en temps réel » tournait sur une carte DSP installée 
 
 Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 2018** (le "Nobel de l'informatique") :
 
+- Ont persisté quand personne ne croyait aux réseaux de neurones
+- Leurs travaux ont permis : reconnaissance vocale, voitures autonomes, traduction automatique
+
 **Geoffrey Hinton** 🇬🇧
 
 **Yann Le Cun** 🇫🇷
 
 **Yoshua Bengio** 🇨🇦
-
----
-
-**Leur Impact**
-
-- Ont persisté quand personne ne croyait aux réseaux de neurones
-- Leurs travaux ont permis : reconnaissance vocale, voitures autonomes, traduction automatique
-- Forment aujourd'hui la nouvelle génération de chercheurs
 
 ---
 <!-- side.slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%283x4_cropped%29.jpg/250px-Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%283x4_cropped%29.jpg" -->
@@ -222,15 +206,7 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Démonstration de force brute d’algorithmes
 
 ---
-
-## 2006 – Renaissance du Deep Learning
-- Hinton et Bengio relancent le deep learning
-- Techniques modernes : **réseaux profonds et GPU**
-- Préparation pour révolution visuelle et textuelle
-
-
----
-<!-- .slide: data-layout="two-column" data-img="https://cv.gluon.ai/_images/imagenet_banner.jpeg"-->
+<!-- .slide: data-layout="two-column" data-img="https://miro.medium.com/v2/resize:fit:640/format:webp/1*tnFwtQfQUsPsmFmOlJtUSw.png" -->
 ## ImageNet (en bref)
 
 - Jeu de données d’images à grande échelle lancé en 2009
@@ -262,15 +238,8 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 **Les Innovations Clés**
 - Utilisation de **GPU Nvidia** pour l'entraînement
-- NVIDIA GTX 580 GPU avec 3GB de mémoire
+- **NVIDIA GTX 580 GPU** avec 3GB de mémoire
 - Ordinateur de chambre utilisé pour la percée
-
----
-<!-- .slide: data-layout="two-column" data-img="https://miro.medium.com/v2/resize:fit:640/format:webp/1*tnFwtQfQUsPsmFmOlJtUSw.png" -->
-
-## Prouve que le deep learning fonctionne
-- Lance l'ère moderne de l'IA
-- Inspire **tous** les modèles actuels
 
 ---
 
@@ -293,16 +262,9 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Chief Scientist chez **OpenAI** jusqu'en 2024
 
 ---
-
-## 🎮 IA et Jeux vidéo
-- L'IA apprend en jouant
-- Exemple : AlphaGo
-- Stratégie, anticipation, coordination
-
----
 <!-- .slide: data-layout="two-column" data-img="https://i.huffpost.com/gen/4072998/images/o-JEU-DE-GO-facebook.jpg" -->
 
-## Le jeu de Go
+## Le défi du jeu de Go
 - Jeu de stratégie chinois vieux de plus de 2500 ans
 - Complexité extrême: il y a plus de positions possibles que d'atomes dans l'univers observable
 
@@ -318,16 +280,10 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 <!-- .slide: data-layout="two-column" data-img="https://imgv2-1-f.scribdassets.com/img/document/698305505/original/462b61234a/1707724024?v=1" -->
 ## AlphaGo bat Lee Sedol 4-1
 
-- 2016, AlphaGo affronte **Lee Sedol**, champion du monde de Go
+- 2016 AlphaGo affronte **Lee Sedol**, champion du monde de Go
 - **Victoire 4-1** : choc pour la communauté du Go
 - Considéré comme impossible 10 ans auparavant
 
----
-<!-- .slide: data-layout="two-column" data-img="https://medias.pourlascience.fr/api/v1/images/view/5a82ac588fe56f7c1c01b7e3/wide_1000-webp/image.jpg" -->
-## Les Techniques d'AlphaGo
-- **Apprentissage supervisé** : étude de 30 millions de positions de parties de professionnels
-- **Apprentissage par renforcement** : l'IA joue contre elle-même des millions de fois
-- Combinaison de réseaux neuronaux profonds et d'algorithmes de recherche
 
 ---
 <!-- .slide: data-layout="two-column" data-video="https://youtu.be/whNvUWRQPhY" -->
@@ -336,15 +292,6 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Deuxième partie : AlphaGo joue un coup jamais vu auparavant
 - Les commentateurs le jugent d'abord **ridicule**, une erreur grossière
 - Se révèle être un coup de génie qui change la partie
-
-> Démontre que l'IA peut être intuitive et créative
-
----
-<!-- .slide: data-layout="two-column" data-img="https://media.newyorker.com/photos/590975168b51cf59fc422f47/master/w_2560%2Cc_limit/House-Alpha-Go-2.jpg" -->
-
-## Impact du coup "37"
-- Révolutionne la compréhension du jeu de Go
-- Prouve que l'IA peut surpasser l'intuition humaine 
 
 > AlphaGo m'a montré que je ne savais rien
 
@@ -363,106 +310,32 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 <!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/watch?v=cUTMhmVh1qs" -->
 ## Décembre 2018 : AlphaStar bat des joueurs professionnels de StarCraft II
 - Atteint le niveau **Grandmaster** (top 0,2% des joueurs)
-- Gère simultanément : économie, armée, stratégie
 - **AlphaStar** est devenue une IA pro de **Starcraft 2** en s'entraînant, comme un humain
-- pendant l'équivalent de **200 ans**, en jouant contre elle-même.
-
-
----
-
-<!-- .slide: data-layout="two-column" data-img="https://techcrunch.com/wp-content/uploads/2019/01/motionalpha.gif" -->
-## Les Techniques Utilisées
-- **Apprentissage par imitation** : étudie des millions de parties humaines
-- **Apprentissage par renforcement** : joue contre différentes versions de lui-même
 - **A joué plus de 200 ans** de parties en 2 semaines
-
----
-<!-- .slide: data-layout="two-column" data-img="https://i.ytimg.com/vi/n8_yNTBdqqk/maxresdefault.jpg" -->
-
-## Innovation Clé
-- AlphaStar ne joue pas de manière surhumaine (APM limité à un niveau humain)
-- Démontre une compréhension stratégique profonde
-- Capable d'adapter sa stratégie en temps réel
 - **Fais preuve de créativité et d'intuition**
-
----
-<!-- .slide: data-layout="two-column" data-video="https://youtu.be/UuhECwm31dM?si=5-9yNHVsPns0mCSq" -->
-
-## L'IA dans StarCraft II bat le meilleur joueur humain
-
-> La grande incertitude [liée au manque] d'informations en période de guerre est d'une difficulté particulière parce que toutes les actions doivent dans une certaine mesure être planifiées avec une légère zone d'ombre (…) comme l'effet d'un brouillard [...].
-
-— Carl von Clausewitz, *De la guerre*
-
-
----
-<!-- .slide: data-layout="two-column" data-img="https://cdn.mos.cms.futurecdn.net/uMHimeHetVYcCSt8ExUM8.jpg" -->
-
-## SETI : Recherche d’intelligences extraterrestres
-- Objectif : détecter des technosignatures (émissions radio étroites, impulsions laser) d’origine non humaine.
-- Méthodes : radiotélescopes (Allen Telescope Array, Green Bank), observations optiques, analyse de spectres, filtrage des interférences terrestres.
-- Problème : le volume de recherche immense et pas assez de capacité de calcul.
-
----
-<!-- .slide: data-layout="two-column" data-video="https://youtu.be/EyWsnc7cB_w?si=BvUJi0RrmLqog1BR" -->
-
-## 1999 SETI@Home
-- Calcul distribué pour chercher des signaux extraterrestres
-- Des milliers d'ordinateurs volontaires cherchent des signaux extraterrestres dans les données radio
 
 ---
 ## 🧬 Pliage moléculaire en médecine
 
 - La forme d’une protéine dicte son rôle (ex. enzymes, anticorps, récepteurs).
-- Un mauvais pliage peut provoquer des maladies (Alzheimer, Parkinson, mucoviscidose).
-- Aide à concevoir des médicaments ciblés et à mieux diagnostiquer.
-
----
-
-## Pourquoi c’est difficile
 - Trop de formes possibles (nombre de combinaisons astronomique).
 - Le pliage dépend de nombreux facteurs (eau, liaisons, ions, pH, température, etc.).
 - **Demande des capacités de calcul énormes.**
 
 ---
-<!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/en/3/35/LifeWithPlayStation_Folding.jpg" -->
-
-## 🧬 Folding@home : Pliage des Protéines Distribué
-
-- Projet de calcul distribué lancé en 2000 par Stanford pour simuler le repliement des protéines.
-- Des volontaires prêtent CPU/GPUleur ordinateurs pour exécuter des calculs scientifiques complexes.
-
----
-<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/watch?v=b8GS9l3xZiY" -->
-## Foldit 
-- Un jeu où des joueurs s'amusent à plier des protéines,  basé sur le moteur Rosetta (University of Washington).
-- Exploite **l’intuition humaine** pour explorer l’espace de conformations, générant des données utiles à l’IA et à la conception de médicaments.
-
----
 <!-- .slide: data-layout="two-column" data-img="https://iadatavision.wordpress.com/wp-content/uploads/2023/03/alphafold-db-1.png" -->
+
 ## AlphaFold : La Révolution
 - Développé par DeepMind (2020)
 - Résout un problème vieux de 50 ans : prédire la structure 3D des protéines
-
-**Pourquoi c'est Important ?**
-- La forme d'une protéine détermine sa fonction
-- Comprendre le pliage = comprendre les maladies
-- Applications : conception de médicaments, lutte contre les virus
-
+- Prédit la structure de 200 millions de protéines (soit quasiment toutes les protéines du vivant)
 ---
 <!-- .slide: data-layout="two-column" data-video="https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs" -->
 
 ## AlphaFold
-- Prédit la structure de 200 millions de protéines (soit quasiment toutes les protéines du vivant)
 - A fait avancer la recherche biomédicale de plusieurs décades en quelques mois
-
----
-<!-- .slide: data-layout="two-column" data-img="https://tse4.mm.bing.net/th/id/OIP.mY0EH8QNYbBHbI5OP_K2LAHaL_?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" -->
-## Impact sur la Science
 - **Avant AlphaFold**, les scientifiques avaient déterminé expérimentalement environ **200 000 structures de protéines**
-
-- **Avec AlphaFold**, plus de **200 millions de structures de protéines** qui sont désormais disponibles gratuitement dans la base de données AlphaFold Protein Structure Database
-
+- **Avec AlphaFold**, plus de **200 millions de structures de protéines** qui sont désormais disponibles gratuitement
 - **Prix Nobel de Chimie 2024** décerné conjointement à Demis Hassabis (DeepMind), John Jumper (DeepMind) et David Baker (University of Washington)
 
 ---
@@ -496,8 +369,8 @@ Studio : Elixir Studios, toujours sous sa direction.
 
 <!-- .slide: data-layout="two-column" data-img="https://news.aikoreacommunity.com/content/images/2024/01/20240109_181100.png" -->
 ## 2017 – Attention is All You Need
-- En bref: le Transformer est une architecture d’IA (2017) qui comprend le contexte des phrases grâce à un mécanisme appelé “attention”.
-- Idée clé: l’attention permet au modèle de se concentrer sur les mots les plus utiles pour la tâche (traduire, résumer, répondre).
+- le Transformer est une architecture d’IA (2017) qui comprend le contexte des phrases grâce à un mécanisme appelé **attention**.
+- **l’attention permet au modèle de se concentrer sur les mots les plus utiles de la phrase**
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://inside-machinelearning.com/wp-content/uploads/2021/10/AttentionViz.png" -->
@@ -505,9 +378,7 @@ Studio : Elixir Studios, toujours sous sa direction.
 ## Le Mécanisme de l’Attention
 - Petite illustration: dans la phrase **Le chat de ma grand mère mange la souris**, 
 - L’attention se concentre sur **mange** et **souris**, pas sur **chat** ou **grand mère**.
-- Avant la machine aurait compris que **c'est ma grand mère qui mange la souris !**
-- Avant les modèles avaient du mal à gérer le contexte sur de longues phrases, le mécanisme d’attention a résolu ce problème.
-
+- Avant la machine aurait compris que **ma grand mère qui mange la souris !**
 
 ---
 
@@ -523,8 +394,6 @@ Où :
 - $V$ (Value) : l’information à récupérer
 - $d_k$ : dimension des vecteurs de clés (utilisée pour le facteur d’échelle)
 
-Ce mécanisme permet au modèle de se concentrer sur les parties les plus pertinentes de la séquence d’entrée.
-
 ---
 <!-- .slide: data-layout="two-column" data-img="https://miro.medium.com/v2/resize:fit:1200/1*QhE-IttZzUBITxMsK74QSQ.png" -->
 ## 🎯 Impact des Transformers
@@ -536,7 +405,7 @@ Ce mécanisme permet au modèle de se concentrer sur les parties les plus pertin
 ---
 <!-- .slide: data-layout="two-column" data-img="https://www.tooltester.com/wp-content/uploads/2023/02/ChatGPT-launch-timeline-to-GPT-4-768x439.jpg" -->
 
-## 🚀 OpenAI et l’impact de ChatGPT
+## 🚀 ChatGPT !
 - Adoption record (>100 M utilisateurs/mois)
 - Popularisation de l’IA générative et accélération de son adoption dans tous les secteurs
 
@@ -556,14 +425,7 @@ Ce mécanisme permet au modèle de se concentrer sur les parties les plus pertin
 - C) À être concentré plus longtemps pendant les conférences 
 ---
 
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend</div>
-
----
-
-## 🧮 Types d’apprentissage
-- Supervisé : données étiquetées
-- Non supervisé : motifs détectés automatiquement
-- Par renforcement : essais et erreurs + récompenses
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment la machine apprend ?</div>
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Supervised-Learning-in-ML.jpg" -->
@@ -574,21 +436,13 @@ Utilisation de données étiquetées
 Tâches de classification et de régression
 
 ---
-
-## ML : Apprentissage supervisé
-
-- Reconnaissance et classification des panneaux de signalisation.
-- Systèmes d’alerte de franchissement de ligne.
-
----
+<!-- .slide: data-layout="two-column" data-img="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Unsupervised-Learning-in-ML.jpg" -->
 
 ## ML : Apprentissage non supervisé
 
 Découverte de structures cachées
 
 Techniques de clustering et de réduction de dimensionnalité
-
-![Apprentissage non supervisé](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Unsupervised-Learning-in-ML.jpg)
 
 ---
 <!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1&mute=1" data-mute="true" -->
@@ -612,32 +466,32 @@ Systèmes de récompense​
 
 ---
 
-## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Maitre Corbeau sur un arbre ?</div>
+## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Maitre Corbeau sur un arbre _____ </div>
 
 ---
 
-## Maitre Corbeau sur un arbre perché
+## Maître Corbeau sur un arbre <u>perché</u>
 ![Poesie](http://andreetgyps.a.n.pic.centerblog.net/o/6b0e0247.jpg)
 
 ---
 
-## "Maitre Corbeau sur un arbre perché" → décasyllabe
-- **Syllabes dans un poème :** Maitre Corbeau sur un arbre perché.
-- **Tokens en NLP :** [Mai ##tre Cor ##beau sur un ar### bre perché.].
+## "Maître Corbeau sur un arbre perché" → décasyllabe
+- **Syllabes dans un poème :** Maî-tre Cor-beau sur un ar-bre per-ché.
+- **Tokens en NLP :** [Maî ##tre Cor ##beau sur un ar ##bre per ##ché.].
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://cdn.prod.website-files.com/61e7d259b7746e3f63f0b6be/6630e466c569a5f73cd81c9e_Understanding%20LLM%20Billing_%20From%20Characters%20to%20Tokens-p-800.jpg"-->
+## Les Tokens sont aux LLMs ce que les syllabes sont à la poésie
+
+Tout comme les syllabes sont les éléments constitutifs du rythme et de la structure d'un poème, les tokens sont les unités fondamentales qui permettent aux modèles d'IA de traiter et de comprendre le texte.
 
 ---
 
-## Tokenisation
-
-Les tokens en traitement du langage naturel (NLP) sont comme les syllabes en poésie. Tout comme les syllabes sont les éléments constitutifs du rythme et de la structure d'un poème, les tokens sont les unités fondamentales qui permettent aux modèles d'IA de traiter et de comprendre le texte.
-
----
-
-## Token dans les Modèles d'IA
+## Tokens dans les Modèles d'IA
 
 La limite de tokens définit le nombre maximum de tokens qu'un modèle peut traiter dans une seule entrée. Des limites de tokens plus élevées permettent de gérer des contextes plus longs, rendant les modèles plus efficaces pour des tâches comme la synthèse, l'analyse de code et la génération de documents.
 
-| Modèle         | Taille Max (tokens) | Pages Livre de Poche Approx. |
+| Modèle         | Taille Max (tokens) | Pages de Livre de Poche |
 |----------------|---------------------|------------------------------|
 | GPT-5          | 128 000             | ~512                         |
 | Llama 3.1      | 128 000             | ~512                         |
@@ -646,84 +500,35 @@ La limite de tokens définit le nombre maximum de tokens qu'un modèle peut trai
 ---
 <!-- .slide: data-layout="two-column" data-img="https://causewriter.ai/wp-content/uploads/2023/08/image-2.png)" -->
 
-## Embedding
+## Embedding: Transformer les Tokens en Représentations Numériques
 
-## Transformer les Tokens en Représentations Numériques
+L'**embedding** transforme les **tokens** en **vecteurs**, qui servent de points d'entrée pour le **LLM**.
 
-L'embedding transforme les tokens en vecteurs, qui servent de véritables points d'entrée pour le LLM.
-
----
-
-## Tokenisation
-- Divise le texte en tokens (par exemple, mots, sous-mots ou caractères).
-- Exemple : "Maitre Corbeau sur un arbre perché" → [Mai ##tre Cor ##beau sur un ar### bre perché.].
-
----
-
-## Embedding
 - Associe chaque token à un vecteur de haute dimension dans un espace continu.
-- Exemple : [Mai ##tre Cor ##beau sur un ar### bre perché.]. → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
-
----
-
-## Pourquoi l'Embedding est Important :
-- **Compréhension Sémantique :** Les tokens ayant des significations similaires ont des embeddings plus proches dans l'espace vectoriel.
-
-
-```mermaid
-flowchart LR
-  A["Input Phrase: 'Maitre Corbeau sur un arbre perché'"] --> B["Tokenization: [Mai ##tre Cor ##beau sur un ar### bre perché.]"]
-  B --> C["Embedding: Dense Numerical Vectors"]
-
-  C["Tokenization Output"]
-  C --> D["Token: 'Mai'"]
-  D --> D1["Vector: [0.12, 0.45, 0.78, ...]"]
-  C --> E["Token: '##tre'"]
-  E --> E1["Vector: [0.34, 0.67, 0.89, ...]"]
-  C --> F["Token: 'Cor'"]
-  F --> F1["Vector: [0.56, 0.23, 0.91, ...]"]
-  C --> G["Token: '##beau'"]
-  G --> G1["Vector: [0.78, 0.12, 0.34, ...]"]
-  C --> H["Token: 'sur'"]
-  H --> H1["Vector: [0.45, 0.89, 0.67, ...]"]
-```
+- Exemple : 
+- [Mai ##tre Cor ##beau sur un ar### bre perché.]. → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
 
 ---
 
 ## Paramètres et Poids dans les Réseaux de Neurones
 
-Dans les réseaux de neurones, les **paramètres** font référence aux valeurs ajustables que le modèle apprend pendant l'entraînement. Ceux-ci incluent :
+- **Les poids et les biais** sont les paramètres  d'un réseaux de neurone. En mettant à jour de manière itérative ces valeurs à l'aide d'algorithmes d'optimisation comme **la descente de gradient**, le réseau améliore ses performances sur la tâche donnée.
 
-**Poids :**
+**Poids et biais au niveau mathématique :**
 
-- Représentent la force de la connexion entre les neurones.
-- Ajustés pendant l'entraînement pour minimiser l'erreur entre les sorties prédites et réelles.
+- Dans un réseau de neurones simple, si l'entrée est `X`, le poids est `W` et le biais est `B`, et $f$ est la fonction d'activation.
 
-**Biais :**
-- Ajoutés à la somme pondérée des entrées pour décaler la fonction d'activation.
-- Aident le modèle à mieux s'adapter aux données en permettant une flexibilité dans les frontières de décision.
+La sortie d'un neurone est calculée comme :
 
----
+$$\text{sortie} = f(W \cdot X + B)$$
 
-## Paramètres et Poids dans les Réseaux de Neurones
-
-**Pourquoi Ils Sont Importants :**
-
-- **Les poids et les biais** sont les composants essentiels qui permettent aux réseaux de neurones d'apprendre des motifs et de faire des prédictions. En mettant à jour de manière itérative ces valeurs à l'aide d'algorithmes d'optimisation comme la descente de gradient, le réseau améliore ses performances sur la tâche donnée.
-    </div>
-
-**Exemple :**
-
-- Dans un réseau de neurones simple, si l'entrée est `X`, le poids est `W` et le biais est `B`, la sortie d'un neurone est calculée comme :
-
-$$\text{sortie} = \text{fonction\_activation}(W \cdot X + B)$$
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://shearwaterjapan.com/wp-content/uploads/2025/04/llm-300x200.png" -->
 ## un LLMs est un modèle avec beaucoup beaucoup ... beaucoup de paramètres
-- L: Large
-- L: Language
-- M: Model
+- **L**: Large
+- **L**: Language
+- **M**: Model
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://www.geeky-gadgets.com/wp-content/uploads/2023/09/New-Mistral-7B-instruct-model-from-Mistral-AI.webp" -->
@@ -737,25 +542,18 @@ Le modèle Mistral 7B est un modèle de fondation avec **7 milliards de paramèt
 - **GPT-5 :** entre 500 et 1500 milliards de paramètres selon les rumeurs.
 
 ---
-
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1&mute=1" data-mute="true" -->
 ## YOLO
 
 **Y**ou
+
 **O**nly
+
 **L**ook
+
 **O**nce
 
----
-
-## Détection d’objets (YOLO/R-CNN)
-![Détection d’objets](https://cv-tricks.com/wp-content/uploads/2017/12/Object-Detection-for-outdoor-cv-tricks.jpg)
-
----
-<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1&mute=1" data-mute="true" -->
-## Cas d’usage de YOLO dans le domaine automobile / trafic
-
-Vidéo : détection d’objets en action
-
+- Modèle de détection d'objets en temps réel
 ---
 
 ## Comment la voiture voit-elle le monde ?
@@ -769,9 +567,9 @@ Vidéo : détection d’objets en action
 
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/v2/D5612AQEjGGrWMf79pA/article-cover_image-shrink_720_1280/B56ZYz6vWpGoAM-/0/1744627806105?e=2147483647&v=beta&t=Bd-5S7UUOmFMZ_8UUHvqIosaJ5EohNQRUyn-nbO62E0" -->
 ## Les Successeurs des LLM (vision de Yann Le Cun)
-- JEPA : apprentissage auto-supervisé qui prédit des parties manquantes en espace de représentations (pas d’autocomplétion de tokens).
+- JEPA : apprentissage auto-supervisé qui prédit des parties manquantes.
 - World Models : modèles prédictifs du monde (vidéo/audio/action) pour raisonner et planifier.
 
 ---
@@ -785,17 +583,12 @@ Vidéo : détection d’objets en action
 ## 🧠 Le cerveau humain
 - Taille moyenne : 1600 cm³
 - Néandertal : 1800 cm³
-- Limité pour nouveaux neurones
-- Synapses : pratiquement illimitées
 
-
----
-
-## ⚡ Énergie : cerveau vs IA
-| Système | Consommation |
-|---------|--------------|
-| Cerveau humain | ~20 W |
-| Cluster d'IA | 1000 MW |
+|                      | Cerveau humain | Intelligence Artificielle |
+|----------------------|----------------|----------------|
+| Consommation         | ~20 W          | ~1 000 MW      |
+| Neurones (approx.)   | ~86 milliards  | ~300 millions (GPT-5)  |
+| Nouveaux neurones    | Limité par la boite cranienne | No limit|
 
 Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énergie** qu'une IA.
 
@@ -808,28 +601,24 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Et Demain ?</div>
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://www.geeky-gadgets.com/wp-content/uploads/2023/06/What-is-AGI.jpg" -->
+## L'AGI: Artificial General Intelligence
 
-## 🤖 L’AGI : qu’est-ce que c’est ?
-- AGI = **Artificial General Intelligence**
-- IA capable de comprendre, apprendre et agir **comme un humain**
+L'IA capable de comprendre, apprendre et agir **comme un humain**
 
----
-
-## 🧠 Différence IA spécialisée vs AGI
 | IA spécialisée | AGI |
 |----------------|-----|
 | Fait une seule tâche | Peut apprendre toutes les tâches |
 | Exemple : AlphaGo | Exemple : résoudre un problème, créer, planifier |
 | Limité à un domaine | **polyvalente et autonome** |
 
-- Question clé : que se passe-t-il quand l'IA devient **plus intelligente que nous** ?
-
 ---
 <!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D4D12AQGyGyJI7Ht9fw/article-cover_image-shrink_600_2000/0/1668837711973?e=2147483647&v=beta&t=aGrDI4vzxLQz976zymt5s0DWTCp6GeG6UXLtKzmOxns" -->
 
-## Singularité technologique en IA
+## La Singularité Technologique
 - Point hypothétique où l’IA dépasse l’intelligence humaine et s’auto-améliore rapidement.
-- Timeline incertaine; scénario graduel ou abrupt ?
+- Timeline incertaine
+- Scénario graduel ou abrupt ?
 
 ---
 
@@ -839,22 +628,19 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 - dans 20 ans
 
 ---
-
-## La règle des 6 mois
-- Chaque nouvelle génération de modèles d’IA double de capacité tous les 6 mois.
+<!-- .slide: data-layout="two-column" data-img="https://miro.medium.com/v2/resize:fit:1358/1*na6eVIVet02RemFEjSDA4w.png" -->
+## Loi de Moore appliquée à l'IA
+- Chaque nouvelle génération de modèles d’IA multiplie par 10 sa capacité à interval fixe
 
 ---
 
 <!-- .slide: data-layout="two-column" data-img="https://content.api.news/v3/images/bin/e39c59e786ff255e6a7d1c4ae9d9611b" data-alt="Terence Tao" -->
 ## Terence Tao
-- Mathématicien australo-américain, professeur à UCLA
-- QI estimé (non officiel) : ~220
-- L'homme le plus intelligent du monde
 - Médaille Fields 2006
+- QI estimé (non officiel) : ~220, L'homme le plus intelligent du monde
 - Théorème Green–Tao: progressions arithmétiques dans les nombres premiers
-- Analyse harmonique, EDP, combinatoire additive, théorie des nombres
 
-> En 2027, une IA sera capable de résoudre la plupart des problèmes mathématiques que Terence Tao peut résoudre.
+> En 2030, une IA sera t'elle capable de résoudre la plupart des problèmes mathématiques que Terence Tao peut résoudre ?
 
 ---
 
@@ -862,15 +648,16 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 
 ## La singularity arrive avec 30 ans d'avance
 
-> "2026 est l'année de la singularité technologique."
+> 2026 est l'année de la singularité technologique.
 
 Elon Musk le 4 janvier 2026
 
 ---
 
 <!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/watch?v=zGfac0-MY20" data-mute="false" -->
-## L'IA est elle meilleure que nous ?
 
+## L'IA est elle meilleure que nous ?
+Ecoutons ce qu'en pense Cédric Villani 
 - Mathématicien français, *médaille Fields 2010* pour ses travaux en théorie cinétique (équations de Boltzmann et de Landau).
 - Auteur du rapport national 2018 sur l’IA *Donner un sens à l’intelligence artificielle* (stratégie française et européenne).
 - Ancien directeur de l’Institut Henri-Poincaré
@@ -884,26 +671,27 @@ Elon Musk le 4 janvier 2026
 <!-- .slide: data-layout="two-column" data-img="https://www.numerama.com/wp-content/uploads/2023/04/concoursia-cover.jpg" -->
 
 ## L’image d’une IA a dupé les organisateurs du plus prestigieux concours de photos
-Le 14 avril 2023, l’artiste allemand Boris Eldagsen a gagné la catégorie « Open » du Sony World Photography Awards, 
+Le 14 avril 2023, l’artiste allemand Boris Eldagsen a gagné la catégorie « Open » du **Sony World Photography Awards**, 
+
 Problème : la photo présentée a été réalisée en partie avec de l’intelligence artificielle.
 
 ---
 ## IA et humains : vers une indistinction ?
 <!-- .slide: data-layout="two-column" data-video="https://youtu.be/ARxHvTScXMY?si=K77qc-_mvKUfFskK" -->
-Dès 2027 on ne pourra pas faire la disctinction entre un humain et une IA
+Dès 2027 on ne pourra pas faire la distinction entre un humain et une IA
 
 **Prompt** *A stylish woman walks down a Tokyo street filled with warm glowing neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and carries a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp and reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.*
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://www.eoi.es/blogs/redinnovacionEOI/files/2015/08/Jan2V_Film_Her.jpg" -->
-## 🎬 Her (2013) avec Joaquin Phoenix
+## 2013 🎬 Film "Her" avec Joaquin Phoenix
 - Relation intime entre un homme et une IA avancée
-- Thèmes: attachement émotionnel, empathie simulée, solitude, autonomie de l’IA.
+- Thèmes: attachement émotionnel, empathie simulée, solitude
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://static.milibris.com/thumbnail/issue/1a2ac231-e35e-41be-a8f2-e3bf978e79a7/front/catalog-cover-large.jpeg" -->
 
-## 2026 la une du magazine Libération du 22 janvier 2026
+## Magazine Libération du 22 janvier 2026
 
 Le test de Turing est officiellement passé par toute IA grand public qui tient aujourd'hui dans votre poche.
 
@@ -920,14 +708,10 @@ Le test de Turing est officiellement passé par toute IA grand public qui tient 
 Neal Mohan, CEO de YouTube, mercredi 21 janvier 2026.
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://www.editions-harmattan.fr/media/359309/download/9782336526898r.jpg?v=1" -->
+## la  course à l'IA entretenue par les tensions géopolitiques entre les blocs USA CHINE EUROPE
 
-## la  course vers l'ia entretenue par les tensions geopolitiques entre les blocs USA CHINE EUROPE
-
----
-
-## 🖥️ Démonstration : Moshi de Kuytai
-- Génération de texte et images
-- Interaction avec le public
+L’IA devient un champ de bataille entre les États-Unis, la Chine et l’Europe
 
 ---
 
@@ -941,7 +725,7 @@ https://this-person-does-not-exist.com/en
 https://unmute.sh/
 
 ---
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Merci pour votre attention !</div>
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Merci pour votre attention</div>
 
 ---
 
@@ -974,6 +758,16 @@ La base de données MNIST (Modified National Institute of Standards and Technolo
 
 Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 
+---
+<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
+
+## Le Perceptron Multicouche
+
+Le **Perceptron Multicouche** est un type de réseau de neurones artificiels composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie. 
+
+Chaque couche consiste en des neurones interconnectés où les entrées sont traitées à travers des connexions pondérées, des fonctions d'activation et des biais.
+
+Le concept du PMC a été introduit pour la première fois en 1969 par *Marvin Minsky et Seymour Papert* dans leur livre *Perceptrons*
 
 ---
 
@@ -990,15 +784,47 @@ Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 1. Un humain dialogue avec deux interlocuteurs cachés
 2. L'un est une machine, l'autre un humain
 3. Si l'humain ne peut pas distinguer qui est qui, la machine "réussit" le test
----
-
-## Exemple concret :
-- Vous discutez par écrit avec deux personnes
-- L'une parle de ses vacances, l'autre aussi
-- Laquelle est l'IA ? Si vous ne pouvez pas le dire, l'IA a réussi !
 
 ---
 
+<!-- .slide: data-layout="two-column" data-img="https://medias.pourlascience.fr/api/v1/images/view/5a82ac588fe56f7c1c01b7e3/wide_1000-webp/image.jpg" -->
+## Les Techniques d'AlphaGo
+- **Apprentissage supervisé** : étude de 30 millions de positions de parties de professionnels
+- **Apprentissage par renforcement** : l'IA joue contre elle-même des millions de fois
+
+---
+
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/UuhECwm31dM?si=5-9yNHVsPns0mCSq" -->
+
+## L'IA dans StarCraft II bat le meilleur joueur humain
+
+> La grande incertitude [liée au manque] d'informations en période de guerre est d'une difficulté particulière parce que toutes les actions doivent dans une certaine mesure être planifiées avec une légère zone d'ombre (…) comme l'effet d'un brouillard [...].
+
+— Carl von Clausewitz, *De la guerre*
+
+---
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/EyWsnc7cB_w?si=BvUJi0RrmLqog1BR" -->
+
+## 1999 SETI@Home
+- Calcul distribué pour chercher des signaux extraterrestres
+- Des milliers d'ordinateurs volontaires cherchent des signaux extraterrestres dans les données radio
+
+---
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/watch?v=b8GS9l3xZiY" -->
+## Foldit 
+- Un jeu où des joueurs s'amusent à plier des protéines,  basé sur le moteur Rosetta (University of Washington).
+- Exploite **l’intuition humaine** pour explorer l’espace de conformations, générant des données utiles à l’IA et à la conception de médicaments.
+
+---
+
+<!-- .slide: data-layout="two-column" data-img="https://techcrunch.com/wp-content/uploads/2019/01/motionalpha.gif" -->
+## Les Techniques Utilisées
+- **Apprentissage par imitation** : étudie des millions de parties humaines
+- **Apprentissage par renforcement** : joue contre différentes versions de lui-même
+- **A joué plus de 200 ans** de parties en 2 semaines
+- **Fais preuve de créativité et d'intuition**
+
+---
 ## Questions Clés
 - "L'IA est-elle plus intelligente que nous ?"
 - "Peut-on lui faire confiance ?" 
