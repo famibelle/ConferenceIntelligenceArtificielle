@@ -98,7 +98,6 @@ Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, q
 - Permet de résoudre des problèmes plus complexes
 - Base des IA modernes
 
-
 ---
 <!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
 
