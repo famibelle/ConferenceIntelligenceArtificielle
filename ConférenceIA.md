@@ -1,6 +1,5 @@
 ## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">L'Intelligence Artificielle</div>
 
-
 ---
 
 ## 🤔 Qu’est-ce que l’IA ?
@@ -16,25 +15,22 @@
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp" -->
-## AI VS GENERATIVE AI​
+## IA vs IA générative
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <div style="flex: 1;">
+**Intelligence artificielle (IA)** est un domaine de l’informatique qui vise à créer des systèmes capables d’imiter ou de simuler l’intelligence humaine.
 
-**ARTIFICIAL INTELLIGENCE** is a field of computer science that aims to create systems capable of imitating or simulating human intelligence.​
+**Apprentissage automatique (ML)** se concentre sur la création de systèmes qui apprennent et s’améliorent à partir de l’expérience sans être explicitement programmés.
 
-**MACHINE LEARNING** focuses on building systems that learn and improve from experience without being explicitly programmed.​
+**Apprentissage profond (DL)** utilise des réseaux de neurones à nombreuses couches pour modéliser des motifs complexes dans les données.
 
-**DEEP LEARNING** uses neural networks with many layers to model complex patterns in data.​
-
-**GENERATIVE AI** can create or generate new content, ideas, or data that resemble human creativity.​
+**IA générative** peut créer ou générer de nouveaux contenus, idées ou données qui ressemblent à la créativité humaine.
 
 ---
 
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Histoire de l’IA</div>
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://cdn.britannica.com/14/84514-050-AF43A0D9/Alan-M-Turing-1951.jpg" -->
 ## 1950 – Alan Turing
 - Publie "Computing Machinery and Intelligence"
 - Propose le **Test de Turing**
@@ -46,16 +42,15 @@
 - Expérience pensée où un interrogateur converse uniquement par écrit avec deux entités cachées: un humain et une machine.
 - Objectif: décider qui est l’humain à partir des réponses en langage naturel.
 - Règle de succès: si l’interrogateur ne distingue pas de façon fiable la machine de l’humain, la machine *réussit* le test.
-- Motivation: remplacer “Les machines peuvent-elles penser ?” par une évaluation comportementale mesurable.
-- Contraintes: échange textuel (sans vision ni audio), sujets libres, durée limitée.
-
 
 ---
-<!-- .slide: data-layout="two-column" data-img="https://lh6.googleusercontent.com/2fOknOCOKRB53elLxNJQfA9CGVh1uud99HhsWp2eMJIvCge-mEPiJuKtQN0GIXOPaACYj-OBNccNrBHAzApkaMESTnylTGDqMVciQOM1C10dAXdg1kzKlDIM3jDpFWdz44PWxCJ8" -->
+<!-- .slide: data-layout="two-column" data-img="https://cryptoconexion.com/wp-content/uploads/2023/08/Dartmouth-1956-Tw.jpg" -->
 
 ## 1956 – Naissance officielle de l’IA
 - Conférence de **Dartmouth**
 - Objectif : créer des machines capables de penser
+
+> Le terme Intelligence Artificielle est inventé
 
 ---
 
@@ -69,40 +64,43 @@ C'est lors de cette rencontre historique que le terme **Intelligence Artificiell
 Les participants pensaient pouvoir créer une machine pensante en quelques mois ...
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://perceptrondemo.com/assets/rosenblatt-wiring-perceptron-940c6e47.jpg" -->
 ## 1960 – Le Perceptron
 - **Frank Rosenblatt** invente le perceptron
 - Neurone artificiel = base des réseaux de neurones
 - Limité : ne résout pas les problèmes non linéaires comme le XOR
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://miro.medium.com/max/1290/1*LSEtAtqzAtIP8A7G4gdDMA@2x.jpeg" -->
 ## Le perceptron de Rosenblatt en bref
 - Neurone binaire: somme pondérée des entrées + biais, puis seuil.
 - Résout les problèmes linéairement séparables (AND, OR).
 - Limite majeure: XOR non séparable → besoin de couches cachées.
 
-
 ---
+<!-- .slide: data-layout="two-column" data-img="https://news.cornell.edu/sites/default/files/styles/story_thumbnail_xlarge/public/2019-09/0925_rosenblatt_main.jpg?itok=BCWmlVvO" -->
 
-
-## Le perceptron de Rosenblatt en bref
+## L'intuition de Rosenblatt
 
 > "Devices of this sort are expected ultimately to be capable of concept formation, language translation, collation of military intelligence, and the solution of problems through inductive logic."
- <em>— Frank Rosenblatt, 1957</em>
+
+<em>Frank Rosenblatt, 1957</em>
 
 ---
 
 ## 🔍 Le Problème XOR : Limite du Perceptron Simple
 
-Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, qui nécessite une séparation non linéaire. Le XOR renvoie vrai uniquement si **une seule** des deux entrées est vraie, pas les deux en même temps.
+Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, qui nécessite une séparation non linéaire.
+
+Le XOR renvoie vrai uniquement si **une seule** des deux entrées est vraie,
+pas les deux en même temps.
 
 **Pourquoi c'est important ?**
 - Cette limitation a conduit au **premier hiver de l'IA** (1974-1980) : baisse de financements et d'intérêt pour la recherche
 
 ---
-
-## 1980 – Perceptrons multicouches
+<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
+## 1980 – Le Perceptron multicouche
 - Introduction des **couches multiples**
 - Permet de résoudre des problèmes plus complexes
 - Base des IA modernes
@@ -113,6 +111,7 @@ Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, q
 - Les couches multiples permettent d'apprendre des relations complexes que le perceptron simple ne pouvait pas résoudre
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
 
 ## Le Perceptron Multicouche (PMC)
 
@@ -122,11 +121,10 @@ Chaque couche consiste en des nœuds (neurones) interconnectés où les entrées
 
 Le concept du PMC a été introduit pour la première fois en 1969 par **Marvin Minsky et Seymour Papert** dans leur livre *Perceptrons*, qui a posé les bases de la recherche sur les réseaux de neurones.
 
-![PMC](https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M)
-
 ---
 
-## Au fait c'est quoi un Neurone Artificiel et un Réseau de Neurones Artificiels ?
+## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 8vw; font-weight: bold; width: 100%;">Au fait c'est quoi un Neurone Artificiel, et c'est quoi un Réseau de Neurones Artificiels ?</div>
+
 
 ---
 
@@ -153,7 +151,7 @@ Fonctions d’activation : ReLU, Sigmoïde, Tanh
 Similarités et différences avec les neurones biologiques ?  
 
 ---
-<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x" -->
+<!-- .slide: data-layout="two-column" data-video="https://datascientest.com/wp-content/uploads/2020/06/DP_2.png" -->
 
 ## Réseaux de Neurones Artificiels
 
@@ -165,13 +163,13 @@ Les Réseaux de Neurones Artificiels sont les unités fondamentales des IA.
 
 ---
 
-<!-- .slide: data-layout="text-video" data-video="https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1" -->
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/FwFduRA_L6Q?si=seVi3mjawRWwdIj1" -->
 
 ## Démonstration de réseau convolutionnel de 1989 par Yann Le Cun
 
-*LeNet-1* premier réseau convolutionnel capable de reconnaître des chiffres manuscrits avec une bonne vitesse et précision.
+**LeNet-1** premier réseau convolutionnel capable de reconnaître des chiffres manuscrits avec une bonne vitesse et précision.
 
-Elle a été développée début 1989 au département Adaptive System Research, dirigé par Larry Jackel, chez Bell Labs à Holmdel (New Jersey).
+Il a été développée début 1989 au département **Adaptive System Research**, dirigé par **Larry Jackel**, chez Bell Labs à Holmdel (New Jersey).
 
 Cette démonstration « en temps réel » tournait sur une carte DSP installée dans un PC 486, avec une caméra vidéo et une carte d’acquisition. 
 
@@ -199,31 +197,34 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Forment aujourd'hui la nouvelle génération de chercheurs
 
 ---
+<!-- side.slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%283x4_cropped%29.jpg/250px-Geoffrey_E._Hinton%2C_2024_Nobel_Prize_Laureate_in_Physics_%283x4_cropped%29.jpg" -->
+
 
 ## 1980s – Geoffrey Hinton
 - Travaux sur **l’apprentissage profond**
 - Redécouvre et perfectionne les réseaux multicouches
 - Précurseur du deep learning moderne
 
----
 
+---
+<!-- .slide: data-layout="two-column" data-img="https://i.la-croix.com/x/smart/2016/03/01/1200743436/Yann-LeCun-responsable-laboratoire-intelligence-artificielle-chez-Facebook_0.jpg"-->
 ## 1980s – Yann LeCun
 - Travaux sur les **CNN (Convolutional Neural Networks)**
 - Applications : reconnaissance de chiffres manuscrits
 - Début du succès du deep learning
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://www.actuia.com/storage/uploads/2018/04/yoshua-bengio.jpg" data-alt="Yoshua Bengio" -->
 ## 1990s – Yoshua Bengio
 - Travaux sur **les représentations distribuées**
 - Réseaux neuronaux plus profonds
 - Précurseur des réseaux très larges et profonds actuels
 
 ---
-<!-- .slide: data-layout="text-image" data-img="https://tse1.mm.bing.net/th/id/OIP.3liapdpAF6vYvBQnLSOGvQHaFA?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" data-alt="Garry Kasparov vs Deep Blue]" -->
+<!-- .slide: data-layout="two-column" data-img="https://tse1.mm.bing.net/th/id/OIP.3liapdpAF6vYvBQnLSOGvQHaFA" -->
 
 ## 1997 – Deep Blue
-- IA d’IBM bat Garry Kasparov aux échecs
+- L'ordinateur d’IBM bat Garry Kasparov aux échecs
 - Démonstration de force brute d’algorithmes
 
 ---
@@ -233,57 +234,48 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 - Techniques modernes : **réseaux profonds et GPU**
 - Préparation pour révolution visuelle et textuelle
 
----
-
-## 2012 – AlexNet
-- Réseau de neurones convolutif profond
-- Gagne le concours **ImageNet**
-- Révolutionne la vision par ordinateur
-
-![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://cv.gluon.ai/_images/imagenet_banner.jpeg"-->
 ## ImageNet (en bref)
 
 - Jeu de données d’images à grande échelle lancé en 2009
 - ~14 M d’images annotées à la main, ~20 000 catégories (synsets WordNet)
 - Utilisé pour entraîner et évaluer des modèles de vision par ordinateur
-![ImageNet](https://cv.gluon.ai/_images/imagenet_banner.jpeg)
 
 ---
+
+<!-- .slide: data-layout="two-column" data-img="https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg" -->
 
 ## 🏆 AlexNet : La Révolution de 2012
 
 **Qu'est-ce qu'AlexNet ?**
-- Réseau de neurones convolutif profond créé par Alex Krizhevsky, Ilya Sutskever et Geoffrey Hinton
+- Réseau de neurones convolutif profond créé par **Alex Krizhevsky, Ilya Sutskever et Geoffrey Hinton**
 - 8 couches (5 convolutives + 3 entièrement connectées)
 - 60 millions de paramètres
 
-![Architecture AlexNet](https://i.ytimg.com/vi/ZUc0Mib5DeI/maxresdefault.jpg)
-
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://www.pinecone.io/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fvr8gru94%2Fproduction%2F1937562f4ac2507386e0a1965602544f697bb439-665x419.png&w=750&q=75" -->
 ## 🏆 AlexNet : La Révolution de 2012
 
-**La Performance**
-- Gagne le concours ImageNet 2012
+**Gagne le concours ImageNet 2012**
 - Taux d'erreur : 15,3% (vs 26,2% pour le second)
 - Révolutionne la reconnaissance d'images
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://computerhistory.org/wp-content/uploads/2025/01/fig-69-REDUCED-bedroom-computer-used-for-breakthrough-1024x771.jpg" -->
 
 ## 🏆 AlexNet : La Révolution de 2012
 
 **Les Innovations Clés**
 - Utilisation de **GPU Nvidia** pour l'entraînement
-
-![Ordinateur de chambre utilisé pour la percée](https://computerhistory.org/wp-content/uploads/2025/01/fig-69-REDUCED-bedroom-computer-used-for-breakthrough-1024x771.jpg)
+- NVIDIA GTX 580 GPU avec 3GB de mémoire
+- Ordinateur de chambre utilisé pour la percée
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://miro.medium.com/v2/resize:fit:640/format:webp/1*tnFwtQfQUsPsmFmOlJtUSw.png" -->
 
-**Pourquoi c'est important ?**
-- Prouve que le deep learning fonctionne
+## Prouve que le deep learning fonctionne
 - Lance l'ère moderne de l'IA
 - Inspire **tous** les modèles actuels
 
@@ -309,23 +301,22 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ---
 
-## 🔍 Impact d’AlexNet
-- Montre que le deep learning fonctionne à grande échelle
-- GPU rend l’entraînement possible
-- Début de la domination du deep learning dans l’industrie
-
----
-
 ## 🎮 IA et Jeux vidéo
-- IA apprend en jouant
-- Exemple : OpenAI Five, AlphaGo
+- L'IA apprend en jouant
+- Exemple : AlphaGo
 - Stratégie, anticipation, coordination
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://i.huffpost.com/gen/4072998/images/o-JEU-DE-GO-facebook.jpg" -->
 
+## Le jeu de Go
+- Jeu de stratégie chinois vieux de plus de 2500 ans
+- Complexité extrême: il y a plus de positions possibles que d'atomes dans l'univers observable, - Seul l'intuition humaine peut le maîtriser
+
+---
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/watch?v=g-dKXOlsf98" -->
 ## 2016 - AlphaGo
 - Développé par **Demis Hassabis, DeepMind**
-- Bat le champion de Go
 - Apprentissage par renforcement + réseaux profonds
 
 ---
@@ -333,16 +324,15 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 ## 🎯 Comment AlphaGo a battu Lee Sedol
 
 **Le Match Historique (Mars 2016)**
-- AlphaGo affronte Lee Sedol, champion du monde de Go
+- AlphaGo affronte **Lee Sedol**, champion du monde de Go
 - Victoire 4-1 : choc pour la communauté du Go
 - Considéré comme impossible 10 ans auparavant
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://medias.pourlascience.fr/api/v1/images/view/5a82ac588fe56f7c1c01b7e3/wide_1000-webp/image.jpg" -->
 ## Les Techniques d'AlphaGo
 - **Apprentissage supervisé** : étude de 30 millions de positions de parties de professionnels
 - **Apprentissage par renforcement** : l'IA joue contre elle-même des millions de fois
-- **Recherche arborescente Monte Carlo** : évalue les meilleurs coups possibles
 - Combinaison de réseaux neuronaux profonds et d'algorithmes de recherche
 
 ---
@@ -364,40 +354,32 @@ Lee Sedol
 
 ---
 
-## 🌌 SETI @ Home
-- Projet pour détecter vie extraterrestre
-- Utilise la puissance de calcul **des ordinateurs des bénévoles**
-- Exemple de **distributed computing** et science collaborative
-
----
-
 ## 🎮 AlphaStar : Champion de StarCraft II
 
 **Le Défi StarCraft II**
 - Jeu de stratégie en temps réel extrêmement complexe
 - Nécessite planification, gestion de ressources, micro-gestion
-- Plus de 10^26 actions possibles (vs 10^170 pour le Go)
 
 ---
 
-**Les Performances d'AlphaStar**
+## Les Performances d'AlphaStar
 - Décembre 2018 : Bat des joueurs professionnels
 - Atteint le niveau "Grandmaster" (top 0,2% des joueurs)
 - Gère simultanément : économie, armée, stratégie
 
 ---
-
-**Les Techniques Utilisées**
+## Les Techniques Utilisées
 - **Apprentissage par imitation** : étudie des millions de parties humaines
 - **Apprentissage par renforcement** : joue contre différentes versions de lui-même
 - **Architecture neuronale** : réseaux transformers pour comprendre le contexte du jeu
 - Traite environ 22 000 observations par seconde
 
 ---
-**Innovation Clé**
+## Innovation Clé
 - AlphaStar ne joue pas de manière surhumaine (APM limité à un niveau humain)
 - Démontre une compréhension stratégique profonde
 - Capable d'adapter sa stratégie en temps réel
+- Fais preuve de créativité et d'intuition 
 
 ---
 <!-- .slide: data-layout="two-column" data-video="https://youtu.be/UuhECwm31dM?si=5-9yNHVsPns0mCSq" -->
@@ -407,6 +389,7 @@ Lee Sedol
 
 — Carl von Clausewitz, "De la guerre"
 
+
 ---
 <!-- .slide: data-layout="two-column" data-img="https://cdn.mos.cms.futurecdn.net/uMHimeHetVYcCSt8ExUM8.jpg" -->
 
@@ -414,7 +397,6 @@ Lee Sedol
 - Objectif : détecter des technosignatures (émissions radio étroites, impulsions laser) d’origine non naturelle.
 - Méthodes : radiotélescopes (Allen Telescope Array, Green Bank), observations optiques, analyse de spectres, filtrage des interférences terrestres.
 - Problème : le volume de recherche immense et pas assez de capacité de calcul.
-
 
 ---
 <!-- .slide: data-layout="two-column" data-video="https://youtu.be/EyWsnc7cB_w?si=BvUJi0RrmLqog1BR" -->
@@ -439,15 +421,6 @@ Lee Sedol
 - Les modèles informatiques sont coûteux et doivent être vérifiés en laboratoire.
 
 ---
-
-## Impact
-
-- Meilleure compréhension de la fonction des protéines et moins d’effets indésirables.
-- Conception plus précise de thérapies.
-- Découvertes accélérées grâce au calcul avancé et à l’IA.
-
-
----
 <!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/en/3/35/LifeWithPlayStation_Folding.jpg" -->
 
 ## 🧬 Folding@home : Pliage des Protéines Distribué
@@ -457,10 +430,15 @@ Lee Sedol
 
 ---
 
-**AlphaFold : La Révolution**
+## Foldit 
+- Un jeu sérieux où des joueurs s'amusent à plier des protéines avec une interface gamifiée, basé sur le moteur Rosetta (University of Washington).
+- Exploite **l’intuition humaine** pour explorer l’espace de conformations, générant des données utiles à l’IA et à la conception de médicaments.
+
+---
+
+## AlphaFold : La Révolution
 - Développé par DeepMind (2020)
 - Résout un problème vieux de 50 ans : prédire la structure 3D des protéines
-- Une protéine = chaîne d'acides aminés qui se replie d'une façon précise
 
 **Pourquoi c'est Important ?**
 - La forme d'une protéine détermine sa fonction
@@ -468,45 +446,51 @@ Lee Sedol
 - Applications : conception de médicaments, lutte contre les virus
 
 ---
+<!-- .slide: data-layout="two-column" data-video="https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs" -->
 
-https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
+## AlphaFold
+- Prédit la structure de 200 millions de protéines (soit quaisment toutes les protéines du vivant)
+- A fait avancer la recherche biomédicale de plusieurs décades en quelques mois
 
+---
+<!-- .slide: data-layout="two-column" data-img="https://tse4.mm.bing.net/th/id/OIP.mY0EH8QNYbBHbI5OP_K2LAHaL_?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" -->
+## Impact sur la Science
+Avant AlphaFold, les scientifiques avaient déterminé expérimentalement environ 170 000 – 200 000 structures de protéines
+Avec AlphaFold, plus de 200 millions de structures de protéines qui sont désormais disponibles gratuitement dans la base de données AlphaFold Protein Structure Database
 
-**Les Performances**
-- Prédit la structure de 200 millions de protéines
-- Précision comparable aux méthodes expérimentales
-- Réduit de plusieurs années à quelques heures le temps de recherche
-
-**Impact sur la Science**
-- Prix Nobel de Chimie 2024 décerné à Demis Hassabis (DeepMind)
-- Accélère la recherche médicale mondiale
-- Données ouvertes : accessibles à tous les chercheurs
-
-![AlphaFold Protein Structure](https://cdn.the-scientist.com/assets/articleNo/68887/aImg/43733/alphafold-l.png)
+- Prix Nobel de Chimie 2024 décerné conjointement à Demis Hassabis (DeepMind), John Jumper (DeepMind) et David Baker (University of Washington)
 
 ---
 
-## Demis Hassabis et les Jeux vidéo 🎮  
+<!-- .slide: data-layout="two-column" data-img="https://cbmm.mit.edu/sites/default/files/styles/colorbox_for_node_images/public/news-events/65e80469-36b7-44de-bb8c-0ddb5b00.jpeg?itok=br6JZi3g" -->
 
+## Qui est Demis Hassabis ?
+Né en 1976 à Londres, Royaume-Uni.
+- Enfance : prodige des échecs, atteint le rang de maître international à 13 ans.
+- Études : diplômé en informatique de l’Université de Cambridge, doctorat en neurosciences cognitives à UCL.
+
+---
+
+## Demis Hassabis et les Jeux vidéo 🎮
+- A commencé sa carrière dans les jeux vidéo à 17 ans.
 - Syndicate (1993)
-	•	Rôle : Playtester (testeur de jeu) dans ses débuts chez Bullfrog Productions.  ￼
-	•	Studio : Bullfrog Productions (connu pour des jeux de simulation et stratégie innovants).  ￼
+Rôle : Playtester (testeur de jeu) dans ses débuts chez Bullfrog Productions.
+Studio : Bullfrog Productions (connu pour des jeux de simulation et stratégie innovants).
 
 - Theme Park (1994)
-	•	Lead Programmer (programmeur principal) sur plusieurs versions (DOS, Amiga, SNES, PlayStation, etc.).  ￼
-	•	Studio : Bullfrog Productions (éditeur / développeur).  ￼
+Lead Programmer (programmeur principal) sur plusieurs versions (DOS, Amiga, SNES, PlayStation, etc.).
+Studio : Bullfrog Productions (éditeur / développeur).
 👉 Theme Park est un jeu de simulation de parc d’attractions très populaire dans les années 1990.
 
 - Republic: The Revolution (2003)
-	•	Rôle : Executive Designer (concepteur exécutif) et concept principal du jeu.  ￼
-	•	Studio : Elixir Studios, société qu’il a fondée en 1998 à Londres.  ￼
+Rôle : Executive Designer (concepteur exécutif) et concept principal du jeu.
+Studio : Elixir Studios, société qu’il a fondée en 1998 à Londres.
 👉 Un jeu de stratégie / simulation politique ambitieux conçu autour de systèmes complexes.
 
 - Evil Genius (2004)
-	•	Rôle : Executive Designer et Concept.  ￼
-	•	Studio : Elixir Studios, toujours sous sa direction.  ￼
+Rôle : Executive Designer et Concept.
+Studio : Elixir Studios, toujours sous sa direction.
 👉 Dans ce jeu, le joueur incarne un maître du mal qui dirige une base secrète (similaire au style “simulation de base” avec humour).
-
 
 ---
 
@@ -515,6 +499,22 @@ https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
 - En bref: le Transformer est une architecture d’IA (2017) qui comprend le contexte des phrases grâce à un mécanisme appelé “attention”.
 - Idée clé: l’attention permet au modèle de se concentrer sur les mots les plus utiles pour la tâche (traduire, résumer, répondre).
 - Petite illustration: dans “Le chat de ma grand mère mange la souris”, le mot “mange” regarde “chat” et “souris” pour comprendre qui fait quoi.
+
+---
+
+## Équation du mécanisme d’attention
+
+Le mécanisme d’attention peut s’exprimer mathématiquement ainsi :
+
+$$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V$$
+
+Où :
+- $Q$ (Query) : ce que l’on recherche
+- $K$ (Key) : ce avec quoi on compare
+- $V$ (Value) : l’information à récupérer
+- $d_k$ : dimension des vecteurs de clés (utilisée pour le facteur d’échelle)
+
+Ce mécanisme permet au modèle de se concentrer sur les parties les plus pertinentes de la séquence d’entrée.
 
 ---
 
@@ -563,21 +563,12 @@ https://youtu.be/gg7WjuFs8F4?si=k0zLPdsV-yJ4RBKs
 
 ## ML : Apprentissage supervisé
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
 Utilisation de données étiquetées
 
 Tâches de classification et de régression
 
-    </div>
-
-    <div style="flex: 1;">
-
 ![Apprentissage supervisé](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Supervised-Learning-in-ML.jpg)
 
-    </div>
-</div>
 ---
 
 ## ML : Apprentissage supervisé
@@ -591,54 +582,29 @@ Tâches de classification et de régression
 
 ## ML : Apprentissage non supervisé
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
 Découverte de structures cachées
 
 Techniques de clustering et de réduction de dimensionnalité
-    </div>
-
-    <div style="flex: 1;">
 
 ![Apprentissage non supervisé](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Unsupervised-Learning-in-ML.jpg)
 
-    </div>
-    
-</div>
 
 ---
-
-## ML : Apprentissage non supervisé
-- Regroupement des profils de conduite pour des offres d’assurance personnalisées.
-- Regroupement des schémas de trafic pour optimiser la navigation et l’itinéraire.
-- Segmentation des données d’usage du véhicule pour des campagnes marketing ciblées.
-
----
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/spfpBrBjntg" -->
 ## ML : Apprentissage par renforcement
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
 Agents apprenant par essais et erreurs
 
 Systèmes de récompense
-    </div>
 
-    <div style="flex: 1;">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-
-</div>
 ---
 
-## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Maitre Corbeau sur un arbre ?</div>
+## Maitre Corbeau sur un arbre ?
 
 ---
 
 ## Maitre Corbeau sur un arbre perché
-http://andreetgyps.a.n.pic.centerblog.net/o/6b0e0247.jpg
+![Poesie](http://andreetgyps.a.n.pic.centerblog.net/o/6b0e0247.jpg)
 
 ---
 ## Tokenisation
@@ -845,6 +811,38 @@ Elle visualise comment le modèle traite les images d'entrée, extrait les carac
 
 ---
 
+# YOLO
+
+## **Y**ou
+## **O**nly
+## **L**ook
+## **O**nce
+
+---
+
+## Détection d’objets (YOLO/R-CNN)
+![Détection d’objets](https://cv-tricks.com/wp-content/uploads/2017/12/Object-Detection-for-outdoor-cv-tricks.jpg)
+
+---
+
+## Cas d’usage de YOLO dans le domaine automobile / trafic
+
+# Vidéo : détection d’objets en action
+
+    <iframe width=640 height=480 src="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1" title="Apprentissage par renforcement en action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="font-size: 1.5em;"></iframe>
+
+---
+
+## Surveillance du conducteur basée sur la vision (Tesla)
+
+<video controls autoplay width="640" height="480">
+    <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/network.mp4" type="video/mp4">
+    Votre navigateur ne prend pas en charge la balise vidéo.
+</video>
+
+
+---
+
 ## Les Successeurs des LLM (vision de Yann Le Cun)
 - JEPA : apprentissage auto-supervisé qui prédit des parties manquantes en espace de représentations (pas d’autocomplétion de tokens).
 - World Models : modèles prédictifs du monde (vidéo/audio/action) pour raisonner et planifier.
@@ -858,8 +856,8 @@ Elle visualise comment le modèle traite les images d'entrée, extrait les carac
 <!-- .slide: data-layout="text-image" data-img="https://image1.slideserve.com/2915781/brain-size-in-mammals-l.jpg" data-alt="Taille du cerveau chez les mammifères" -->
 
 ## 🧠 Le cerveau humain
-- Taille moyenne : 1300 cm³
-- Néandertal : 1600 cm³
+- Taille moyenne : 1600 cm³
+- Néandertal : 1800 cm³
 - Limité pour nouveaux neurones
 - Synapses : pratiquement illimitées
 
@@ -929,6 +927,14 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 
 ---
 
+<!-- .slide: data-layout="two-column" data-img="https://www.numerama.com/wp-content/uploads/2023/04/concoursia-cover.jpg" -->
+
+## L’image d’une IA a dupé les organisateurs du plus prestigieux concours de photos
+Le 14 avril 2023, l’artiste allemand Boris Eldagsen a gagné la catégorie « Open » du Sony World Photography Awards, 
+Problème : la photo présentée a été réalisée en partie avec de l’intelligence artificielle.
+
+---
+<!-- .slide: data-layout="two-column" data-img="https://media.wired.com/photos/63f5e3e3d1e4f6b4f4e8e6e2/191:100/w_1280,c_limit/Science_AI-Generative-Models-GettyImages-1241690188.jpg" -->
 Dès 2027 on ne pourra pas faire la disctinction entre un humain et une IA
 
 ---
