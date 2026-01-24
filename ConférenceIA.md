@@ -1,4 +1,4 @@
-## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">L'Intelligence Artificielle</div>
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">L'Intelligence Artificielle</div>
 
 ---
 
@@ -17,7 +17,7 @@
 <!-- .slide: data-layout="two-column" data-img="https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp" -->
 ## IA vs IA générative
 
-**Intelligence artificielle (IA)** est un domaine de l’informatique qui vise à créer des systèmes capables d’imiter ou de simuler l’intelligence humaine.
+**Intelligence artificielle (IA)** est un domaine de l’informatique qui vise à créer des systèmes capables d’imiter l’intelligence humaine.
 
 **Apprentissage automatique (ML)** se concentre sur la création de systèmes qui apprennent et s’améliorent à partir de l’expérience sans être explicitement programmés.
 
@@ -32,7 +32,7 @@
 ---
 <!-- .slide: data-layout="two-column" data-img="https://cdn.britannica.com/14/84514-050-AF43A0D9/Alan-M-Turing-1951.jpg" -->
 ## 1950 – Alan Turing
-- Publie "Computing Machinery and Intelligence"
+- Publie **Computing Machinery and Intelligence**
 - Propose le **Test de Turing**
 - Question : une machine peut-elle penser ?
 
@@ -46,11 +46,11 @@
 ---
 <!-- .slide: data-layout="two-column" data-img="https://cryptoconexion.com/wp-content/uploads/2023/08/Dartmouth-1956-Tw.jpg" -->
 
-## 1956 – Naissance officielle de l’IA
+## 1956 – Naissance officielle de l’Intelligence Artificielle
 - Conférence de **Dartmouth**
 - Objectif : créer des machines capables de penser
 
-> Le terme Intelligence Artificielle est inventé
+> Le terme **Intelligence Artificielle** est inventé
 
 ---
 
@@ -61,7 +61,7 @@ Elle a réuni **John McCarthy, Marvin Minsky, Claude Shannon et Allen Newell**.
 
 C'est lors de cette rencontre historique que le terme **Intelligence Artificielle** a été inventé par John McCarthy. 
 
-Les participants pensaient pouvoir créer une machine pensante en quelques mois ...
+> Les participants pensaient pouvoir créer une machine pensante en quelques mois ...
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://perceptrondemo.com/assets/rosenblatt-wiring-perceptron-940c6e47.jpg" -->
@@ -83,20 +83,21 @@ Les participants pensaient pouvoir créer une machine pensante en quelques mois 
 ## L'intuition de Rosenblatt
 
 > "Devices of this sort are expected ultimately to be capable of concept formation, language translation, collation of military intelligence, and the solution of problems through inductive logic."
+<div style="font-size: 0.6em; line-height: 1.3;">
+<strong>Traduction :</strong><br>
+« On s’attend à ce que des dispositifs de ce type soient, à terme, capables de la formation de concepts, de la traduction de langues, de la compilation de renseignements militaires et de la résolution de problèmes par la logique inductive. »
+</div>
 
 <em>Frank Rosenblatt, 1957</em>
 
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://media.geeksforgeeks.org/wp-content/uploads/20240328125139/XOR-Gate.png" -->
 ## 🔍 Le Problème XOR : Limite du Perceptron Simple
 
 Le perceptron simple ne peut pas résoudre le problème **XOR (OU exclusif)**, qui nécessite une séparation non linéaire.
 
-Le XOR renvoie vrai uniquement si **une seule** des deux entrées est vraie,
-pas les deux en même temps.
-
 **Pourquoi c'est important ?**
-- Cette limitation a conduit au **premier hiver de l'IA** (1974-1980) : baisse de financements et d'intérêt pour la recherche
+> Cette limitation a conduit au **premier hiver de l'IA** (1974-1980) : baisse de financements et d'intérêt pour la recherche
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
@@ -113,22 +114,21 @@ pas les deux en même temps.
 ---
 <!-- .slide: data-layout="two-column" data-img="https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M" -->
 
-## Le Perceptron Multicouche (PMC)
+## Le Perceptron Multicouche
 
-Un Perceptron Multicouche (PMC) est un type de réseau de neurones artificiels composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie. 
+Le **Perceptron Multicouche** est un type de réseau de neurones artificiels composé d'une couche d'entrée, d'une ou plusieurs couches cachées et d'une couche de sortie. 
 
-Chaque couche consiste en des nœuds (neurones) interconnectés où les entrées sont traitées à travers des connexions pondérées, des fonctions d'activation et des biais. 
+Chaque couche consiste en des neurones interconnectés où les entrées sont traitées à travers des connexions pondérées, des fonctions d'activation et des biais.
 
-Le concept du PMC a été introduit pour la première fois en 1969 par **Marvin Minsky et Seymour Papert** dans leur livre *Perceptrons*, qui a posé les bases de la recherche sur les réseaux de neurones.
+Le concept du PMC a été introduit pour la première fois en 1969 par *Marvin Minsky et Seymour Papert* dans leur livre *Perceptrons*
 
 ---
 
 ## <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 8vw; font-weight: bold; width: 100%;">Au fait c'est quoi un Neurone Artificiel, et c'est quoi un Réseau de Neurones Artificiels ?</div>
 
-
 ---
 
-## Neurones biologiques  
+## Un Neurone Biologique
 <!-- .slide: data-layout="two-column" data-img="https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png" -->
 
 **Structure :**  
@@ -138,7 +138,6 @@ Le concept du PMC a été introduit pour la première fois en 1969 par **Marvin 
 
 **Fonctionnement des synapses :**  
 - Transmission de signaux chimiques et électriques  
-
 
 ---
 <!-- .slide: data-layout="two-column" data-img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png" -->
@@ -159,7 +158,7 @@ Les réseaux de neurones artificiels sont des modèles computationnels inspirés
 
 Ils sont composés de couches interconnectées de neurones artificiels, où chaque neurone traite les entrées, applique une fonction d'activation et transmet la sortie à la couche suivante. 
 
-Les Réseaux de Neurones Artificiels sont les unités fondamentales des IA.
+> Les Réseaux de Neurones Artificiels sont les unités fondamentales des IA.
 
 ---
 
@@ -184,7 +183,7 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 **Geoffrey Hinton** 🇬🇧
 
-**Yann LeCun** 🇫🇷
+**Yann Le Cun** 🇫🇷
 
 **Yoshua Bengio** 🇨🇦
 
@@ -249,7 +248,6 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 
 ## 🏆 AlexNet : La Révolution de 2012
 
-**Qu'est-ce qu'AlexNet ?**
 - Réseau de neurones convolutif profond créé par **Alex Krizhevsky, Ilya Sutskever et Geoffrey Hinton**
 - 8 couches (5 convolutives + 3 entièrement connectées)
 - 60 millions de paramètres
@@ -294,10 +292,10 @@ Trois chercheurs ont révolutionné l'IA moderne et partagé le **Prix Turing 20
 <!-- .slide: data-layout="two-column" data-img="https://d92co48ro6fll.cloudfront.net/gradual/videos/scale/transformX/posters/what-s-next-for-ai-systems-language-models-with-ilya-sutskever-of-openai.jpg" data-alt="Ilya Sutskever" -->
 
 ## Le fabuleux destin d'Ilya Sutskever
-- Après AlexNet, rejoint Google Brain
+- Après AlexNet, rejoint **Google Brain**
 - 2015 : Cofonde **OpenAI** avec Sam Altman
 - Rôle clé dans le développement de **GPT** et **ChatGPT**
-- Chief Scientist chez OpenAI jusqu'en 2024
+- Chief Scientist chez **OpenAI** jusqu'en 2024
 
 ---
 
@@ -628,25 +626,13 @@ La limite de tokens définit le nombre maximum de tokens qu'un modèle peut trai
 | Mistral Large  | 64 000              | ~256                         |
 
 ---
+<!-- .slide: data-layout="two-column" data-img="https://causewriter.ai/wp-content/uploads/2023/08/image-2.png)" -->
 
 ## Embedding
 
 ## Transformer les Tokens en Représentations Numériques
 
-<div style="display: flex; align-items: center; gap: 20px;">
-
-    <div style="flex: 1;">
-
 L'embedding transforme les tokens en vecteurs, qui servent de véritables points d'entrée pour le LLM.
-
-    </div>
-
-    <div style="flex: 1;">
-
-![Exemple d'Embedding](https://causewriter.ai/wp-content/uploads/2023/08/image-2.png)
-
-    </div>
-</div>
 
 ---
 
@@ -704,31 +690,20 @@ Dans les réseaux de neurones, les **paramètres** font référence aux valeurs 
 
 ## Paramètres et Poids dans les Réseaux de Neurones
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
-
 **Pourquoi Ils Sont Importants :**
 
 - **Les poids et les biais** sont les composants essentiels qui permettent aux réseaux de neurones d'apprendre des motifs et de faire des prédictions. En mettant à jour de manière itérative ces valeurs à l'aide d'algorithmes d'optimisation comme la descente de gradient, le réseau améliore ses performances sur la tâche donnée.
     </div>
 
-    <div style="flex: 1;">
 **Exemple :**
 
 - Dans un réseau de neurones simple, si l'entrée est `X`, le poids est `W` et le biais est `B`, la sortie d'un neurone est calculée comme :
 $$\text{sortie} = \text{fonction\_activation}(W \cdot X + B)$$
 
-    </div>
-</div>
-
 
 ---
 
 ## Mistral 7B : Nombre de Paramètres
-
-<div style="display: flex; align-items: center; gap: 20px;">
-
-    <div style="flex: 1;">
 
 Le modèle Mistral 7B est un modèle de fondation de pointe avec **7 milliards de paramètres**.
 
@@ -737,14 +712,9 @@ Le modèle Mistral 7B est un modèle de fondation de pointe avec **7 milliards d
 - **GPT-4 :** Environ 175 milliards de paramètres estimés.
 - **LLaMA 2 (13B) :** 13 milliards de paramètres.
 - **GPT-5 : ** entre 500 et 1500 milliards de paramètres selon les rumeurs.
-    </div>
-
-    <div style="flex: 1;">
 
 ![Comparaison des Paramètres de Modèles](https://www.geeky-gadgets.com/wp-content/uploads/2023/09/New-Mistral-7B-instruct-model-from-Mistral-AI.webp)
 
-    </div>
-</div>
 
 ---
 
@@ -752,71 +722,42 @@ Le modèle Mistral 7B est un modèle de fondation de pointe avec **7 milliards d
 LLM: Large Language Model
 
 ---
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1&mute=1" data-mute="true" -->
+
 ## ML : Apprentissage par Renforcement​
 
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
 Agents apprenant par essais et erreurs​
 
 Systèmes de récompense​
-    </div>
 
-    <div style="flex: 1;">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-
-</div>
 
 ---
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/KPLYhRBCcvk?autoplay=1&mute=1" data-mute="true" -->
 
 ## ML : Apprentissage par Renforcement​
-<div style="display: flex; align-items: center; gap: 20px;">
-    <div style="flex: 1;">
 
 - Systèmes de conduite autonome apprenant des stratégies de conduite optimales par simulation.
 - Systèmes de régulateur de vitesse adaptatif optimisant l'efficacité énergétique et la sécurité.
 - Systèmes d'assistance au stationnement apprenant à naviguer dans des scénarios de stationnement complexes.
 
-    </div>
-    <div style="flex: 1;">  
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KPLYhRBCcvk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 **Source :** [AlphaStar : Niveau grand maître dans StarCraft II utilisant l'apprentissage par renforcement multi-agents](https://deepmind.google/discover/blog/alphastar-grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning/)
 
-    </div>
-</div>
 ---
-
+<!-- .slide: data-layout="two-column" data-img="https://i.makeagif.com/media/3-22-2022/boUeR6.gif" -->
 ## Réseau de Neurones en Action
-
-<div style="display: flex; align-items: center; gap: 20px;">
-
-    <div style="flex: 1;">
 
 L'animation montre le processus de reconnaissance de chiffres manuscrits à l'aide d'un réseau de neurones. 
 
 Elle visualise comment le modèle traite les images d'entrée, extrait les caractéristiques et prédit le chiffre correspondant.
 
-    </div>
-
-    <div style="flex: 1;">
-
-![Réseau de Neurones en Action](https://i.makeagif.com/media/3-22-2022/boUeR6.gif)
-
-    </div>
-</div>
-
 ---
 
-# YOLO
+## YOLO
 
-## **Y**ou
-## **O**nly
-## **L**ook
-## **O**nce
+**Y**ou
+**O**nly
+**L**ook
+**O**nce
 
 ---
 
@@ -824,21 +765,21 @@ Elle visualise comment le modèle traite les images d'entrée, extrait les carac
 ![Détection d’objets](https://cv-tricks.com/wp-content/uploads/2017/12/Object-Detection-for-outdoor-cv-tricks.jpg)
 
 ---
-
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1&mute=1" data-mute="true" -->
 ## Cas d’usage de YOLO dans le domaine automobile / trafic
 
-# Vidéo : détection d’objets en action
-
-    <iframe width=640 height=480 src="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1" title="Apprentissage par renforcement en action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="font-size: 1.5em;"></iframe>
+Vidéo : détection d’objets en action
 
 ---
 
-## Surveillance du conducteur basée sur la vision (Tesla)
+## Comment la voiture voit-elle le monde ?
 
-<video controls autoplay width="640" height="480">
-    <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/network.mp4" type="video/mp4">
-    Votre navigateur ne prend pas en charge la balise vidéo.
-</video>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 100%;">
+    <video controls autoplay muted playsinline width="640" height="480">
+        <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/network.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la balise vidéo.
+    </video>
+</div>
 
 
 ---
@@ -849,7 +790,7 @@ Elle visualise comment le modèle traite les images d'entrée, extrait les carac
 
 ---
 
-# Comment l'Homme se positionne vis à vis de l'IA ?
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Comment l'Homme se positionne vis à vis de l'IA ?</div>
 
 ---
 
@@ -878,8 +819,7 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 ![Comparaison des performances de l'IA et des humains — Our World in Data](https://upload.wikimedia.org/wikipedia/commons/1/11/Comparaison_des_performances_de_l%27IA_et_des_humains_-_Our_World_in_Data.svg?download)
 
 ---
-
-# Et Demain ?
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Et Demain ?</div>
 
 ---
 
@@ -918,12 +858,53 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 
 ## Singularité technologique en IA
 - Point hypothétique où l’IA dépasse l’intelligence humaine et s’auto-améliore rapidement.
-- Timeline incertaine; scénario graduel ou abrupt.
-
+- Timeline incertaine; scénario graduel ou abrupt ?
 
 ---
 
-# Un futur pas si lointain ... 
+## à votre avis la singularité technologique arrivera quand ?
+- jamais
+- dans 50 ans
+- dans 20 ans
+
+---
+
+## La règle des 6 mois
+- Chaque nouvelle génération de modèles d’IA double de capacité tous les 6 mois.
+
+---
+
+<!-- .slide: data-layout="two-column" data-img="https://content.api.news/v3/images/bin/e39c59e786ff255e6a7d1c4ae9d9611b" data-alt="Terence Tao" -->
+## Terence Tao
+- Mathématicien australo-américain, professeur à UCLA
+- QI estimé (non officiel) : ~220
+- Médaille Fields 2006
+- Théorème Green–Tao: progressions arithmétiques dans les nombres premiers
+- Analyse harmonique, EDP, combinatoire additive, théorie des nombres
+- Contributions au compressed sensing (Candès–Tao)
+
+---
+
+<!-- .slide: data-layout="two-column" data-img="https://controverity.com/wp-content/uploads/2026/01/elon2026-1024x536.webp" -->
+
+## La singularity arrive avec 30 ans d'avance
+
+> "2026 est l'année de la singularité technologique."
+
+Elon Musk le 4 janvier 2026
+
+---
+
+<!-- .slide: data-layout="two-column" data-video="https://www.youtube.com/watch?v=zGfac0-MY20" data-mute="false" -->
+## L'IA est elle meilleure que nous ?
+
+- Mathématicien français, *médaille Fields 2010* pour ses travaux en théorie cinétique (équations de Boltzmann et de Landau).
+- Auteur du rapport national 2018 sur l’IA *Donner un sens à l’intelligence artificielle* (stratégie française et européenne).
+- Ancien directeur de l’Institut Henri-Poincaré
+
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Un futur pas si lointain ...</div>
 
 ---
 
@@ -964,44 +945,40 @@ By Neal Mohan, CEO, YouTube
 
 ---
 
-<!-- .slide: data-layout="two-column" data-img="https://controverity.com/wp-content/uploads/2026/01/elon2026-1024x536.webp" -->
-
-## La singularity arrive avec 30 ans d'avance
-
-> "2026 est l'année de la singularité technologique."
-
-Elon Musk le 4 janvier 2026
-
-
----
-
-<!-- .slide: data-layout="two-column" data-video="https://youtube.com/shorts/zGfac0-MY20?si=c8Tn2hH6gn0-aaaG" -->
-## L'IA est elle meilleure que nous ?
-
-- Mathématicien français, médaille Fields 2010 pour ses travaux en théorie cinétique (équations de Boltzmann et de Landau).
-- Auteur du rapport national 2018 sur l’IA “Donner un sens à l’intelligence artificielle” (stratégie française et européenne).
-- Ancien directeur de l’Institut Henri-Poincaré et député, engagé sur sciences, éducation et innovation.
-
----
-
 ## la  course vers l'ia entretenue par les tensions geopolitiques entre les blocs USA CHINE EUROPE
 
 ---
 
-
 ## 🖥️ Démonstration : Moshi de Kuytai
 - Génération de texte et images
 - Interaction avec le public
-- Illustrer puissance et limites de l’IA
 
+---
+
+## Atelier Interactif : Comment détecter une image générée par IA ?
+
+https://this-person-does-not-exist.com/en
+
+---
+
+## Parlons avec le Général de Gaulle
+https://unmute.sh/
+
+---
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Merci pour votre attention !</div>
+
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Questions ?</div>
+
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Pour aller plus loin ...</div>
 
 ---
 
 ## Base de Données MNIST : Reconnaissance de Chiffres Manuscrits
 
-<div style="display: flex; align-items: center; gap: 20px;">
-
-    <div style="flex: 1;">
 
 La base de données MNIST (Modified National Institute of Standards and Technology) est un benchmark largement utilisé en apprentissage automatique et en vision par ordinateur. Elle se compose de 70 000 images en niveaux de gris de chiffres manuscrits (0 à 9), chacune de taille 28x28 pixels. La base de données est utilisée pour entraîner et évaluer des modèles pour des tâches de reconnaissance de chiffres.
 
@@ -1016,16 +993,10 @@ La base de données MNIST (Modified National Institute of Standards and Technolo
 - Reconnaissance de chiffres dans les systèmes postaux.
 - Expériences fondamentales en apprentissage profond.
 
-    </div>
-    <div style="flex: 1;">
-
 
 ![Exemple de la Base MNIST](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
 
 Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
-
-    </div>
-</div>
 
 
 ---
@@ -1049,32 +1020,6 @@ Exemple de reconnaissance de chiffres manuscrits de la base de données MNIST
 - Vous discutez par écrit avec deux personnes
 - L'une parle de ses vacances, l'autre aussi
 - Laquelle est l'IA ? Si vous ne pouvez pas le dire, l'IA a réussi !
-
----
-
-## Atelier Interactif : Comment détecter une image générée par IA ?
-
-
-https://this-person-does-not-exist.com/en
-
-
----
-
-## Parlons avec le Général de Gaulle
-https://unmute.sh/
-
----
-
-## Applications Concrètes
-  - Génération d'une image simple ("un chat dans un jardin")
-  - Génération d'un poème avec le public
--  Exemples du quotidien (10 min)
-  - Reconnaissance vocale, recommandations, traduction automatique
--  Détecter l'IA (5 min)
-  - "Cette image a-t-elle été générée par une IA ?" (quiz visuel)
-
-
-
 
 ---
 
