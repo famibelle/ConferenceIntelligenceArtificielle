@@ -232,11 +232,53 @@
         });
       }, 200);
     });
+    
+    // Auto-scale pour les slides classiques (sans data-layout)
+    Reveal.on('ready', () => {
+      setTimeout(() => {
+        document.querySelectorAll('section:not([data-layout])').forEach(section => {
+          if (!section.querySelector('.slide-container')) {
+            scaleClassicSlide(section);
+          }
+        });
+      }, 300);
+    });
+    
+    Reveal.on('slidechanged', () => {
+      setTimeout(() => {
+        const currentSlide = Reveal.getCurrentSlide();
+        if (currentSlide && !currentSlide.hasAttribute('data-layout') && !currentSlide.querySelector('.slide-container')) {
+          scaleClassicSlide(currentSlide);
+        }
+      }, 300);
+    });
+    
+    function scaleClassicSlide(section) {
+      // Ne pas scaler si c'est une slide spéciale (titre centré, etc.)
+      if (section.querySelector('[style*="display: flex"]')) return;
+      
+      const sectionHeight = section.clientHeight;
+      const contentHeight = section.scrollHeight;
+      
+      if (sectionHeight > 10 && contentHeight > sectionHeight + 50) {
+        const scale = Math.min(1, (sectionHeight / contentHeight) * 0.95);
+        section.style.transform = `scale(${scale})`;
+        section.style.transformOrigin = 'top center';
+      }
+    }
+    
     window.addEventListener('resize', () => {
       document.querySelectorAll('.slide-text-content').forEach(content => {
         const container = content.closest('.slide-text');
         if (container) {
           scaleText(content, container);
+        }
+      });
+      
+      // Re-scale slides classiques
+      document.querySelectorAll('section:not([data-layout])').forEach(section => {
+        if (!section.querySelector('.slide-container')) {
+          scaleClassicSlide(section);
         }
       });
     });
