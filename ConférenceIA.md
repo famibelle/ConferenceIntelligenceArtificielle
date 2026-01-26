@@ -601,6 +601,12 @@ Le cerveau humain est aujourd'hui **100 millions de fois plus économe en énerg
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Et Demain ?</div>
 
 ---
+changement de paradigme
+1er revolution indus : lnenergie se transforme en force
+2eme energie devient con'aissance (Internet)
+3   energie devient intelligence (QI)
+
+---
 <!-- .slide: data-layout="two-column" data-img="https://www.geeky-gadgets.com/wp-content/uploads/2023/06/What-is-AGI.jpg" -->
 ## L'AGI: Artificial General Intelligence
 
